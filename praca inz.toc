@@ -1,8 +1,14 @@
 \contentsline {section}{\numberline {1}Wst\IeC {\k e}p}{1}
 \contentsline {subsection}{\numberline {1.1}Cel pracy}{1}
-\contentsline {subsection}{\numberline {1.2}aplikacja}{2}
+\contentsline {subsection}{\numberline {1.2}Zilog z80}{2}
+\contentsline {subsection}{\numberline {1.3}Motywacja}{2}
+\contentsline {subsection}{\numberline {1.4}Aplikacja}{2}
 \contentsline {section}{\numberline {2}Zagadnienie emulacji}{2}
-\contentsline {section}{\numberline {3}Przegl\IeC {\k a}d istniej\IeC {\k a}cych rozwi\IeC {\k a}za\IeC {\'n}}{2}
+\contentsline {subsection}{\numberline {2.1}r\IeC {\'o}\IeC {\.z}nica mi\IeC {\k e}dzy symulacj\IeC {\k a} a emulacj\IeC {\k a}}{2}
+\contentsline {subsection}{\numberline {2.2}emulacja przez interpretowanie}{3}
+\contentsline {subsection}{\numberline {2.3}emulacja przez statyczn\IeC {\k a} re-kompilacje}{3}
+\contentsline {subsection}{\numberline {2.4}emulacja przez dynamiczn\IeC {\k a} re-kompilacje}{3}
+\contentsline {section}{\numberline {3}Przegl\IeC {\k a}d istniej\IeC {\k a}cych rozwi\IeC {\k a}za\IeC {\'n}}{3}
 \contentsline {section}{\numberline {4}Projekt aplikacji}{3}
 \contentsline {section}{\numberline {5}Implementacja}{3}
 \contentsline {section}{\numberline {6}Testy}{3}
