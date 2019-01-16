@@ -1,9 +1,9 @@
 \contentsline {chapter}{\numberline {1}Wst\IeC {\k e}p}{2}
 \contentsline {chapter}{\numberline {2}Zagadnienie emulacji}{5}
 \contentsline {section}{\numberline {2.1}emulacja przez interpretowanie}{5}
-\contentsline {section}{\numberline {2.2}emulacja przez statyczn\IeC {\k a} re-kompilacje}{6}
-\contentsline {section}{\numberline {2.3}emulacja przez dynamiczn\IeC {\k a} re-kompilacje}{6}
-\contentsline {section}{\numberline {2.4}r\IeC {\'o}\IeC {\.z}nica mi\IeC {\k e}dzy symulacj\IeC {\k a} a emulacj\IeC {\k a}}{6}
+\contentsline {section}{\numberline {2.2}statyczna re-kompilacja}{6}
+\contentsline {section}{\numberline {2.3}dynamiczna re-kompilacja}{7}
+\contentsline {section}{\numberline {2.4}r\IeC {\'o}\IeC {\.z}nica mi\IeC {\k e}dzy symulacj\IeC {\k a} a emulacj\IeC {\k a}}{7}
 \contentsline {chapter}{\numberline {3}Przegl\IeC {\k a}d istniej\IeC {\k a}cych rozwi\IeC {\k a}za\IeC {\'n}}{8}
 \contentsline {section}{\numberline {3.1}Motywacja}{8}
 \contentsline {chapter}{\numberline {4}Projekt aplikacji}{9}

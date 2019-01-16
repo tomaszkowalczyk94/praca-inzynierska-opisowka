@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2019.1.14)  16 JAN 2019 18:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2019.1.14)  16 JAN 2019 21:34
 entering extended mode
 **"./praca inz.tex"
 ("praca inz.tex"
@@ -494,7 +494,7 @@ File: lstmisc.sty 2018/09/02 1.7 (Carsten Heinz)
 
 
 
-])) [6] [7]
+]) [6]) [7]
 \openout2 = `przegladIstniejacychRozwiazan.aux'.
 
  (przegladIstniejacychRozwiazan.tex
@@ -609,17 +609,23 @@ nie-rii wstecz-nej, $[]$
 
 
 
-] [15
+]
+Overfull \hbox (157.79121pt too wide) in paragraph at lines 59--61
+[]\T1/ptm/m/n/12 https://www.researchgate.net/publication/239665973_The_univers
+ity_of_queensland_binary_translator_uqbt_framework 
+ []
+
+[15
 
 
 ] ("praca inz.aux" (wstep.aux) (zagadnienieEmulacji.aux)
 (przegladIstniejacychRozwiazan.aux) (projektAplikacji.aux) (implementacja.aux)
 (testy.aux) (uwagiIWnioski.aux)) ) 
 Here is how much of TeX's memory you used:
- 4483 strings out of 492970
- 64296 string characters out of 3126594
- 331635 words of memory out of 3000000
- 8212 multiletter control sequences out of 15000+200000
+ 4485 strings out of 492970
+ 64330 string characters out of 3126594
+ 331641 words of memory out of 3000000
+ 8214 multiletter control sequences out of 15000+200000
  44920 words of font info for 72 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,6n,54p,787b,1654s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -629,7 +635,7 @@ Here is how much of TeX's memory you used:
 grams/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/tomek/AppData/Local
 /Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/tomek/AppData/L
 ocal/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "praca inz.pdf" (16 pages, 136605 bytes).
+Output written on "praca inz.pdf" (16 pages, 138063 bytes).
 PDF statistics:
  76 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

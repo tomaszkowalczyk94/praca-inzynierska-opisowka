@@ -20,8 +20,19 @@
 	
 	Emulacja przez interpretowanie jest najwolniejszą formą emulacji, ale także najłatwiejszą w debugowania. Pozwala na prześledzenie wykonania operacji, i podgląd wewnętrznych stanów urządzenia. Z tego powodu jest najczęściej wybierana w debuggerach procesorów, mikro-kontrolerów dla programistów.
 	
-	\section{emulacja przez statyczną re-kompilacje}
-	\section{emulacja przez dynamiczną re-kompilacje}
+	\section{statyczna re-kompilacja}
+	Statyczna re-kompilacja (ang. "Static binary translation") to proces konwertowania kodu maszynowego na kod maszynowy przeznaczony dla innej architektury. Plik wykonywalny tłumaczony jest w raz, za jednym podejściu przez cały plik. 	 Problemem tego rozwiązania są instrukcje skoków pośrednich czyli takich gdzie adres skoku przechowywany jest w rejestrze lub pamięci, i może on być uzyskany tylko podczas wykonywania programu. W takim przypadku niemożliwym jest przetłumaczenie wszystkich instrukcji pliku wykonywalnego. 
+	\cite{uqbt}
+	
+	\section{dynamiczna re-kompilacja}
+	Dynamiczna re-kompilacja (ang. "Dynamic binary translator") w odróżnieniu od translacji dynamicznej tłumaczy kod blokami, podczas jego wykonywania. Re-kompilacja występuje "na żądanie" co jest wolniejsze od statycznej re-kompilacji, ale rozwiązuje problem związany z statycznym tłumaczeniem kodu wykonywanego za instrukcjami skoków pośrednich.
+	
+	Raz przetłumaczony fragment kodu jest przechowywany w pamięci, na wypadek jego ponownego użycia, co pozwala zoptymalizować ten sposób emulacji.
+	\cite{uqbt}
+	
+	Dynamicznej rekompilacji używa w dużym stopniu maszyna wirtualna javy. Wczesne wersje JVM (Java Virtual Machin) używały do swojego działania interpreterów, co okazało się mało wydajne. Dobrym sposobem na optymalizację maszyny wirtualnej okazało się dynamiczne tłumaczenie kodu maszynowego. 
+	\cite{dynamicRecompilationInJava}
+	
 	
 	\section{różnica między symulacją a emulacją} 
 	% Brakuje mi do tego bibliografii
