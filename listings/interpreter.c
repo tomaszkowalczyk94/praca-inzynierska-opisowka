@@ -1,7 +1,8 @@
 
 int PC = 0;
 while(warunekStopu()) {
-  Rozkaz rozkaz = dekodujRozkaz(memory[PC]);
+	
+  Rozkaz rozkaz = dekodujRozkaz(pobierzRozkaz());
 
   switch(rozkaz) {
     case ROZKAZ_1:
@@ -9,11 +10,10 @@ while(warunekStopu()) {
     case ROZKAZ_2:
       rozkaz_2();
     ...  
-
   }
 
-  obsługaPrzerwan();
-  obsługaIO();
+  obslugaPrzerwan();
+  obslugaIO();
   inkrementacjaLicznikow();
 
   PC++;
