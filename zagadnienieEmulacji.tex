@@ -1,0 +1,35 @@
+\chapter{Zagadnienie emulacji}
+	
+	Emulator w kontekście informatyki, oznacza program który jest przystosowany do uruchomienia na specyficznym urządzeniu lub/i systemie, i pozwala na uruchomienie programów napisanych z przeznaczeniem dla innego urządzenia/systemu. \cite{howDoIWriteAnEmulator}
+	
+	Inną ciekawą definicją emulatora podał Victor Moya del Barrio "Emulacja w informatyce oznacza emulowanie zachowania urządzenia lub oprogramowania za pomocą innego oprogramowania lub urządzenia" %to jest tłumaczenie z ang, powinienem jakoś oznaczyć że to jest tłumaczenie a nie cytat??
+	\cite{studyofthetechniquesforemulationprogramming}
+		
+	Emulacje CPU można przeprowadzić na 3 sposoby:\cite{fms_komkon_org_howto}	
+	\begin{itemize}  
+		\item emulacja przez interpretowanie
+		\item emulacja przez statyczną re-kompilacje
+		\item emulacja przez dynamiczną re-kompilacje
+	\end{itemize} 
+	Każda z tych metod wymaga oddzielnego omówienia.
+	
+	\section{emulacja przez interpretowanie}
+	Interpreter to najprostszy rodzaj emulatora. Odczytuje on kod programu z wirtualnej pamięci. Odczytany bajt (lub bajty, rozkaz procesora może być wielobajtowy) zawiera informacje o rodzaju operacji jaką CPU powinno wykonać. Interpreter ma za zadanie odkodować informacje o operacji, a następnie ją wykonać. Między kolejnymi rozkazami powinien on także zmienić wirtualne parametry (np inkrementacja licznika rozkazów), sprawdzić czy nie zostało wywołane przerwanie, obsłużyć urządzenia wejścia wyjścia, liczniki, karta graficzna, lub inne operacje zależne od emulowanego urządzenia.
+	
+	
+	
+	\section{emulacja przez statyczną re-kompilacje}
+	\section{emulacja przez dynamiczną re-kompilacje}
+	
+	\section{różnica między symulacją a emulacją} 
+	% Brakuje mi do tego bibliografii
+	% linki z których czerpałem wiedze:
+	% https://www.guru99.com/real-device-vs-emulator-testing-ultimate-showdown.html
+	% http://fms.komkon.org/EMUL8/HOWTO.html
+	% https://stackoverflow.com/questions/1584617/simulator-or-emulator-what-is-the-difference
+	% https://www.quora.com/What-are-the-differences-between-simulation-and-emulation
+	% TO NAJLEPSZE: https://softwareengineering.stackexchange.com/questions/134746/whats-the-difference-between-simulation-and-emulation
+	Zagadnienie emulacji często mylone jest z symulacją. Nie są to jednak jednoznaczne pojęcia.
+	
+	W książe "Study of the techniques for emulation
+	programming" Victor Moya del Barrio podaje taką to definicje emulatora "An emulator tries to duplicate the behaviour of a full computer using software programs in a different computer. "\cite{studyofthetechniquesforemulationprogramming}
