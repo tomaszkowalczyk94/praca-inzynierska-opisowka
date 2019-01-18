@@ -7,10 +7,11 @@
 \contentsline {chapter}{\numberline {3}Przegl\IeC {\k a}d istniej\IeC {\k a}cych rozwi\IeC {\k a}za\IeC {\'n}}{8}
 \contentsline {section}{\numberline {3.1}Z80 SIMULATOR IDE}{8}
 \contentsline {section}{\numberline {3.2}ZEMU - Z80 Emulator Joe Moore}{9}
-\contentsline {section}{\numberline {3.3}Motywacja}{9}
-\contentsline {chapter}{\numberline {4}Projekt aplikacji}{10}
-\contentsline {chapter}{\numberline {5}Implementacja}{11}
-\contentsline {chapter}{\numberline {6}Testy}{12}
-\contentsline {section}{\numberline {6.1}????}{12}
-\contentsline {section}{\numberline {6.2}Test-driven development}{14}
-\contentsline {chapter}{\numberline {7}Uwagi i wnioski}{15}
+\contentsline {section}{\numberline {3.3}ZIM - The Z80 Machine Simulator}{10}
+\contentsline {section}{\numberline {3.4}Podsumowanie istniej\IeC {\k a}cych rozwi\IeC {\k a}za\IeC {\'n}}{10}
+\contentsline {chapter}{\numberline {4}Projekt aplikacji}{13}
+\contentsline {chapter}{\numberline {5}Implementacja}{14}
+\contentsline {chapter}{\numberline {6}Testy}{15}
+\contentsline {section}{\numberline {6.1}????}{15}
+\contentsline {section}{\numberline {6.2}Test-driven development}{17}
+\contentsline {chapter}{\numberline {7}Uwagi i wnioski}{18}
