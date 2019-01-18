@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2019.1.14)  16 JAN 2019 21:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2019.1.14)  18 JAN 2019 14:14
 entering extended mode
 **"./praca inz.tex"
 ("praca inz.tex"
@@ -499,16 +499,36 @@ File: lstmisc.sty 2018/09/02 1.7 (Carsten Heinz)
 
  (przegladIstniejacychRozwiazan.tex
 Rozdzia\PlPrIeC {\l } 3.
-) [8
+
+Overfull \hbox (3.69437pt too wide) in paragraph at lines 2--3
+\T1/ptm/m/n/12 Z80, lub emu-lu-j¡-cy-mi urz¡-dze-nia u»y-wa-j¡-ce te-go pro-ce-
+so-ra, co do-wo-dzi je-go popularno±ci.[[]] 
+ []
+
+
+Overfull \hbox (2.02554pt too wide) in paragraph at lines 7--8
+\T1/ptm/m/n/12 Dost¦pny pod ad-re-sem http://www.oshonsoft.com/z80.html pªat-ny
+ sy-mu-la-tor po-sia-da-j¡-cy naj-
+ []
+
+<./image/oshonsoftEmulator.png, id=35, 869.2475pt x 822.07124pt>
+File: ./image/oshonsoftEmulator.png Graphic file (type png)
+<use ./image/oshonsoftEmulator.png>
+Package pdftex.def Info: ./image/oshonsoftEmulator.png  used on input line 11.
+(pdftex.def)             Requested size: 310.50357pt x 293.6499pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[8
 
 
 
-]
+]) [9 <./image/oshonsoftEmulator.png>]
 \openout2 = `projektAplikacji.aux'.
 
  (projektAplikacji.tex
 Rozdzia\PlPrIeC {\l } 4.
-) [9
+) [10
 
 
 
@@ -517,7 +537,7 @@ Rozdzia\PlPrIeC {\l } 4.
 
  (implementacja.tex
 Rozdzia\PlPrIeC {\l } 5.
-) [10
+) [11
 
 
 
@@ -540,7 +560,7 @@ Overfull \hbox (60.42665pt too wide) in paragraph at lines 11--13
 [][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[11
+[12
 
 
 
@@ -584,7 +604,7 @@ Overfull \hbox (17.22621pt too wide) in paragraph at lines 43--44
 [][][][][][][][][][][][][][][][][][][][] 
  []
 
-[12]
+[13]
 Overfull \hbox (24.42628pt too wide) in paragraph at lines 51--52
 [][][][][][][][][][][][][][][][][][][][] 
  []
@@ -594,7 +614,7 @@ Overfull \hbox (17.22621pt too wide) in paragraph at lines 52--53
 [][][][][][][][][][][][][][][][][][][][] 
  []
 
-)) [13]
+)) [14]
 \openout2 = `uwagiIWnioski.aux'.
 
  (uwagiIWnioski.tex
@@ -605,7 +625,7 @@ Overfull \hbox (51.52463pt too wide) in paragraph at lines 3--33
 nie-rii wstecz-nej, $[]$ 
  []
 
-[14
+[15
 
 
 
@@ -615,17 +635,17 @@ Overfull \hbox (157.79121pt too wide) in paragraph at lines 59--61
 ity_of_queensland_binary_translator_uqbt_framework 
  []
 
-[15
+[16
 
 
 ] ("praca inz.aux" (wstep.aux) (zagadnienieEmulacji.aux)
 (przegladIstniejacychRozwiazan.aux) (projektAplikacji.aux) (implementacja.aux)
 (testy.aux) (uwagiIWnioski.aux)) ) 
 Here is how much of TeX's memory you used:
- 4485 strings out of 492970
- 64330 string characters out of 3126594
- 331641 words of memory out of 3000000
- 8214 multiletter control sequences out of 15000+200000
+ 4493 strings out of 492970
+ 64548 string characters out of 3126594
+ 331717 words of memory out of 3000000
+ 8221 multiletter control sequences out of 15000+200000
  44920 words of font info for 72 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,6n,54p,787b,1654s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -635,9 +655,9 @@ Here is how much of TeX's memory you used:
 grams/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/tomek/AppData/Local
 /Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/tomek/AppData/L
 ocal/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "praca inz.pdf" (16 pages, 138063 bytes).
+Output written on "praca inz.pdf" (17 pages, 179785 bytes).
 PDF statistics:
- 76 PDF objects out of 1000 (max. 8388607)
+ 80 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
