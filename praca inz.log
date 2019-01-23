@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2019.1.14)  18 JAN 2019 17:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2019.1.14)  23 JAN 2019 18:01
 entering extended mode
 **"./praca inz.tex"
 ("praca inz.tex"
@@ -500,12 +500,6 @@ File: lstmisc.sty 2018/09/02 1.7 (Carsten Heinz)
  (przegladIstniejacychRozwiazan.tex
 Rozdzia\PlPrIeC {\l } 3.
 
-Overfull \hbox (3.69437pt too wide) in paragraph at lines 2--3
-\T1/ptm/m/n/12 Z80, lub emu-lu-j¡-cy-mi urz¡-dze-nia u»y-wa-j¡-ce te-go pro-ce-
-so-ra, co do-wo-dzi je-go popularno±ci.[[]] 
- []
-
-
 Overfull \hbox (2.02554pt too wide) in paragraph at lines 7--8
 \T1/ptm/m/n/12 Dost¦pny pod ad-re-sem http://www.oshonsoft.com/z80.html pªat-ny
  sy-mu-la-tor po-sia-da-j¡-cy naj-
@@ -548,16 +542,18 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
  (projektAplikacji.tex
 Rozdzia\PlPrIeC {\l } 4.
-) [13
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 7.
+[13
 
 
 
-]
+]) [14]
 \openout2 = `implementacja.aux'.
 
  (implementacja.tex
 Rozdzia\PlPrIeC {\l } 5.
-) [14
+) [15
 
 
 
@@ -580,7 +576,7 @@ Overfull \hbox (60.42665pt too wide) in paragraph at lines 11--13
 [][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[15
+[16
 
 
 
@@ -624,7 +620,7 @@ Overfull \hbox (17.22621pt too wide) in paragraph at lines 43--44
 [][][][][][][][][][][][][][][][][][][][] 
  []
 
-[16]
+[17]
 Overfull \hbox (24.42628pt too wide) in paragraph at lines 51--52
 [][][][][][][][][][][][][][][][][][][][] 
  []
@@ -634,7 +630,7 @@ Overfull \hbox (17.22621pt too wide) in paragraph at lines 52--53
 [][][][][][][][][][][][][][][][][][][][] 
  []
 
-)) [17]
+)) [18]
 \openout2 = `uwagiIWnioski.aux'.
 
  (uwagiIWnioski.tex
@@ -645,7 +641,7 @@ Overfull \hbox (51.52463pt too wide) in paragraph at lines 3--33
 nie-rii wstecz-nej, $[]$ 
  []
 
-[18
+[19
 
 
 
@@ -655,29 +651,29 @@ Overfull \hbox (157.79121pt too wide) in paragraph at lines 59--61
 ity_of_queensland_binary_translator_uqbt_framework 
  []
 
-[19
+[20
 
 
 ] ("praca inz.aux" (wstep.aux) (zagadnienieEmulacji.aux)
 (przegladIstniejacychRozwiazan.aux) (projektAplikacji.aux) (implementacja.aux)
 (testy.aux) (uwagiIWnioski.aux)) ) 
 Here is how much of TeX's memory you used:
- 4511 strings out of 492970
- 64787 string characters out of 3126594
- 331860 words of memory out of 3000000
- 8236 multiletter control sequences out of 15000+200000
- 44920 words of font info for 72 fonts, out of 3000000 for 9000
+ 4515 strings out of 492970
+ 64846 string characters out of 3126594
+ 331864 words of memory out of 3000000
+ 8239 multiletter control sequences out of 15000+200000
+ 47723 words of font info for 74 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,6n,54p,901b,1654s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,6n,54p,928b,1654s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/tomek/AppData/Local/Programs/MiKTeX
  2.9/fonts/enc/dvips/base/8r.enc}<C:/Users/tomek/AppData/Local/Programs/MiKTeX 
 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/tomek/AppData/Local/Pro
 grams/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/tomek/AppData/Local
 /Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/tomek/AppData/L
 ocal/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "praca inz.pdf" (20 pages, 494978 bytes).
+Output written on "praca inz.pdf" (21 pages, 498718 bytes).
 PDF statistics:
- 92 PDF objects out of 1000 (max. 8388607)
+ 95 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
