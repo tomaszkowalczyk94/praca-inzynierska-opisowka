@@ -12,7 +12,7 @@
 	
 	Przetrzymywanie plików wykonywalnych w zewnętrznym serwisie ułatwia zarządzanie wszystkimi trzema projektami, pozwala na ich wersjonowanie, i łatwiejsze budowanie aplikacji. 
 
-	\subsection{XBit}
+	\section{XBit}
 	Java jest językiem programowania wysokiego poziomu, kompilowanym do kodu bajtowego. Z tego powodu nie jest on zazwyczaj stosowany w emulacji, gdyż kod emulatora musi być uruchamiany w maszynie wirtualnej, co nie należy do optymalnych rozwiązań.
 	
 	Innym poważnym problemem Javy jest brak typów danych przechowujących tylko wartości dodatnie. James Gosling, jeden z twórców Javy tak argumentuje ich brak: 
@@ -21,9 +21,56 @@
 	
 	Problem ten rozwiązano tworząc własną bibliotekę o roboczej nazwie XBit. Przechowuje ona liczby 8 i 16 bitowe, które mogą być interpretowane zarówno jako wartości całkowite jak i liczby w kodzie uzupełnień do dwóch. Biblioteka potrafi zwrócić konkretne bity, stworzyć reprezentacje liczby z pojedynczych bitów i typów prymitywnych, obudowuje operacje arytmetyczne z uwzględnieniem przepełnienia i przeniesienia. Kod projektu z jej użyciem staje się czytelniejszy i łatwiejszy do ewentualnej refaktoryzacji. 
 	
-	\subsection{z80emu-core}
+	Bibliotekę zaprojektowano w taki sposób aby była możliwie jak najbardziej uniwersalna, i można ją było użyć nie tylko podczas emulacji Zilog-a Z80. ale także innych procesorów. 
 	
-	\subsection{z80emu-gui}
+	\subsection{Możliwości}
+	Za cel obrano następujące funkcje:
+	\begin{itemize}  
+		\item odwzorowanie liczb 8 i 16 bitowych
+		\item możliwość stworzenia reprezentacji liczb 8 i 16 bitowych z typów prymitywnych 
+		\item interpretacja liczb w naturalnym kodzie binarnym lub dopełnień do dwóch
+		\item operacje na pojedynczych bitach(możliwość zmiany, odczytu bitu o danym indeksie)
+		\item opcja odczytania grupy bitów (odczytanie kilku bitów podając indeks pierwszego i ostatniego bitu)
+		\item interpretacja liczb 16 bitowych w formacie big endian lub little endian
+		\item operacje arytmetyczne (dodawanie, odejmowanie)
+		\item operacje bitowe na liczbach (negacja, alternatywa, koniunkcja, przesunięcia bitowe)
+		\item uwzględnienie przy operacjach arytmetycznych przepełnienia oraz przeniesienia
+	\end{itemize} 
 	
+	\subsection{Założenia projektowe}
+	Przed przystąpieniem do implementacji rozwiązania, zaprojektowano publiczny interfejs biblioteki w języku uml, zaprezentowany na grafice \ref{img:xbitUml}. Ustalono także założenia projektowe które zaprezentowano poniżej. 
+	
+	\subsubsection{Klasy XBit8 i XBit16}
+	Klasy XBit8 oraz XBit16 to reprezentacje liczb 8 i 16 bitowych. Postanowiono, że nie będą one w stanie zmienić swojej wewnętrznej wartości, swego stanu (z angielskiego nazwano by je "immutable"), tak jak obiektowe reprezentacje typów prostych w javie (Short, Long, Integer itp).  Przez podjęcie tej decyzji projektowej, metody które powinny zmienić stan obiektu, klonują istniejący obiekt a następnie modyfikują odpowiednio jego stan. Przykładem takiej metody jest setBit(index: int, value: boolean) klasy Xbit8 oraz Xbit16. Funkcja ta nie zmienia bitu obiektu na rzecz którego została wykonana, a jedynie zwraca kopie obiektu, z zmodyfikowanym odpowiednim bitem. 
+	
+	Zalety zastosowania obiektów niezmiennych:
+	\begin{itemize} 
+		\item Prosta implementacja oraz łatwe debugowanie kodu.
+		\item Garbage Collector jest zoptymalizowany pod względem pracy z tego typu obiektami.   
+		\item Łatwość zapisywania obiektów do pliku lub pamięci podręcznej (z ang. cache).
+		\item Bezpieczne używanie obiektów niezmiennych w programach wielowątkowych, co umożliwiałoby emulacje potokowości CPU. Jeden wątek w takim przypadku mógłby być odpowiedzialny za jeden stopień potoku, np osobny wątek pobierał by instrukcje z pamięci, inny dekodował instrukcję, kolejny wykonywał i tak dalej.
+		\item Możliwość użycia obiektu jako klucz, np w HashMap. 
+	\end{itemize}
+	
+	Wadą zastosowania obiektów niezmiennych jest optymalizacja, i zwiększone użycie pamięci, co mimo wszystko nie powinno być przeszkodą dla współczesnych komputerów. Ze względu na przewagę zalet w stosunku do jednej wady postanowiono użyć obiektów niezmiennych w bibliotece.
+	
+	\subsubsection{Klasa XBitUtils, Arithmetic8bitResult, Arithmetic16bitResult}
+	Klasa XBitUtils jest odpowiedzialna za wszystkie operacje arytmetyczne oraz bitowe. Większość z jej metod zwraca obiekty klas XBit8 lub XBit16. Wyjątkami są metody wykonujące dodawanie lub odejmowanie, które oprócz zwrócenia wyniku operacji powinny informować o wystąpieniu przeniesienia lub przepełnienia. Z tego zaprojektowano  klasy Arithmetic8bitResult oraz Arithmetic16bitResult które zawierają następujące pola:
+	\begin{itemize}
+		\item obiekt klasy XBit8 lub XBit16 będący rezultatem operacji
+		\item dwie zmienne typu boolean informujące o wystąpieniu przeniesienia i przepełnienia
+	\end{itemize}
+		
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=1\textwidth]{xbitUml}
+		\caption{projekt uml biblioteki xbit}
+		\label{img:xbitUml}
+	\end{figure}
+	
+	\section{z80emu-core}
+	
+	\section{z80emu-gui}
+	%tutaj o mvc
 	
 	

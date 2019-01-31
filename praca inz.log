@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2019.1.14)  31 JAN 2019 14:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2019.1.14)  31 JAN 2019 20:29
 entering extended mode
 **"./praca inz.tex"
 ("praca inz.tex"
@@ -438,18 +438,18 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
-)
+ [1
+
+])
 \tf@toc=\write3
 \openout3 = `"praca inz.toc"'.
 
- [1
-
-]
+ [2]
 \openout2 = `wstep.aux'.
 
  (wstep.tex
 Rozdzia\PlPrIeC {\l } 1.
-<./image/z80wyprowadzenia.png, id=10, 273.27094pt x 289.83281pt>
+<./image/z80wyprowadzenia.png, id=13, 273.27094pt x 289.83281pt>
 File: ./image/z80wyprowadzenia.png Graphic file (type png)
 <use ./image/z80wyprowadzenia.png>
 Package pdftex.def Info: ./image/z80wyprowadzenia.png  used on input line 16.
@@ -457,7 +457,7 @@ Package pdftex.def Info: ./image/z80wyprowadzenia.png  used on input line 16.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./image/app1.png, id=12, 588.69937pt x 346.29375pt>
+<./image/app1.png, id=15, 588.69937pt x 346.29375pt>
 File: ./image/app1.png Graphic file (type png)
 <use ./image/app1.png>
 Package pdftex.def Info: ./image/app1.png  used on input line 23.
@@ -471,10 +471,10 @@ File: omsptm.fd
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 30.
-[2
+[3
 
 
-]) [3 <./image/z80wyprowadzenia.png>] [4 <./image/app1.png>]
+]) [4 <./image/z80wyprowadzenia.png>] [5 <./image/app1.png>]
 \openout2 = `zagadnienieEmulacji.aux'.
 
 
@@ -490,11 +490,11 @@ File: lstlang1.sty 2018/09/02 1.7 listings language file
 ("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstmisc.s
 ty"
 File: lstmisc.sty 2018/09/02 1.7 (Carsten Heinz)
-) (listings/interpreter.c [5
+) (listings/interpreter.c [6
 
 
 
-]) [6]) [7]
+]) [7]) [8]
 \openout2 = `przegladIstniejacychRozwiazan.aux'.
 
  (przegladIstniejacychRozwiazan.tex
@@ -505,7 +505,7 @@ Overfull \hbox (2.02554pt too wide) in paragraph at lines 7--8
  sy-mu-la-tor po-sia-da-j¡-cy naj-
  []
 
-<./image/oshonsoftEmulator.png, id=35, 869.2475pt x 822.07124pt>
+<./image/oshonsoftEmulator.png, id=38, 869.2475pt x 822.07124pt>
 File: ./image/oshonsoftEmulator.png Graphic file (type png)
 <use ./image/oshonsoftEmulator.png>
 Package pdftex.def Info: ./image/oshonsoftEmulator.png  used on input line 11.
@@ -513,12 +513,12 @@ Package pdftex.def Info: ./image/oshonsoftEmulator.png  used on input line 11.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[8
+[9
 
 
 
 ]
-<./image/zemu.jpg, id=39, 770.88pt x 578.16pt>
+<./image/zemu.jpg, id=42, 770.88pt x 578.16pt>
 File: ./image/zemu.jpg Graphic file (type jpg)
 <use ./image/zemu.jpg>
 Package pdftex.def Info: ./image/zemu.jpg  used on input line 30.
@@ -527,8 +527,8 @@ Package pdftex.def Info: ./image/zemu.jpg  used on input line 30.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[9 <./image/oshonsoftEmulator.png>]
-<./image/zim.jpg, id=43, 638.385pt x 602.25pt>
+[10 <./image/oshonsoftEmulator.png>]
+<./image/zim.jpg, id=46, 638.385pt x 602.25pt>
 File: ./image/zim.jpg Graphic file (type jpg)
 <use ./image/zim.jpg>
 Package pdftex.def Info: ./image/zim.jpg  used on input line 45.
@@ -537,7 +537,7 @@ Package pdftex.def Info: ./image/zim.jpg  used on input line 45.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[10 <./image/zemu.jpg>] [11 <./image/zim.jpg>]) [12]
+[11 <./image/zemu.jpg>] [12 <./image/zim.jpg>]) [13]
 \openout2 = `projektAplikacji.aux'.
 
  (projektAplikacji.tex
@@ -555,19 +555,33 @@ Overfull \hbox (53.22658pt too wide) in paragraph at lines 4--5
 [][][][][][][][][][][][][][][][][][][][] 
  []
 
-[13
+[14
 
 
 
-]) (listings/myMavenRepoSettings.xml)
+]) (listings/myMavenRepoSettings.xml) [15]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 15.
- [14]) [15]
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 26.
+ [16]
+Overfull \hbox (9.11703pt too wide) in paragraph at lines 51--52
+[]\T1/ptm/m/n/12 Bezpieczne u»y-wa-nie obiek-tów nie-zmien-nych w pro-gra-mach 
+wie-lo-w¡t-ko-wych, co umo»-
+ []
+
+<./image/xbitUml.png, id=66, 990.70125pt x 712.91344pt>
+File: ./image/xbitUml.png Graphic file (type png)
+<use ./image/xbitUml.png>
+Package pdftex.def Info: ./image/xbitUml.png  used on input line 66.
+(pdftex.def)             Requested size: 443.57848pt x 319.1981pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [17] [18 <./image/xbitUml.png>]
 \openout2 = `implementacja.aux'.
 
  (implementacja.tex
 Rozdzia\PlPrIeC {\l } 5.
-) [16
+) [19
 
 
 
@@ -590,7 +604,7 @@ Overfull \hbox (60.42665pt too wide) in paragraph at lines 11--13
 [][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[17
+[20
 
 
 
@@ -634,7 +648,7 @@ Overfull \hbox (17.22621pt too wide) in paragraph at lines 43--44
 [][][][][][][][][][][][][][][][][][][][] 
  []
 
-[18]
+[21]
 Overfull \hbox (24.42628pt too wide) in paragraph at lines 51--52
 [][][][][][][][][][][][][][][][][][][][] 
  []
@@ -644,7 +658,7 @@ Overfull \hbox (17.22621pt too wide) in paragraph at lines 52--53
 [][][][][][][][][][][][][][][][][][][][] 
  []
 
-)) [19]
+)) [22]
 \openout2 = `uwagiIWnioski.aux'.
 
  (uwagiIWnioski.tex
@@ -655,7 +669,7 @@ Overfull \hbox (51.52463pt too wide) in paragraph at lines 3--33
 nie-rii wstecz-nej, $[]$ 
  []
 
-[20
+[23
 
 
 
@@ -665,17 +679,17 @@ Overfull \hbox (157.79121pt too wide) in paragraph at lines 59--61
 ity_of_queensland_binary_translator_uqbt_framework 
  []
 
-[21
+[24
 
 
 ] ("praca inz.aux" (wstep.aux) (zagadnienieEmulacji.aux)
 (przegladIstniejacychRozwiazan.aux) (projektAplikacji.aux) (implementacja.aux)
 (testy.aux) (uwagiIWnioski.aux)) ) 
 Here is how much of TeX's memory you used:
- 4590 strings out of 492970
- 66229 string characters out of 3126594
- 332481 words of memory out of 3000000
- 8303 multiletter control sequences out of 15000+200000
+ 4596 strings out of 492970
+ 66348 string characters out of 3126594
+ 332549 words of memory out of 3000000
+ 8308 multiletter control sequences out of 15000+200000
  47723 words of font info for 74 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,6n,54p,928b,1654s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -685,9 +699,9 @@ Here is how much of TeX's memory you used:
 grams/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/tomek/AppData/Local
 /Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/tomek/AppData/L
 ocal/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "praca inz.pdf" (22 pages, 501272 bytes).
+Output written on "praca inz.pdf" (25 pages, 701298 bytes).
 PDF statistics:
- 98 PDF objects out of 1000 (max. 8388607)
+ 110 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
