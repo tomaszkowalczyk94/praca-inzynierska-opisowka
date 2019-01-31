@@ -1,0 +1,5 @@
+<server>
+	<id>myMavenRepo.write</id>
+	<username>usename</username>
+	<password>password</password>
+</server>

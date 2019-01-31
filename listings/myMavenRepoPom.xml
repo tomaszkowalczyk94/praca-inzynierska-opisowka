@@ -1,0 +1,13 @@
+<repositories>
+    <repository>
+        <id>myMavenRepoRead</id>
+        <url>https://mymavenrepo.com/repo/PmCL80jeU82fLVGyuUt4/</url>
+    </repository>
+</repositories>
+
+<distributionManagement>
+    <repository>
+        <id>myMavenRepo.write</id>
+        <url>${myMavenRepoWriteUrl}</url>
+    </repository>
+</distributionManagement>

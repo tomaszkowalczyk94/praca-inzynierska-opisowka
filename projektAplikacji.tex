@@ -1,16 +1,23 @@
 \chapter{Projekt aplikacji}
-	uml-e, mvc. wzorce projektowe, może maven????
+	% uml-e, mvc. wzorce projektowe, może maven i javaDoc????????
 	
 	\section{Podział aplikacji}
-	Aplikację podzielono na 3 mniejsze moduły, Xbit, z80emu-core, z80emu-gui z czego każdy z nich jest osobnym mniejszym projektem. 
+	Aplikację podzielono na 3 mniejsze moduły, xbit, z80emu-core oraz z80emu-gui z czego każdy z nich jest osobnym mniejszym projektem, który używa narzędzia ,,Maven" do zautomatyzowania procesu budowy oprogramowania. Ich pliki jar są przetrzymywane w platformie mymavenrepo.com jako prywatne repozytorium, zabezpieczone hasłem przy pomocy funkcji protokołu http "basic auth". Każdy z projektów może zostać wysłany do zdalnego serwera za pomocą komendy ,,mvn deploy:deploy". Komenda ta przeprowadza testy jednostkowe, kompiluje kod javy do kodu bajtowego JVM, dodaje zewnętrzne bliblioteki jar i umieszcza plik wykonywalny na serwerze.
 	
+	Aby umożliwić integracje z serwisem mymavenrepo.com pliki pom.xml zawierają wpisy zaprezentowane w fragmencie kodu \ref{listing:myMavenRepoPom}. Ponieważ repozytoria maven są ustawione jako prywatne, należy odnaleźć w systemie plik ~/.m2/settings.xml podać w nim dane pozwalające na autoryzacje za pomocą "http basic auth". Przykład konfiguracji przedstawiono w kodzie \ref{listing:myMavenRepoSettings}
+	
+	\lstinputlisting[language=xml, label={listing:myMavenRepoPom}, caption={fragment pliku pom.xml umożliwający integracje z serwisem myMavenRepo},captionpos=b]{listings/myMavenRepoPom.xml}
+	
+	\lstinputlisting[language=xml, label={listing:myMavenRepoSettings}, caption={fragment pliku settings.xml przechowującego dane utoryzacyjne do serwera myMavenRepo},captionpos=b]{listings/myMavenRepoSettings.xml}
+	
+	Przetrzymywanie plików wykonywalnych w zewnętrznym serwisie ułatwia zarządzanie wszystkimi trzema projektami, pozwala na ich wersjonowanie, i łatwiejsze budowanie aplikacji. 
+
 	\subsection{XBit}
 	Java jest językiem programowania wysokiego poziomu, kompilowanym do kodu bajtowego. Z tego powodu nie jest on zazwyczaj stosowany w emulacji, gdyż kod emulatora musi być uruchamiany w maszynie wirtualnej, co nie należy do optymalnych rozwiązań.
 	
 	Innym poważnym problemem Javy jest brak typów danych przechowujących tylko wartości dodatnie. James Gosling, jeden z twórców Javy tak argumentuje ich brak: 
 	,,Dla mnie jako projektant języków programowania, do których tak naprawdę ostatnimi czasy się nie zaliczam, coś prostego oznaczało skończenie na założeniu że losowy deweloper będzie w stanie zapamiętać specyfikacje. 
 	Ta definicja mówi, że na przykład Java i wiele innych języków nie są proste, i w rzeczywistości wiele języków kończy z funkcjonalnościami których do końca nikt nie rozumie. Spytaj jakiegoś programistę języka C o dodatnie typy liczbowe, i odkryjesz że prawie żaden programista C faktycznie nie rozumie co dzieje się z typami bez znaku, czym jest arytmetyka liczb całkowitych. Takie rzeczy sprawiły że C jest językiem skomplikowanym. Myślę że w tej kwestii Java jest prosta"\cite{javaGoslingInterview}.
-	
 	
 	Problem ten rozwiązano tworząc własną bibliotekę o roboczej nazwie XBit. Przechowuje ona liczby 8 i 16 bitowe, które mogą być interpretowane zarówno jako wartości całkowite jak i liczby w kodzie uzupełnień do dwóch. Biblioteka potrafi zwrócić konkretne bity, stworzyć reprezentacje liczby z pojedynczych bitów i typów prymitywnych, obudowuje operacje arytmetyczne z uwzględnieniem przepełnienia i przeniesienia. Kod projektu z jej użyciem staje się czytelniejszy i łatwiejszy do ewentualnej refaktoryzacji. 
 	
