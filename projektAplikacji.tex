@@ -107,9 +107,14 @@
 		\label{img:z80emuCoreUml}
 	\end{figure}
 	
-	\subsection{przerwania}
+	\subsection{Manipulacja procesem emulacji}
+		
+	Postanowiono nie uruchamiać procesu emulacji w pętli głównej tak jak w klasycznym podejściu pokazanym w kodzie \ref{listing:interpreter}. Zamiast tego udostępniono jedną metodę runOneInstruction() która wykonuje jeden rozkaz procesora.
 	
-	Postanowiono nie tworzyć samej emulacji w nowym wątku, oraz nie uruchamiać jej w pętli głównej tak jak w klasycznym podejściu pokazanym w kodzie \ref{listing:interpreter}. Zamiast tego udostępniono jedną metodę runOneInstruction() : void która uruchamia jeden rozkaz procesora, uwzględniając czy wcześniej nie zostały wywołane metody makeInterrupt(addressBus : XBit8), makeNonMaskableInterrupt(addressBus : XBit8), resett(addressBus : XBit8)
+	Metody manipulujące procesem emulacji (np wywołanie przerwania, edycja rejestrów) powinny zostać wywoływane między kolejnymi wywołaniami runOneInstruction(). Główna pętla emulacji powinna zostać zaimplementowania w module nadrzędnym, używającym z80emu-core. Pozwala to na większą elastyczność modułu w łączeniu go z innymi projektami.
+	
+	
+	
 	
 	%Pamięć fizycznie jest zewnętrznym modułem, mimo to uwzględniono jego implementację w projekcie aplikacji. 
 	
