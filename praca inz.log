@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2019.1.14)  1 FEB 2019 13:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2019.1.14)  1 FEB 2019 21:29
 entering extended mode
 **"./praca inz.tex"
 ("praca inz.tex"
@@ -595,17 +595,37 @@ File: ./image/z80minimalnySystemKomputerowy.png Graphic file (type png)
 <use ./image/z80minimalnySystemKomputerowy.png>
 Package pdftex.def Info: ./image/z80minimalnySystemKomputerowy.png  used on inp
 ut line 122.
-(pdftex.def)             Requested size: 443.57848pt x 331.51282pt.
+(pdftex.def)             Requested size: 266.14978pt x 198.90576pt.
+ [21 <./image/z80minimalnySystemKomputerowy.png>]
+<./image/z80Gui.png, id=88, 1002.74625pt x 581.17125pt>
+File: ./image/z80Gui.png Graphic file (type png)
+<use ./image/z80Gui.png>
+Package pdftex.def Info: ./image/z80Gui.png  used on input line 133.
+(pdftex.def)             Requested size: 443.57848pt x 257.09067pt.
+ [22 <./image/z80Gui.png>]
+<./image/z80GuiPart1WithPoints.png, id=93, 652.4375pt x 595.22375pt>
+File: ./image/z80GuiPart1WithPoints.png Graphic file (type png)
+<use ./image/z80GuiPart1WithPoints.png>
+Package pdftex.def Info: ./image/z80GuiPart1WithPoints.png  used on input line 
+151.
+(pdftex.def)             Requested size: 443.57848pt x 404.6923pt.
+ [23 <./image/z80GuiPart1WithPoints.png>]
+<./image/z80GuiPart2WithPoints.png, id=98, 525.965pt x 625.33624pt>
+File: ./image/z80GuiPart2WithPoints.png Graphic file (type png)
+<use ./image/z80GuiPart2WithPoints.png>
+Package pdftex.def Info: ./image/z80GuiPart2WithPoints.png  used on input line 
+179.
+(pdftex.def)             Requested size: 354.86412pt x 421.92154pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [21] [22 <./image/z80minimalnySystemKomputerowy.png>]
+) [24] [25 <./image/z80GuiPart2WithPoints.png>]
 \openout2 = `implementacja.aux'.
 
  (implementacja.tex
 Rozdzia\PlPrIeC {\l } 5.
-) [23
+) [26
 
 
 
@@ -628,7 +648,7 @@ Overfull \hbox (60.42665pt too wide) in paragraph at lines 11--13
 [][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[24
+[27
 
 
 
@@ -672,7 +692,7 @@ Overfull \hbox (17.22621pt too wide) in paragraph at lines 43--44
 [][][][][][][][][][][][][][][][][][][][] 
  []
 
-[25]
+[28]
 Overfull \hbox (24.42628pt too wide) in paragraph at lines 51--52
 [][][][][][][][][][][][][][][][][][][][] 
  []
@@ -682,7 +702,7 @@ Overfull \hbox (17.22621pt too wide) in paragraph at lines 52--53
 [][][][][][][][][][][][][][][][][][][][] 
  []
 
-)) [26]
+)) [29]
 \openout2 = `uwagiIWnioski.aux'.
 
  (uwagiIWnioski.tex
@@ -693,7 +713,7 @@ Overfull \hbox (51.52463pt too wide) in paragraph at lines 3--33
 nie-rii wstecz-nej, $[]$ 
  []
 
-[27
+[30
 
 
 
@@ -703,17 +723,17 @@ Overfull \hbox (157.79121pt too wide) in paragraph at lines 59--61
 ity_of_queensland_binary_translator_uqbt_framework 
  []
 
-[28
+[31
 
 
 ] ("praca inz.aux" (wstep.aux) (zagadnienieEmulacji.aux)
 (przegladIstniejacychRozwiazan.aux) (projektAplikacji.aux) (implementacja.aux)
 (testy.aux) (uwagiIWnioski.aux)) ) 
 Here is how much of TeX's memory you used:
- 4609 strings out of 492970
- 66762 string characters out of 3126594
- 332683 words of memory out of 3000000
- 8319 multiletter control sequences out of 15000+200000
+ 4627 strings out of 492970
+ 67281 string characters out of 3126594
+ 332886 words of memory out of 3000000
+ 8334 multiletter control sequences out of 15000+200000
  47723 words of font info for 74 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,6n,54p,928b,1654s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -723,9 +743,9 @@ Here is how much of TeX's memory you used:
 grams/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/tomek/AppData/Local
 /Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/tomek/AppData/L
 ocal/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "praca inz.pdf" (29 pages, 788267 bytes).
+Output written on "praca inz.pdf" (32 pages, 1162884 bytes).
 PDF statistics:
- 126 PDF objects out of 1000 (max. 8388607)
+ 142 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 

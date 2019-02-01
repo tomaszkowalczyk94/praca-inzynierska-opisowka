@@ -119,12 +119,68 @@
 	
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=1\textwidth]{z80minimalnySystemKomputerowy}
+		\includegraphics[width=0.6\textwidth]{z80minimalnySystemKomputerowy}
 		\caption{Minimalny System Komputerowy Z80 \cite{eduinf}}
 		\label{img:z80minimalnySystemKomputerowy}
 	\end{figure}
 		
 	\section{z80emu-gui}
+	Z80emu-gui to moduł zawierający interfejs użytkownika. Został napisany z pomocą biblioteki JavaFX. Projekt interfejsu uwzględnił stworzenie makiety w języku fxml zaprezentowanej na grafice \ref{img:z80Gui}. Większość interfejsów emulatorów posiada interfejs złożony z wielu okien, które można dowolnie zamykać i otwierać, a każde z nich zawiera osobny moduł. Dla przykładu, w Z80 simulator ide, edytor pamięci, asemblera lub manipulacja urządzeniami wejścia wyjścia zawarta jest w osobnych oknach. 
+	W projekcie z80emu-gui postanowiono stworzyć interfejs zawierający wszystkie funkcje w jednym oknie. 
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=1\textwidth]{z80Gui}
+		\caption{Makieta interfejsu użytkownika}
+		\label{img:z80Gui}
+	\end{figure}
+	 
+	
+	Elementy interfejsu podzielono na dwa mniejsze fragmenty w celu czytelniejszego wyjaśnienia. Część pierwsza zaprezentowana na grafice \ref{img:z80GuiPart1WithPoints} zawiera elementy związane z manipulacją pamięcią oraz kodem programu. Opis poszczególnych elementów umieszczonych na schemacie:
+	\begin{enumerate}
+		\item Edytor kodu asemblera, z prostym kolorowaniem składni.
+		\item Widok kodu maszynowego w formie tabeli, zawierającej formacje o adresie rozkazu w pamięci, kodzie maszynowym oraz czytelnej dla człowieka nazwie instrukcji.
+		\item Tabela reprezentująca moduł pamięci podłączony do procesora.
+		\item Przycisk kompilujący kod asemblera (p. 1) do kodu maszynowego (p. 2).
+		\item Przycisk wczytujący kod maszynowy programu(p. 2), do pamięci procesora (p. 3)
+		\item Przycisk wykonujący kompilacje kodu asemblera (p. 1) a następnie wczytanie go do pamięci (p. 3).
+	\end{enumerate}
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=1\textwidth]{z80GuiPart1WithPoints}
+		\caption{Makieta interfejsu użytkownika z oznaczeniami. Część 1}
+		\label{img:z80GuiPart1WithPoints}
+	\end{figure}
+	
+	Drugą część interfejsu zaprezentowano na grafice \ref{img:z80GuiPart2WithPoints}. Poniżej opis poszczególnych elementów:
+	\begin{enumerate}
+		\item Główny panel kontrolujący proces emulacji, przedstawiający między innymi liczbę cykli maszynowych i zegara wykonywanego programu.
+		\item Pola prezentujące nazwę ostatniej wykonanej i następnej w kolejce instrukcji procesora.
+		\item Przycisk uruchamiający emulację ciągłą (ponownie jego wybranie zatrzymuje emulacje).
+		\item Przycisk wykonujący pojedynczą, kolejną instrukcję procesora.
+		\item Przycisk resetujący urządzenie.
+		\item Widok rejestrów głównych i alternatywnych włącznie z flagami.
+		\item Widok rejestrów I, R, PC, SP, IX, IY.
+		\item Terminal wyjściowy, emulujący na stałe przypisane urządzenie. 
+		\item Pole tekstowe z możliwością wpisania portu terminalu wyjściowego, pod jakim będzie przyjmował dane.
+		\item Panel grupujący elementy interfejsu odpowiedzialne za przerwania.
+		\item Przycisk wywołujący NMI (z ang. Non-Maskable Interrupt), sygnał przerwania niemaskowanego.
+		\item Przycisk wywołujący INT (z ang. Interrupt), sygnał maskowanego przerwania.
+		\item Przycisk wykonujący sygnał resetu.
+		\item Pole tekstowe zawierające 8bitową wartość, jaką przyjmie szyna danych podczas przerwania.
+		\item Tabela z listą podłączonych urządzeń wejścia/wyjścia.
+		\item Przycisk pozwalający na usunięcie urządzenia wejścia/wyjścia.
+		\item Przycisk dodający nowe urządzenie wejścia/wyjścia.
+	\end{enumerate}
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.8\textwidth]{z80GuiPart2WithPoints}
+		\caption{Makieta interfejsu użytkownika z oznaczeniami. Część 2}
+		\label{img:z80GuiPart2WithPoints}
+	\end{figure}
+
 	%tutaj o mvc
 	
 	
