@@ -107,17 +107,23 @@
 		\label{img:z80emuCoreUml}
 	\end{figure}
 	
-	\subsection{Manipulacja procesem emulacji}
+	\subsection{Elastyczność w łączeniu z innymi projektami}
 		
 	Postanowiono nie uruchamiać procesu emulacji w pętli głównej tak jak w klasycznym podejściu pokazanym w kodzie \ref{listing:interpreter}. Zamiast tego udostępniono jedną metodę runOneInstruction() która wykonuje jeden rozkaz procesora.
 	
 	Metody manipulujące procesem emulacji (np wywołanie przerwania, edycja rejestrów) powinny zostać wywoływane między kolejnymi wywołaniami runOneInstruction(). Główna pętla emulacji powinna zostać zaimplementowania w module nadrzędnym, używającym z80emu-core. Pozwala to na większą elastyczność modułu w łączeniu go z innymi projektami.
 	
+	Inną ważną decyzją projektową pozwalającą na zwiększenie elastyczności projektu, było zaprojektowanie interfejsów IoDevice oraz Memory, i decyzja o zaimplementowaniu jedynie prostych reprezentacji klas implementujących te interfejsy. Aby dobrze przedstawić powód tego rozwiązania na rysunku \ref{img:z80minimalnySystemKomputerowy} przedstawiono minimalny system komputerowy oparty na procesorze z80.
+	Widać na nim że pamięć programu (na rysunku jest to 8kb ROM) oraz podłączone urządzenie wejścia/wyjścia (na rysunku z80-PIO który jest programowalnym układem wejścia/wyjścia) są osobnymi urządzeniami, i mogą one być różne w zależności od systemu komputerowego. Interfejsy IoDevice oraz Memory pozwalają na implementację zachowania takich urządzeń, jakie są wymagane dla docelowego projektu. 
 	
 	
-	
-	%Pamięć fizycznie jest zewnętrznym modułem, mimo to uwzględniono jego implementację w projekcie aplikacji. 
-	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=1\textwidth]{z80minimalnySystemKomputerowy}
+		\caption{Minimalny System Komputerowy Z80 \cite{eduinf}}
+		\label{img:z80minimalnySystemKomputerowy}
+	\end{figure}
+		
 	\section{z80emu-gui}
 	%tutaj o mvc
 	

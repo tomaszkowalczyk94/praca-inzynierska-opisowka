@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2019.1.14)  1 FEB 2019 13:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2019.1.14)  1 FEB 2019 13:55
 entering extended mode
 **"./praca inz.tex"
 ("praca inz.tex"
@@ -589,12 +589,23 @@ File: ./image/z80EmuCoreUml.png Graphic file (type png)
 <use ./image/z80EmuCoreUml.png>
 Package pdftex.def Info: ./image/z80EmuCoreUml.png  used on input line 105.
 (pdftex.def)             Requested size: 443.57848pt x 447.40184pt.
- [20 <./image/z80EmuCoreUml.png>]) [21]
+ [20 <./image/z80EmuCoreUml.png>]
+<./image/z80minimalnySystemKomputerowy.png, id=83, 423.08063pt x 316.18124pt>
+File: ./image/z80minimalnySystemKomputerowy.png Graphic file (type png)
+<use ./image/z80minimalnySystemKomputerowy.png>
+Package pdftex.def Info: ./image/z80minimalnySystemKomputerowy.png  used on inp
+ut line 122.
+(pdftex.def)             Requested size: 443.57848pt x 331.51282pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [21] [22 <./image/z80minimalnySystemKomputerowy.png>]
 \openout2 = `implementacja.aux'.
 
  (implementacja.tex
 Rozdzia\PlPrIeC {\l } 5.
-) [22
+) [23
 
 
 
@@ -617,7 +628,7 @@ Overfull \hbox (60.42665pt too wide) in paragraph at lines 11--13
 [][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[23
+[24
 
 
 
@@ -661,7 +672,7 @@ Overfull \hbox (17.22621pt too wide) in paragraph at lines 43--44
 [][][][][][][][][][][][][][][][][][][][] 
  []
 
-[24]
+[25]
 Overfull \hbox (24.42628pt too wide) in paragraph at lines 51--52
 [][][][][][][][][][][][][][][][][][][][] 
  []
@@ -671,7 +682,7 @@ Overfull \hbox (17.22621pt too wide) in paragraph at lines 52--53
 [][][][][][][][][][][][][][][][][][][][] 
  []
 
-)) [25]
+)) [26]
 \openout2 = `uwagiIWnioski.aux'.
 
  (uwagiIWnioski.tex
@@ -682,7 +693,7 @@ Overfull \hbox (51.52463pt too wide) in paragraph at lines 3--33
 nie-rii wstecz-nej, $[]$ 
  []
 
-[26
+[27
 
 
 
@@ -692,17 +703,17 @@ Overfull \hbox (157.79121pt too wide) in paragraph at lines 59--61
 ity_of_queensland_binary_translator_uqbt_framework 
  []
 
-[27
+[28
 
 
 ] ("praca inz.aux" (wstep.aux) (zagadnienieEmulacji.aux)
 (przegladIstniejacychRozwiazan.aux) (projektAplikacji.aux) (implementacja.aux)
 (testy.aux) (uwagiIWnioski.aux)) ) 
 Here is how much of TeX's memory you used:
- 4602 strings out of 492970
- 66503 string characters out of 3126594
- 332616 words of memory out of 3000000
- 8313 multiletter control sequences out of 15000+200000
+ 4609 strings out of 492970
+ 66762 string characters out of 3126594
+ 332683 words of memory out of 3000000
+ 8319 multiletter control sequences out of 15000+200000
  47723 words of font info for 74 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,6n,54p,928b,1654s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -712,9 +723,9 @@ Here is how much of TeX's memory you used:
 grams/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/tomek/AppData/Local
 /Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/tomek/AppData/L
 ocal/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "praca inz.pdf" (28 pages, 768509 bytes).
+Output written on "praca inz.pdf" (29 pages, 788267 bytes).
 PDF statistics:
- 121 PDF objects out of 1000 (max. 8388607)
+ 126 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
