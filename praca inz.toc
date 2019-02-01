@@ -13,13 +13,15 @@
 \contentsline {section}{\numberline {4.1}Podzia\IeC {\l } aplikacji}{14}
 \contentsline {section}{\numberline {4.2}XBit}{15}
 \contentsline {subsection}{\numberline {4.2.1}Mo\IeC {\.z}liwo\IeC {\'s}ci}{16}
-\contentsline {subsection}{\numberline {4.2.2}Za\IeC {\l }o\IeC {\.z}enia projektowe}{16}
+\contentsline {subsection}{\numberline {4.2.2}Za\IeC {\l }o\IeC {\.z}enia projektowe xBit}{16}
 \contentsline {subsubsection}{Klasy XBit8 i XBit16}{16}
-\contentsline {subsubsection}{Klasa XBitUtils, Arithmetic8bitResult, Arithmetic16bitResult}{17}
+\contentsline {subsubsection}{Klasa XBitUtils, Arithmetic8bitResult, Arithmetic16bitResult}{18}
 \contentsline {section}{\numberline {4.3}z80emu-core}{18}
-\contentsline {section}{\numberline {4.4}z80emu-gui}{18}
-\contentsline {chapter}{\numberline {5}Implementacja}{19}
-\contentsline {chapter}{\numberline {6}Testy}{20}
-\contentsline {section}{\numberline {6.1}????}{20}
-\contentsline {section}{\numberline {6.2}Test-driven development}{22}
-\contentsline {chapter}{\numberline {7}Uwagi i wnioski}{23}
+\contentsline {subsection}{\numberline {4.3.1}Publiczny interfejs modu\IeC {\l }u z80emu-core}{19}
+\contentsline {subsection}{\numberline {4.3.2}przerwania}{21}
+\contentsline {section}{\numberline {4.4}z80emu-gui}{21}
+\contentsline {chapter}{\numberline {5}Implementacja}{22}
+\contentsline {chapter}{\numberline {6}Testy}{23}
+\contentsline {section}{\numberline {6.1}????}{23}
+\contentsline {section}{\numberline {6.2}Test-driven development}{25}
+\contentsline {chapter}{\numberline {7}Uwagi i wnioski}{26}

@@ -37,8 +37,15 @@
 		\item uwzględnienie przy operacjach arytmetycznych przepełnienia oraz przeniesienia
 	\end{itemize} 
 	
-	\subsection{Założenia projektowe}
+	\subsection{Założenia projektowe xBit}
 	Przed przystąpieniem do implementacji rozwiązania, zaprojektowano publiczny interfejs biblioteki w języku uml, zaprezentowany na grafice \ref{img:xbitUml}. Ustalono także założenia projektowe które zaprezentowano poniżej. 
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=1\textwidth]{xbitUml}
+		\caption{projekt uml biblioteki xbit}
+		\label{img:xbitUml}
+	\end{figure}
 	
 	\subsubsection{Klasy XBit8 i XBit16}
 	Klasy XBit8 oraz XBit16 to reprezentacje liczb 8 i 16 bitowych. Postanowiono, że nie będą one w stanie zmienić swojej wewnętrznej wartości, swego stanu (z angielskiego nazwano by je "immutable"), tak jak obiektowe reprezentacje typów prostych w javie (Short, Long, Integer itp).  Przez podjęcie tej decyzji projektowej, metody które powinny zmienić stan obiektu, klonują istniejący obiekt a następnie modyfikują odpowiednio jego stan. Przykładem takiej metody jest setBit(index: int, value: boolean) klasy Xbit8 oraz Xbit16. Funkcja ta nie zmienia bitu obiektu na rzecz którego została wykonana, a jedynie zwraca kopie obiektu, z zmodyfikowanym odpowiednim bitem. 
@@ -61,14 +68,50 @@
 		\item dwie zmienne typu boolean informujące o wystąpieniu przeniesienia i przepełnienia
 	\end{itemize}
 		
-	\begin{figure}[h]
-		\centering
-		\includegraphics[width=1\textwidth]{xbitUml}
-		\caption{projekt uml biblioteki xbit}
-		\label{img:xbitUml}
-	\end{figure}
+	
 	
 	\section{z80emu-core}
+	Z80emu-core to moduł mający za zadanie wykonywać emulację oraz udostępniać zestaw metod umożliwiający  manipulacje tym procesem. Za cel obrano stworzenie takiego interfejsu, który pozwalał by na użycie Z80emu-core w innych projektach, które emulują urządzenia zbudowane między innymi z Ziloga Z80. Jako przykład można podać emulator przenośnej konsoli Game Boy firmy Nintendo z 1989 roku która jako główny procesor używała Ziloga Z80. 
+
+	Za cel obrałem implementacje następujących funkcji:
+	\begin{itemize}  
+		\item możliwość wykonania wszystkich 158 instrukcji procesora
+		\item zestaw metod umożliwiających zmianę stanów rejestrów
+		\item emulacja zewnętrznej pamięci
+		\item możliwość podłączenia urządzeń wejścia/wyjścia
+		\item wywołanie przerwania maskowanego oraz niemaskowanego (Z80 posiada dwa rodzaje przerwań)
+	\end{itemize}
+	
+	\subsection{Publiczny interfejs modułu z80emu-core}
+	Publiczny zestaw metod służący manipulacją samym procesem emulacji jak i urządzeniem pokazano na grafice \ref{img:z80emuCoreUml}. Cała mechanika działania modułu została ukryta w trzech klasach: Z80, RegistersBank i DuplicableRegisterSet. 
+	
+	Klasa Z80 zawiera zestaw funkcji manipulującymi samą emulacją, oraz wartościami liczników i mniejszych rejestrów procesora. Niżej opisuje najważniejsze z nich:
+	\begin{itemize}  
+		\item Z80(memory: Memory, ioDevice: IoDevice) - konstruktor, przyjmujący dwa parametry wymagane do poprawnego działania. Parametr ,,memory" oraz "ioDevice to obiekty implementujące interfejsy o tych samych nazwach. Reprezentują one kolejno moduł pamięci oraz urządzenia wejścia wyjścia podłączone do procesora. Użytkownik używający modułu Z80emu-core ma powinien samemu zaimplementować ich działanie, z zależności od otoczenia w jakim chce emulować urządzenie. 
+		
+		\item runOneInstruction() - metoda wykonująca jedną instrukcję procesora, za jej pomocą wykonane zostanie pobieranie, dekodowanie, wykonywanie rozkazu, ale również obsługa przerwań, inkrementacja liczników.
+		
+		\item makeInterupt(addressBus: XBit8), makeNonMaskableInterupt(addressBus: XBit8) - metody powinny zostać wywołane między kolejnymi wywołaniami runOneInstruction(). Ich zadaniem jest zgłaszanie przerwań. Parametr addressBus to wartość jaka została by ustalona na magistrali danych podczas przerwania, gdyby zostało ono wykonane w prawdziwym urządzeniu.
+	\end{itemize}
+	
+	Wartym przypomnienia jest, że Zilog Z80 jest procesorem posiadającym dwa zestawy rejestrów ogólnego przeznaczenia (do nich należąc rejestry A,B,C,D,E,H,L,F oraz ich 16bitowe odpowiedniki). Takie rozwiązanie jest optymalne, w przypadku gdy procesor często wykonuje obsługę przerwań. W klasycznym podejściu, podczas przerwania zestawi rejestrów ogólnego przeznaczenia zapisany zostałby na stosie, co jest czasochłonną operacją. Projektanci Ziloga Z80 postanowili stworzyć drugi alternatywny zestaw rejestrów ogólnego przeznaczenia, który zostaje przełączony jako główny podczas przerwania. W takim przypadku nie jest wymagane odłożenie wartości na stos.
+	
+	W projekcie reprezentacją zestawu rejestrów ogólnego przeznaczenia jest klasa DuplicableRegisterSet. Jej dwie instancje (jedna jako główny zestaw rejestrów, druga alternatywny) przechowuje klasa RegisterBank, która posiada metody switchRegisterSet(), switchRegisterSetToA() i switchRegisterSetToB() pozwalające na przełączanie głównego zestawu rejestrów. Metody typu getA(), setA(value: XBit8) to aliasy wykonujące te operacje na aktualnie aktywnym zestawie. 
+	
+		
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=1\textwidth]{z80EmuCoreUml}
+		\caption{publiczny interfejs projektu z80emu-core zaprezentowany za pomocą diagramu klas uml}
+		\label{img:z80emuCoreUml}
+	\end{figure}
+	
+	\subsection{przerwania}
+	
+	Postanowiono nie tworzyć samej emulacji w nowym wątku, oraz nie uruchamiać jej w pętli głównej tak jak w klasycznym podejściu pokazanym w kodzie \ref{listing:interpreter}. Zamiast tego udostępniono jedną metodę runOneInstruction() : void która uruchamia jeden rozkaz procesora, uwzględniając czy wcześniej nie zostały wywołane metody makeInterrupt(addressBus : XBit8), makeNonMaskableInterrupt(addressBus : XBit8), resett(addressBus : XBit8)
+	
+	%Pamięć fizycznie jest zewnętrznym modułem, mimo to uwzględniono jego implementację w projekcie aplikacji. 
 	
 	\section{z80emu-gui}
 	%tutaj o mvc

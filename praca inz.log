@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2019.1.14)  31 JAN 2019 20:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2019.1.14)  1 FEB 2019 13:07
 entering extended mode
 **"./praca inz.tex"
 ("praca inz.tex"
@@ -562,26 +562,39 @@ Overfull \hbox (53.22658pt too wide) in paragraph at lines 4--5
 ]) (listings/myMavenRepoSettings.xml) [15]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 26.
- [16]
-Overfull \hbox (9.11703pt too wide) in paragraph at lines 51--52
+<./image/xbitUml.png, id=63, 990.70125pt x 712.91344pt>
+File: ./image/xbitUml.png Graphic file (type png)
+<use ./image/xbitUml.png>
+Package pdftex.def Info: ./image/xbitUml.png  used on input line 45.
+(pdftex.def)             Requested size: 443.57848pt x 319.1981pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[16]
+Overfull \hbox (9.11703pt too wide) in paragraph at lines 58--59
 []\T1/ptm/m/n/12 Bezpieczne u»y-wa-nie obiek-tów nie-zmien-nych w pro-gra-mach 
 wie-lo-w¡t-ko-wych, co umo»-
  []
 
-<./image/xbitUml.png, id=66, 990.70125pt x 712.91344pt>
-File: ./image/xbitUml.png Graphic file (type png)
-<use ./image/xbitUml.png>
-Package pdftex.def Info: ./image/xbitUml.png  used on input line 66.
-(pdftex.def)             Requested size: 443.57848pt x 319.1981pt.
+[17 <./image/xbitUml.png>] [18]
+Overfull \hbox (8.55164pt too wide) in paragraph at lines 94--95
+[]\T1/ptm/m/n/12 makeInterupt(addressBus: XBit8), ma-ke-Non-Ma-ska-ble-In-te-ru
+pt(addressBus: XBit8) - me-
+ []
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) [17] [18 <./image/xbitUml.png>]
+[19]
+<./image/z80EmuCoreUml.png, id=78, 526.96875pt x 531.48563pt>
+File: ./image/z80EmuCoreUml.png Graphic file (type png)
+<use ./image/z80EmuCoreUml.png>
+Package pdftex.def Info: ./image/z80EmuCoreUml.png  used on input line 105.
+(pdftex.def)             Requested size: 443.57848pt x 447.40184pt.
+ [20 <./image/z80EmuCoreUml.png>]) [21]
 \openout2 = `implementacja.aux'.
 
  (implementacja.tex
 Rozdzia\PlPrIeC {\l } 5.
-) [19
+) [22
 
 
 
@@ -604,7 +617,7 @@ Overfull \hbox (60.42665pt too wide) in paragraph at lines 11--13
 [][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[20
+[23
 
 
 
@@ -648,7 +661,7 @@ Overfull \hbox (17.22621pt too wide) in paragraph at lines 43--44
 [][][][][][][][][][][][][][][][][][][][] 
  []
 
-[21]
+[24]
 Overfull \hbox (24.42628pt too wide) in paragraph at lines 51--52
 [][][][][][][][][][][][][][][][][][][][] 
  []
@@ -658,7 +671,7 @@ Overfull \hbox (17.22621pt too wide) in paragraph at lines 52--53
 [][][][][][][][][][][][][][][][][][][][] 
  []
 
-)) [22]
+)) [25]
 \openout2 = `uwagiIWnioski.aux'.
 
  (uwagiIWnioski.tex
@@ -669,7 +682,7 @@ Overfull \hbox (51.52463pt too wide) in paragraph at lines 3--33
 nie-rii wstecz-nej, $[]$ 
  []
 
-[23
+[26
 
 
 
@@ -679,17 +692,17 @@ Overfull \hbox (157.79121pt too wide) in paragraph at lines 59--61
 ity_of_queensland_binary_translator_uqbt_framework 
  []
 
-[24
+[27
 
 
 ] ("praca inz.aux" (wstep.aux) (zagadnienieEmulacji.aux)
 (przegladIstniejacychRozwiazan.aux) (projektAplikacji.aux) (implementacja.aux)
 (testy.aux) (uwagiIWnioski.aux)) ) 
 Here is how much of TeX's memory you used:
- 4596 strings out of 492970
- 66348 string characters out of 3126594
- 332549 words of memory out of 3000000
- 8308 multiletter control sequences out of 15000+200000
+ 4602 strings out of 492970
+ 66503 string characters out of 3126594
+ 332616 words of memory out of 3000000
+ 8313 multiletter control sequences out of 15000+200000
  47723 words of font info for 74 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,6n,54p,928b,1654s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -699,9 +712,9 @@ Here is how much of TeX's memory you used:
 grams/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/tomek/AppData/Local
 /Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/tomek/AppData/L
 ocal/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "praca inz.pdf" (25 pages, 701298 bytes).
+Output written on "praca inz.pdf" (28 pages, 768324 bytes).
 PDF statistics:
- 110 PDF objects out of 1000 (max. 8388607)
+ 121 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
