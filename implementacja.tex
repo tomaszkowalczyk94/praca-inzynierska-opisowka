@@ -261,12 +261,47 @@ public static Arithmetic8bitResult subTwo8bits(XBit8 value1, XBit8 value2) {
 	$ a - b = a+(-b) $ mówiącą, że odejmowanie dwóch liczb można zastąpić dodawaniem, negując drugi składnik odejmowania. 
 	Metoda realizująca odejmowanie dwóch liczb 16-bitowych działa w analogiczny sposób.
 	
+	\subsection{public static XBit8 not8bit(XBit8 value)}
+	\begin{listing}[h]
+		\begin{minted}{java}
+public static XBit8 not8bit(XBit8 value) {
+	return XBit8.valueOfUnsigned(
+		(~value.getUnsignedValue()) & XBit8.MAX_UNSIGNED_VALUE
+	);
+}		
+		\end{minted}
+		\caption{Metoda XBit8 not8bit(XBit8 value)}
+		\label{listing:not8bit}
+	\end{listing}
+	Funkcja not8bit(XBit8 value) zaprezentowana w kodzie \ref{listing:not8bit} wykonuje negację bitową na liczbie 8bitowej. Operacja wykonywana jest za pomocą wbudowanej w język java opcji negacji bitowej (znak "\~{}"). Dodatkową wykonywaną operacją jest iloczyn bitowy z liczbą 255, mająca za zadanie obcięcie niepotrzebnych bitów. Wersja metody 16-bitowa jest analogiczna.
 	
+	\subsection{public static XBit8 and8bit(XBit8 value1, XBit8 value2)}
+	\begin{listing}[h]
+		\begin{minted}{java}
+public static XBit8 and8bit(XBit8 value1, XBit8 value2) {
+	return XBit8.valueOfUnsigned(
+		(value1.getUnsignedValue() & value2.getUnsignedValue()) 
+		& XBit8.MAX_UNSIGNED_VALUE
+	);
+}	
+		\end{minted}
+		\caption{Metoda XBit8 and8bit(XBit8 value1, XBit8 value2)}
+		\label{listing:and8bit}
+	\end{listing}
+	Kod \ref{listing:and8bit} prezentuje metodę wykonującą operację sumy logicznej dwóch liczb 8-bitowych (linia nr 3). Linia nr 4 obcina wynik operacji tak, aby mieścił się w ośmiu bitach. Wersja metody dla liczb 16-bitowych działa analogicznie.
 	
-	
-	
-
-
+	\subsection{metody wykonujące sumę bitową i różnice symetryczną}
+	Implementacja metod:
+	\begin{itemize}  
+		\item public static XBit8 or8bit(XBit8 value1, XBit8 value2)
+		\item public static XBit16 or16bit(XBit16 value1, XBit16 value2)
+		\item public static XBit8 xor8bit(XBit8 value1, XBit8 value2)
+		\item public static XBit16 xor16bit(XBit16 value1, XBit16 value2)
+		\item public static XBit8 shift8bit(XBit8 value1, int position) 
+		\item public static XBit8 shift16bit(XBit8 value1, int position)
+	\end{itemize}
+	wygląda analogicznie do metody and8bit(XBit8 value1, XBit8 value2). Operacje bitowe wykonywane są za pomocą mechanizmów wbudowanych w język java, a nadmiar bitów zostaje obcięty.
+		
 
 
 	

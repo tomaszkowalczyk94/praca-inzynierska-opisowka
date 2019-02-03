@@ -37,7 +37,10 @@
 \contentsline {subsection}{\numberline {5.1.5}public static XBit8 negativeOf(XBit8 value)}{32}
 \contentsline {subsection}{\numberline {5.1.6}public static Arithmetic8bitResult addTwo8bits(XBit8 value1, XBit8 value2)}{33}
 \contentsline {subsection}{\numberline {5.1.7}public static Arithmetic8bitResult subTwo8bits(XBit8 value1, XBit8 value2)}{34}
-\contentsline {chapter}{\numberline {6}Testy}{35}
-\contentsline {section}{\numberline {6.1}????}{35}
-\contentsline {section}{\numberline {6.2}Test-driven development}{35}
-\contentsline {chapter}{\numberline {7}Uwagi i wnioski}{38}
+\contentsline {subsection}{\numberline {5.1.8}public static XBit8 not8bit(XBit8 value)}{34}
+\contentsline {subsection}{\numberline {5.1.9}public static XBit8 and8bit(XBit8 value1, XBit8 value2)}{34}
+\contentsline {subsection}{\numberline {5.1.10}metody wykonuj\IeC {\k a}ce sum\IeC {\k e} bitow\IeC {\k a} i r\IeC {\'o}\IeC {\.z}nice symetryczn\IeC {\k a}}{35}
+\contentsline {chapter}{\numberline {6}Testy}{36}
+\contentsline {section}{\numberline {6.1}????}{36}
+\contentsline {section}{\numberline {6.2}Test-driven development}{36}
+\contentsline {chapter}{\numberline {7}Uwagi i wnioski}{39}

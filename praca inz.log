@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2019.1.14)  3 FEB 2019 22:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2019.1.14)  3 FEB 2019 23:45
 entering extended mode
 **"./praca inz.tex"
 ("praca inz.tex"
@@ -1035,7 +1035,26 @@ Overfull \hbox (7.46973pt too wide) in paragraph at lines 260--263
 c¡ odej-mo-wa-nie jed-nej licz-by 8-bitowej,
  []
 
-) [34]
+\openout3 = `praca_inz.pyg'.
+
+
+(_minted-praca_inz/D65E184893474FC76570FA0AB9DFA41D0860A283FB4A9EF7A1FE09898A71
+48BB.pygtex)
+\openout3 = `praca_inz.pyg'.
+
+
+(_minted-praca_inz/BCEEA8CE48811D4F067048CF1CEE75660860A283FB4A9EF7A1FE09898A71
+48BB.pygtex)
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (1.57904pt too wide) in paragraph at lines 291--292
+[]\T1/ptm/m/n/12 Kod 5.16[] pre-zen-tu-je me-to-d¦ wy-ko-nu-j¡-c¡ ope-ra-cj¦ su
+-my lo-gicz-nej dwóch liczb 8-bitowych
+ []
+
+[34]) [35]
 \openout2 = `testy.aux'.
 
  (testy.tex
@@ -1049,11 +1068,11 @@ LaTeX Warning: Float too large for page by 408.26059pt on input line 16.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [35
+) [36
 
 
 
-] [36] [37]
+] [37] [38]
 \openout2 = `uwagiIWnioski.aux'.
 
  (uwagiIWnioski.tex
@@ -1064,7 +1083,7 @@ Overfull \hbox (51.52463pt too wide) in paragraph at lines 3--4
 nie-rii wstecz-nej, $[]$ 
  []
 
-) [38
+) [39
 
 
 
@@ -1074,7 +1093,7 @@ Overfull \hbox (157.79121pt too wide) in paragraph at lines 74--76
 ity_of_queensland_binary_translator_uqbt_framework 
  []
 
-[39
+[40
 
 
 ] ("praca inz.aux" (wstep.aux) (zagadnienieEmulacji.aux)
@@ -1084,10 +1103,10 @@ runsystem(del praca_inz.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 8116 strings out of 492970
- 140065 string characters out of 3126594
- 256482 words of memory out of 3000000
- 11705 multiletter control sequences out of 15000+200000
+ 8127 strings out of 492970
+ 140844 string characters out of 3126594
+ 256802 words of memory out of 3000000
+ 11710 multiletter control sequences out of 15000+200000
  57944 words of font info for 90 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,6n,35p,928b,474s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1101,9 +1120,9 @@ ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/tomek/AppData
 /Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/tomek/App
 Data/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/tomek
 /AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "praca inz.pdf" (40 pages, 1234402 bytes).
+Output written on "praca inz.pdf" (41 pages, 1236783 bytes).
 PDF statistics:
- 333 PDF objects out of 1000 (max. 8388607)
+ 336 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  56 words of extra memory for PDF output out of 10000 (max. 10000000)
 
