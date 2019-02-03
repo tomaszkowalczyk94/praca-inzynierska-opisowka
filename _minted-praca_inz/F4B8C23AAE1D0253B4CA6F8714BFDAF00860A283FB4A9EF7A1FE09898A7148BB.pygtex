@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{public} \PYG{k+kd}{static} \PYG{k+kd}{class} \PYG{n+nc}{Arithmetic16bitResult} \PYG{o}{\PYGZob{}}
+	\PYG{k+kd}{public} \PYG{n}{XBit16} \PYG{n}{result}\PYG{o}{;}
+	\PYG{k+kt}{boolean} \PYG{n}{carry} \PYG{o}{=} \PYG{k+kc}{false}\PYG{o}{;}
+	\PYG{k+kt}{boolean} \PYG{n}{overflow} \PYG{o}{=} \PYG{k+kc}{false}\PYG{o}{;}
+\PYG{o}{\PYGZcb{}}
+\end{Verbatim}

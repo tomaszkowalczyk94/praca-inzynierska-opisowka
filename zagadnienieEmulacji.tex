@@ -15,9 +15,13 @@
 	
 	\section{Emulacja przez interpretowanie}
 	Interpreter to najprostszy rodzaj emulatora. Odczytuje w pętli kod programu z wirtualnej pamięci. Odczytany bajt (lub bajty, rozkaz procesora może być wielobajtowy) zawiera informacje o rodzaju operacji jaką CPU powinno wykonać. Interpreter ma za zadanie odkodować informacje o operacji, a następnie ją wykonać. Między kolejnymi rozkazami powinien on zmienić wirtualne parametry (np inkrementacja licznika rozkazów), sprawdzić czy nie zostało wywołane przerwanie, obsłużyć urządzenia wejścia/wyjścia, liczniki, kartę graficzną, lub wykonać inne operacje zależne od emulowanego urządzenia. Przykładowa struktura interpretera została przedstawiona w kodzie \ref{listing:interpreter}.
-		
-	\lstinputlisting[language=C, label={listing:interpreter}, caption={Przykładowa struktura interpretera procesora},captionpos=b]{listings/interpreter.c}
 	
+	\begin{listing}[h]
+		\inputminted{java}{listings/interpreter.c}
+		\caption{Przykładowa struktura interpretera procesora}
+		\label{listing:interpreter}
+	\end{listing}
+		
 	Emulacja przez interpretowanie jest najwolniejszą formą emulacji, ale także najłatwiejszą w debugowaniu. Pozwala na prześledzenie wykonania operacji, i podgląd wewnętrznych stanów urządzenia. Z tego powodu jest najczęściej wybierana w debuggerach procesorów, mikro-kontrolerów dla programistów.
 	
 	\section{Statyczna re-kompilacja}

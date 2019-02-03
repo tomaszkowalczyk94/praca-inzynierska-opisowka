@@ -1,0 +1,21 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kt}{int} \PYG{n}{PC} \PYG{o}{=} \PYG{l+m+mi}{0}\PYG{o}{;}
+\PYG{k}{while}\PYG{o}{(}\PYG{n}{warunekStopu}\PYG{o}{())} \PYG{o}{\PYGZob{}}
+	
+  \PYG{n}{Rozkaz} \PYG{n}{rozkaz} \PYG{o}{=} \PYG{n}{dekodujRozkaz}\PYG{o}{(}\PYG{n}{pobierzRozkaz}\PYG{o}{());}
+
+  \PYG{k}{switch}\PYG{o}{(}\PYG{n}{rozkaz}\PYG{o}{)} \PYG{o}{\PYGZob{}}
+    \PYG{k}{case} \PYG{n}{ROZKAZ\PYGZus{}1}\PYG{o}{:}
+      \PYG{n}{rozkaz\PYGZus{}1}\PYG{o}{();}
+    \PYG{k}{case} \PYG{n}{ROZKAZ\PYGZus{}2}\PYG{o}{:}
+      \PYG{n}{rozkaz\PYGZus{}2}\PYG{o}{();}
+    \PYG{o}{...}  
+  \PYG{o}{\PYGZcb{}}
+
+  \PYG{n}{obslugaPrzerwan}\PYG{o}{();}
+  \PYG{n}{obslugaIO}\PYG{o}{();}
+  \PYG{n}{inkrementacjaLicznikow}\PYG{o}{();}
+
+  \PYG{n}{PC}\PYG{o}{++;}
+\PYG{o}{\PYGZcb{}}
+\end{Verbatim}

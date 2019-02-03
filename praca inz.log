@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2019.1.14)  1 FEB 2019 21:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2019.1.14)  3 FEB 2019 22:43
 entering extended mode
 **"./praca inz.tex"
 ("praca inz.tex"
@@ -106,6 +106,360 @@ File: listings.cfg 2018/09/02 1.7 listings configuration
 ))
 Package: listings 2018/09/02 1.7 (Carsten Heinz)
 
+("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\color
+.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdfte
+x.def"
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\minted\minted.sty"
+Package: minted 2017/07/19 v2.5 Yet another Pygments shim for LaTeX
+
+("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvoptions
+.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds
+.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)
+("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvsetke
+ys.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\infware
+rr.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\etexcmd
+s.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifluate
+x.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fvextra\fvextra.st
+y"
+Package: fvextra 2017/07/08 v1.3.1 fvextra - extensions and patches for fancyvr
+b
+ ("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.
+sty"
+Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count97
+)
+("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fancyvrb\fancyvrb.
+sty"
+Package: fancyvrb 2019/01/15
+ Style option: `fancyvrb' v3.2a <2019/01/15> (tvz)
+\FV@CodeLineNo=\count98
+\FV@InFile=\read1
+\FV@TabBox=\box28
+\c@FancyVerbLine=\count99
+\FV@StepNumber=\count100
+\FV@OutFile=\write3
+)
+("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\upquote\upquote.st
+y"
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
+tim
+
+("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\textcomp.sty"
+Package: textcomp 2017/04/05 v2.0i Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
+("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1enc.def"
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+Now handling font encoding TS1 ...
+... processing UTF-8 mapping file for font encoding TS1
+
+("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1enc.dfu"
+File: ts1enc.dfu 2018/04/05 v1.2c UTF-8 support for inputenc
+   defining Unicode char U+00A2 (decimal 162)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A5 (decimal 165)
+   defining Unicode char U+00A6 (decimal 166)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00A8 (decimal 168)
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AC (decimal 172)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00AF (decimal 175)
+   defining Unicode char U+00B0 (decimal 176)
+   defining Unicode char U+00B1 (decimal 177)
+   defining Unicode char U+00B2 (decimal 178)
+   defining Unicode char U+00B3 (decimal 179)
+   defining Unicode char U+00B4 (decimal 180)
+   defining Unicode char U+00B5 (decimal 181)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+00B9 (decimal 185)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+00BC (decimal 188)
+   defining Unicode char U+00BD (decimal 189)
+   defining Unicode char U+00BE (decimal 190)
+   defining Unicode char U+00D7 (decimal 215)
+   defining Unicode char U+00F7 (decimal 247)
+   defining Unicode char U+0192 (decimal 402)
+   defining Unicode char U+02C7 (decimal 711)
+   defining Unicode char U+02D8 (decimal 728)
+   defining Unicode char U+02DD (decimal 733)
+   defining Unicode char U+0E3F (decimal 3647)
+   defining Unicode char U+2016 (decimal 8214)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+203B (decimal 8251)
+   defining Unicode char U+203D (decimal 8253)
+   defining Unicode char U+2044 (decimal 8260)
+   defining Unicode char U+204E (decimal 8270)
+   defining Unicode char U+2052 (decimal 8274)
+   defining Unicode char U+20A1 (decimal 8353)
+   defining Unicode char U+20A4 (decimal 8356)
+   defining Unicode char U+20A6 (decimal 8358)
+   defining Unicode char U+20A9 (decimal 8361)
+   defining Unicode char U+20AB (decimal 8363)
+   defining Unicode char U+20AC (decimal 8364)
+   defining Unicode char U+20B1 (decimal 8369)
+   defining Unicode char U+2103 (decimal 8451)
+   defining Unicode char U+2116 (decimal 8470)
+   defining Unicode char U+2117 (decimal 8471)
+   defining Unicode char U+211E (decimal 8478)
+   defining Unicode char U+2120 (decimal 8480)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2126 (decimal 8486)
+   defining Unicode char U+2127 (decimal 8487)
+   defining Unicode char U+212E (decimal 8494)
+   defining Unicode char U+2190 (decimal 8592)
+   defining Unicode char U+2191 (decimal 8593)
+   defining Unicode char U+2192 (decimal 8594)
+   defining Unicode char U+2193 (decimal 8595)
+   defining Unicode char U+2329 (decimal 9001)
+   defining Unicode char U+232A (decimal 9002)
+   defining Unicode char U+2422 (decimal 9250)
+   defining Unicode char U+25E6 (decimal 9702)
+   defining Unicode char U+25EF (decimal 9711)
+   defining Unicode char U+266A (decimal 9834)
+   defining Unicode char U+FEFF (decimal 65279)
+))
+LaTeX Info: Redefining \oldstylenums on input line 334.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 349.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 350.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 351.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 352.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 353.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 354.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 355.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 356.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 357.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 358.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 359.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 360.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 361.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 362.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 363.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 364.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 365.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 366.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 367.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 368.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 369.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 370.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 371.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 372.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 373.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 374.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 375.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 376.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 377.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 378.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 379.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 380.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 381.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 382.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 383.
+Package textcomp Info: Setting lmtt sub-encoding to TS1/0 on input line 384.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 385.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 386.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 387.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 388.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 389.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 390.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 391.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 392.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 393.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 394.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 395.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 396.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 397.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 398.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 399.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 400.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 401.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 402.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 403.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 404.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 405.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
+))
+("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lineno\lineno.sty"
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+\linenopenalty=\count101
+\output=\toks18
+\linenoprevgraf=\count102
+\linenumbersep=\dimen107
+\linenumberwidth=\dimen108
+\c@linenumber=\count103
+\c@pagewiselinenumber=\count104
+\c@LN@truepage=\count105
+\c@internallinenumber=\count106
+\c@internallinenumbers=\count107
+\quotelinenumbersep=\dimen109
+\bframerule=\dimen110
+\bframesep=\dimen111
+\bframebox=\box29
+LaTeX Info: Redefining \\ on input line 3056.
+)
+\c@FV@TrueTabGroupLevel=\count108
+\c@FV@TrueTabCounter=\count109
+\FV@TabBox@Group=\box30
+\FV@TmpLength=\skip43
+\c@FV@HighlightLinesStart=\count110
+\c@FV@HighlightLinesStop=\count111
+\FV@LoopCount=\count112
+\FV@NCharsBox=\box31
+\FV@BreakIndent=\dimen112
+\FV@BreakIndentNChars=\count113
+\FV@BreakSymbolSepLeft=\dimen113
+\FV@BreakSymbolSepLeftNChars=\count114
+\FV@BreakSymbolSepRight=\dimen114
+\FV@BreakSymbolSepRightNChars=\count115
+\FV@BreakSymbolIndentLeft=\dimen115
+\FV@BreakSymbolIndentLeftNChars=\count116
+\FV@BreakSymbolIndentRight=\dimen116
+\FV@BreakSymbolIndentRightNChars=\count117
+\c@FancyVerbLineBreakLast=\count118
+\FV@LineBox=\box32
+\FV@LineIndentBox=\box33
+) ("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\calc.sty"
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count119
+\calc@Bcount=\count120
+\calc@Adimen=\dimen117
+\calc@Bdimen=\dimen118
+\calc@Askip=\skip44
+\calc@Bskip=\skip45
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count121
+\calc@Cskip=\skip46
+)
+("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\shellesc.sty
+"
+Package: shellesc 2016/06/07 v0.02a unified shell escape interface for LaTeX
+Package shellesc Info: Unrestricted shell escape enabled on input line 67.
+)
+("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\ifplatform\ifplatf
+orm.sty"
+Package: ifplatform 2017/10/13 v0.4a Testing for the operating system
+
+("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\pdftexc
+mds.sty"
+Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.s
+ty"
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\catchfi
+le.sty"
+Package: catchfile 2016/05/16 v1.7 Catch the contents of a file (HO)
+))
+("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xstring\xstring.st
+y"
+("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\generic\xstring\xstring.
+tex"
+\integerpart=\count122
+\decimalpart=\count123
+)
+Package: xstring 2018/12/09 v1.81 String manipulations (CT)
+)
+("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\framed\framed.sty"
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip47
+\fb@frw=\dimen119
+\fb@frh=\dimen120
+\FrameRule=\dimen121
+\FrameSep=\dimen122
+) ("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count124
+\float@exts=\toks19
+\float@box=\box34
+\@float@everytoks=\toks20
+\@floatcapt=\box35
+)
+\minted@appexistsfile=\read2
+\minted@bgbox=\box36
+\minted@code=\write4
+\c@minted@FancyVerbLineTemp=\count125
+\c@minted@pygmentizecounter=\count126
+\@float@every@listing=\toks21
+\c@listing=\count127
+)
+runsystem(if not exist _minted-praca_inz mkdir _minted-praca_inz)...executed.
+
+
 ("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.
 sty"
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
@@ -122,21 +476,9 @@ ics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
-
-("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdfte
-x.def"
-File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
-))
-\Gin@req@height=\dimen107
-\Gin@req@width=\dimen108
 )
-("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\float\float.sty"
-Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count97
-\float@exts=\toks18
-\float@box=\box28
-\@float@everytoks=\toks19
-\@floatcapt=\box29
+\Gin@req@height=\dimen123
+\Gin@req@width=\dimen124
 )
 ("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fontenc.sty"
 Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
@@ -190,10 +532,6 @@ LaTeX Info: Redefining \hbar on input line 50.
 sty"
 Package: geometry 2018/04/16 v5.8 Page Geometry
 
-("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.s
-ty"
-Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
-)
 ("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.
 sty"
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
@@ -203,18 +541,18 @@ Package ifvtex Info: VTeX not detected.
 sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count98
-\Gm@cntv=\count99
-\c@Gm@tempcnt=\count100
-\Gm@bindingoffset=\dimen109
-\Gm@wd@mp=\dimen110
-\Gm@odd@mp=\dimen111
-\Gm@even@mp=\dimen112
-\Gm@layoutwidth=\dimen113
-\Gm@layoutheight=\dimen114
-\Gm@layouthoffset=\dimen115
-\Gm@layoutvoffset=\dimen116
-\Gm@dimlist=\toks20
+\Gm@cnth=\count128
+\Gm@cntv=\count129
+\c@Gm@tempcnt=\count130
+\Gm@bindingoffset=\dimen125
+\Gm@wd@mp=\dimen126
+\Gm@odd@mp=\dimen127
+\Gm@even@mp=\dimen128
+\Gm@layoutwidth=\dimen129
+\Gm@layoutheight=\dimen130
+\Gm@layouthoffset=\dimen131
+\Gm@layoutvoffset=\dimen132
+\Gm@dimlist=\toks22
 
 ("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.
 cfg"))
@@ -250,55 +588,63 @@ cfg"))
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+runsystem(for ^%i in (pygmentize.exe pygmentize.bat pygmentize.cmd) do set > pr
+aca_inz.aex <nul: /p x=^%~$PATH:i>> praca_inz.aex)...executed.
+
+runsystem(del praca_inz.aex)...executed.
+
  ("praca inz.aux" (wstep.aux) (zagadnienieEmulacji.aux)
 (przegladIstniejacychRozwiazan.aux) (projektAplikacji.aux) (implementacja.aux)
 (testy.aux) (uwagiIWnioski.aux))
 \openout1 = `"praca inz.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 23.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 38.
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 38.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 38.
+
+("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
+File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 38.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 38.
 
 ("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\t1ptm.fd"
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
-\c@lstlisting=\count101
+\c@lstlisting=\count131
 
 ("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mk
 ii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count102
-\scratchdimen=\dimen117
-\scratchbox=\box30
-\nofMPsegments=\count103
-\nofMParguments=\count104
-\everyMPshowfont=\toks21
-\MPscratchCnt=\count105
-\MPscratchDim=\dimen118
-\MPnumerator=\count106
-\makeMPintoPDFobject=\count107
-\everyMPtoPDFconversion=\toks22
+\scratchcounter=\count132
+\scratchdimen=\dimen133
+\scratchbox=\box37
+\nofMPsegments=\count133
+\nofMParguments=\count134
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count135
+\MPscratchDim=\dimen134
+\MPnumerator=\count136
+\makeMPintoPDFobject=\count137
+\everyMPtoPDFconversion=\toks24
 )
 ("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-
 base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\infware
-rr.sty"
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-)
 ("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grfext.st
 y"
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
@@ -306,42 +652,7 @@ Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 ("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvdefin
 ekeys.sty"
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-
-("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds
-.sty"
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-)))
-("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvoptions
-.sty"
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
-
-("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvsetke
-ys.sty"
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
-
-("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\etexcmd
-s.sty"
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-
-("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifluate
-x.sty"
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-)))
-("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\pdftexc
-mds.sty"
-Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
+))
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 38.
 Package grfext Info: Graphics extension search list:
@@ -349,7 +660,7 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-\big@size=\dimen119
+\big@size=\dimen135
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -385,49 +696,49 @@ G,.JBIG2,.JB2,.eps]
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 24
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 39
 .
 ("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1ztmcm.fd
 "
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 24
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 39
 .
 
 ("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omlztmcm.fd
 "
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 24
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 39
 .
 
 ("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omsztmcm.fd
 "
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 24
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 39
 .
 
 ("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omxztmcm.fd
 "
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 24.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 39.
  ("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 24.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 39.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 24.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 39.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 24.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 39.
  [1
 
 
 {C:/Users/tomek/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 25.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 40.
 
 ("praca inz.toc"
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
@@ -441,8 +752,8 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
  [1
 
 ])
-\tf@toc=\write3
-\openout3 = `"praca inz.toc"'.
+\tf@toc=\write5
+\openout5 = `"praca inz.toc"'.
 
  [2]
 \openout2 = `wstep.aux'.
@@ -465,13 +776,10 @@ Package pdftex.def Info: ./image/app1.png  used on input line 23.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 30.
-("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
-File: omsptm.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 30.
-[3
+LaTeX Font Info:    Try loading font information for TS1+ptm on input line 30.
+("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ts1ptm.fd"
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+) [3
 
 
 ]) [4 <./image/z80wyprowadzenia.png>] [5 <./image/app1.png>]
@@ -482,19 +790,26 @@ LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
 Rozdzia\PlPrIeC {\l } 2.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 16.
+(_minted-praca_inz/default-pyg-prefix.pygstyle)
+(_minted-praca_inz/default.pygstyle)
+(_minted-praca_inz/D8FDB4D59FC3A117FBB55A1F05725FB10A26A37ED1894093C92D167BF2F1
+C621.pygtex
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 1.
 
-("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang1.
-sty"
-File: lstlang1.sty 2018/09/02 1.7 listings language file
+("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstmisc.s
-ty"
-File: lstmisc.sty 2018/09/02 1.7 (Carsten Heinz)
-) (listings/interpreter.c [6
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 2.
+)
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[6
 
 
 
-]) [7]) [8]
+] [7]) [8]
 \openout2 = `przegladIstniejacychRozwiazan.aux'.
 
  (przegladIstniejacychRozwiazan.tex
@@ -543,78 +858,80 @@ LaTeX Warning: `h' float specifier changed to `ht'.
  (projektAplikacji.tex
 Rozdzia\PlPrIeC {\l } 4.
 
-("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang1.
-sty"
-File: lstlang1.sty 2018/09/02 1.7 listings language file
+(_minted-praca_inz/025D18D057133FA5DA9DFC238A3722DD2F47CC482F716C277D5A5D24F454
+B73B.pygtex
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <12> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 2.
 )
-("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstmisc.s
-ty"
-File: lstmisc.sty 2018/09/02 1.7 (Carsten Heinz)
-) (listings/myMavenRepoPom.xml
-Overfull \hbox (53.22658pt too wide) in paragraph at lines 4--5
-[][][][][][][][][][][][][][][][][][][][] 
- []
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+(_minted-praca_inz/0EEC8FCFE372CD2716C1FBEF133B02ADD7790AF62B5495D7E16C4BB3B950
+3C15.pygtex)
+
+LaTeX Warning: `h' float specifier changed to `ht'.
 
 [14
 
 
 
-]) (listings/myMavenRepoSettings.xml) [15]
+] [15]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 26.
-<./image/xbitUml.png, id=63, 990.70125pt x 712.91344pt>
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 34.
+<./image/xbitUml.png, id=64, 990.70125pt x 712.91344pt>
 File: ./image/xbitUml.png Graphic file (type png)
 <use ./image/xbitUml.png>
-Package pdftex.def Info: ./image/xbitUml.png  used on input line 45.
+Package pdftex.def Info: ./image/xbitUml.png  used on input line 53.
 (pdftex.def)             Requested size: 443.57848pt x 319.1981pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [16]
-Overfull \hbox (9.11703pt too wide) in paragraph at lines 58--59
+Overfull \hbox (9.11703pt too wide) in paragraph at lines 66--67
 []\T1/ptm/m/n/12 Bezpieczne u»y-wa-nie obiek-tów nie-zmien-nych w pro-gra-mach 
 wie-lo-w¡t-ko-wych, co umo»-
  []
 
 [17 <./image/xbitUml.png>] [18]
-Overfull \hbox (8.55164pt too wide) in paragraph at lines 94--95
+Overfull \hbox (8.55164pt too wide) in paragraph at lines 102--103
 []\T1/ptm/m/n/12 makeInterupt(addressBus: XBit8), ma-ke-Non-Ma-ska-ble-In-te-ru
 pt(addressBus: XBit8) - me-
  []
 
 [19]
-<./image/z80EmuCoreUml.png, id=78, 526.96875pt x 531.48563pt>
+<./image/z80EmuCoreUml.png, id=79, 526.96875pt x 531.48563pt>
 File: ./image/z80EmuCoreUml.png Graphic file (type png)
 <use ./image/z80EmuCoreUml.png>
-Package pdftex.def Info: ./image/z80EmuCoreUml.png  used on input line 105.
+Package pdftex.def Info: ./image/z80EmuCoreUml.png  used on input line 113.
 (pdftex.def)             Requested size: 443.57848pt x 447.40184pt.
  [20 <./image/z80EmuCoreUml.png>]
-<./image/z80minimalnySystemKomputerowy.png, id=83, 423.08063pt x 316.18124pt>
+<./image/z80minimalnySystemKomputerowy.png, id=84, 423.08063pt x 316.18124pt>
 File: ./image/z80minimalnySystemKomputerowy.png Graphic file (type png)
 <use ./image/z80minimalnySystemKomputerowy.png>
 Package pdftex.def Info: ./image/z80minimalnySystemKomputerowy.png  used on inp
-ut line 122.
+ut line 130.
 (pdftex.def)             Requested size: 266.14978pt x 198.90576pt.
  [21 <./image/z80minimalnySystemKomputerowy.png>]
-<./image/z80Gui.png, id=88, 1002.74625pt x 581.17125pt>
+<./image/z80Gui.png, id=89, 1002.74625pt x 581.17125pt>
 File: ./image/z80Gui.png Graphic file (type png)
 <use ./image/z80Gui.png>
-Package pdftex.def Info: ./image/z80Gui.png  used on input line 133.
+Package pdftex.def Info: ./image/z80Gui.png  used on input line 141.
 (pdftex.def)             Requested size: 443.57848pt x 257.09067pt.
  [22 <./image/z80Gui.png>]
-<./image/z80GuiPart1WithPoints.png, id=93, 652.4375pt x 595.22375pt>
+<./image/z80GuiPart1WithPoints.png, id=94, 652.4375pt x 595.22375pt>
 File: ./image/z80GuiPart1WithPoints.png Graphic file (type png)
 <use ./image/z80GuiPart1WithPoints.png>
 Package pdftex.def Info: ./image/z80GuiPart1WithPoints.png  used on input line 
-151.
+159.
 (pdftex.def)             Requested size: 443.57848pt x 404.6923pt.
  [23 <./image/z80GuiPart1WithPoints.png>]
-<./image/z80GuiPart2WithPoints.png, id=98, 525.965pt x 625.33624pt>
+<./image/z80GuiPart2WithPoints.png, id=99, 525.965pt x 625.33624pt>
 File: ./image/z80GuiPart2WithPoints.png Graphic file (type png)
 <use ./image/z80GuiPart2WithPoints.png>
 Package pdftex.def Info: ./image/z80GuiPart2WithPoints.png  used on input line 
-179.
+187.
 (pdftex.def)             Requested size: 354.86412pt x 421.92154pt.
 
 
@@ -625,127 +942,168 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
  (implementacja.tex
 Rozdzia\PlPrIeC {\l } 5.
-) [26
+
+Overfull \hbox (10.7705pt too wide) in paragraph at lines 13--14
+[]\T1/ptm/m/n/12 Wewn¡trz obiek-tów re-pre-zen-tu-j¡-cych licz-by bi-nar-ne, wa
+r-to±¢ prze-cho-wy-wa-na jest w zmien-
+ []
+
+[26
 
 
 
 ]
+\openout3 = `praca_inz.pyg'.
+
+
+(_minted-praca_inz/BD44DBCA725C36377B0FBA8E0F7627740860A283FB4A9EF7A1FE09898A71
+48BB.pygtex)
+\openout3 = `praca_inz.pyg'.
+
+
+(_minted-praca_inz/49A556F17E9A94B196229ACE3BB665D10860A283FB4A9EF7A1FE09898A71
+48BB.pygtex) [27]
+\openout3 = `praca_inz.pyg'.
+
+
+(_minted-praca_inz/F974C18032B84B0E0173F1F0DDDC46A50860A283FB4A9EF7A1FE09898A71
+48BB.pygtex) [28] [29]
+\openout3 = `praca_inz.pyg'.
+
+
+(_minted-praca_inz/5C7DDE8626851B60A604E617B7B4EA140860A283FB4A9EF7A1FE09898A71
+48BB.pygtex)
+\openout3 = `praca_inz.pyg'.
+
+
+(_minted-praca_inz/4E4439AE3B841A1D4803DC50E4BA63B90860A283FB4A9EF7A1FE09898A71
+48BB.pygtex) [30]
+Overfull \hbox (6.32025pt too wide) in paragraph at lines 152--153
+\T1/ptm/m/n/12 XBit16. Po-sia-da ona dwie kla-sy we-wn¦trz-ne, Ari-th-me-tic8bi
+tResult oraz Ari-th-me-tic16bitResult
+ []
+
+\openout3 = `praca_inz.pyg'.
+
+
+(_minted-praca_inz/66E0FD62504B7B4A439FBF7557DDC98C0860A283FB4A9EF7A1FE09898A71
+48BB.pygtex)
+\openout3 = `praca_inz.pyg'.
+
+
+(_minted-praca_inz/F4B8C23AAE1D0253B4CA6F8714BFDAF00860A283FB4A9EF7A1FE09898A71
+48BB.pygtex)
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+\openout3 = `praca_inz.pyg'.
+
+
+(_minted-praca_inz/0AFD1FE4759A7766537260FE5EFC90870860A283FB4A9EF7A1FE09898A71
+48BB.pygtex)
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[31]
+\openout3 = `praca_inz.pyg'.
+
+
+(_minted-praca_inz/D19EA8DE39761CC3969AA0D23476AA2F0860A283FB4A9EF7A1FE09898A71
+48BB.pygtex) [32]
+Overfull \hbox (13.94775pt too wide) in paragraph at lines 213--213
+[]\T1/ptm/b/n/14.4 public sta-tic Ari-th-me-tic8bitResult ad-d-Two8bits(XBit8 v
+a-lue1, XBit8
+ []
+
+\openout3 = `praca_inz.pyg'.
+
+
+(_minted-praca_inz/E3AE94397BCF905FF079C69906151C200860A283FB4A9EF7A1FE09898A71
+48BB.pygtex)
+Overfull \hbox (12.34921pt too wide) in paragraph at lines 247--247
+[]\T1/ptm/b/n/14.4 public sta-tic Ari-th-me-tic8bitResult sub-Two8bits(XBit8 va
+-lue1, XBit8
+ []
+
+\openout3 = `praca_inz.pyg'.
+
+
+(_minted-praca_inz/BDF5CD9FFE5FC1B6805760C848F68AE70860A283FB4A9EF7A1FE09898A71
+48BB.pygtex) [33]
+Overfull \hbox (7.46973pt too wide) in paragraph at lines 260--263
+[]\T1/ptm/m/n/12 W ko-dzie nr 5.14[] za-pre-zen-to-wa-no me-to-d¦ re-ali-zu-j¡-
+c¡ odej-mo-wa-nie jed-nej licz-by 8-bitowej,
+ []
+
+) [34]
 \openout2 = `testy.aux'.
 
  (testy.tex
 Rozdzia\PlPrIeC {\l } 6.
 
-("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstlang1.
-sty"
-File: lstlang1.sty 2018/09/02 1.7 listings language file
-) (listings/exampleTest.java
-Overfull \hbox (10.02614pt too wide) in paragraph at lines 9--10
-[][][][][][][][][][][][][][][][][][][] 
- []
+(_minted-praca_inz/9B111CE980895324EF8FF4D114BF01FAB8326E0A0C1BA1228258BCF57AA6
+2890.pygtex)
+
+LaTeX Warning: Float too large for page by 408.26059pt on input line 16.
 
 
-Overfull \hbox (60.42665pt too wide) in paragraph at lines 11--13
-[][][][][][][][][][][][][][][][][][][][][][][] 
- []
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-[27
+) [35
 
 
 
-]
-Overfull \hbox (74.8268pt too wide) in paragraph at lines 25--27
-[][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (24.42628pt too wide) in paragraph at lines 27--28
-[][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (24.42628pt too wide) in paragraph at lines 28--29
-[][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (24.42628pt too wide) in paragraph at lines 29--30
-[][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (24.42628pt too wide) in paragraph at lines 30--31
-[][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (24.42628pt too wide) in paragraph at lines 31--33
-[][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (132.42738pt too wide) in paragraph at lines 33--34
-[][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (17.22621pt too wide) in paragraph at lines 43--44
-[][][][][][][][][][][][][][][][][][][][] 
- []
-
-[28]
-Overfull \hbox (24.42628pt too wide) in paragraph at lines 51--52
-[][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (17.22621pt too wide) in paragraph at lines 52--53
-[][][][][][][][][][][][][][][][][][][][] 
- []
-
-)) [29]
+] [36] [37]
 \openout2 = `uwagiIWnioski.aux'.
 
  (uwagiIWnioski.tex
 Rozdzia\PlPrIeC {\l } 7.
-)
-Overfull \hbox (51.52463pt too wide) in paragraph at lines 3--33
+
+Overfull \hbox (51.52463pt too wide) in paragraph at lines 3--4
 \T1/ptm/m/n/12 ce-so-ra, je-dy-n¡ opcj¡ by-ªo by pod-da-nie urz¡-dze-nia in-»y-
 nie-rii wstecz-nej, $[]$ 
  []
 
-[30
+) [38
 
 
 
 ]
-Overfull \hbox (157.79121pt too wide) in paragraph at lines 59--61
+Overfull \hbox (157.79121pt too wide) in paragraph at lines 74--76
 []\T1/ptm/m/n/12 https://www.researchgate.net/publication/239665973_The_univers
 ity_of_queensland_binary_translator_uqbt_framework 
  []
 
-[31
+[39
 
 
 ] ("praca inz.aux" (wstep.aux) (zagadnienieEmulacji.aux)
 (przegladIstniejacychRozwiazan.aux) (projektAplikacji.aux) (implementacja.aux)
-(testy.aux) (uwagiIWnioski.aux)) ) 
+(testy.aux) (uwagiIWnioski.aux))
+runsystem(del praca_inz.pyg)...executed.
+
+ ) 
 Here is how much of TeX's memory you used:
- 4627 strings out of 492970
- 67281 string characters out of 3126594
- 332886 words of memory out of 3000000
- 8334 multiletter control sequences out of 15000+200000
- 47723 words of font info for 74 fonts, out of 3000000 for 9000
+ 8116 strings out of 492970
+ 140065 string characters out of 3126594
+ 256482 words of memory out of 3000000
+ 11705 multiletter control sequences out of 15000+200000
+ 57944 words of font info for 90 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,6n,54p,928b,1654s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Users/tomek/AppData/Local/Programs/MiKTeX
- 2.9/fonts/enc/dvips/base/8r.enc}<C:/Users/tomek/AppData/Local/Programs/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/tomek/AppData/Local/Pro
-grams/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/tomek/AppData/Local
-/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/tomek/AppData/L
-ocal/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "praca inz.pdf" (32 pages, 1162884 bytes).
+ 39i,6n,35p,928b,474s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\tomek\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
+ecit1200.pk>{C:/Users/tomek/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/b
+ase/8r.enc} <C:\Users\tomek\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\e
+c\dpi600\ectt1200.pk> <C:\Users\tomek\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\
+jknappen\ec\dpi600\ectt1000.pk><C:/Users/tomek/AppData/Local/Programs/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/tomek/AppData/Local/Progra
+ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/tomek/AppData
+/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/tomek/App
+Data/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/tomek
+/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on "praca inz.pdf" (40 pages, 1234402 bytes).
 PDF statistics:
- 142 PDF objects out of 1000 (max. 8388607)
+ 333 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  56 words of extra memory for PDF output out of 10000 (max. 10000000)
 

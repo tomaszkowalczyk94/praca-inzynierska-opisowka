@@ -8,7 +8,12 @@
 	Dlatego poprawne wykonanie każdego rozkazu jest tak ważne w moim projekcie. Aby uchronić się przed tego typu prostymi błędami każdy emulowany rozkaz posiada swój test/testy jednostkowe napisane przy pomocy biblioteki Junit. 
 	
 	Przykładowy test dla rozkazu LD A, I. Rozkaz ten ładuje zawartość rejestru A z I:
-	\lstinputlisting[language=Java]{listings/exampleTest.java}
+	
+	\begin{listing}[h]
+		\inputminted{Java}{listings/exampleTest.java}
+		\caption{Test LoadAFromITest.java}
+		\label{listing:LoadAFromITest}
+	\end{listing}
 	
 	Opisany przykład ukazuje że prosta z pozoru operacja jak pobranie wartości jednego rejestru i przeniesienie go do innego, wymaga objętościowych testów. Oprócz testowania czy poprawna wartość znajduje się w rejestrze docelowym, musimy sprawdzić także czy flagi CPU zostały ustawione na poprawnych wartościach, czy ilość przewidywanych cykli zegara została poprawnie zwiększona, czy rejestr PC został zainkrementowany. 
 	

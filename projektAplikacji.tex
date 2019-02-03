@@ -6,10 +6,18 @@
 	
 	Aby umożliwić integracje z serwisem mymavenrepo.com pliki pom.xml zawierają wpisy zaprezentowane w fragmencie kodu \ref{listing:myMavenRepoPom}. Ponieważ repozytoria maven są ustawione jako prywatne, należy odnaleźć w systemie plik ~/.m2/settings.xml podać w nim dane pozwalające na autoryzacje za pomocą "http basic auth". Przykład konfiguracji przedstawiono w kodzie \ref{listing:myMavenRepoSettings}
 	
-	\lstinputlisting[language=xml, label={listing:myMavenRepoPom}, caption={fragment pliku pom.xml umożliwający integracje z serwisem myMavenRepo},captionpos=b]{listings/myMavenRepoPom.xml}
-	
-	\lstinputlisting[language=xml, label={listing:myMavenRepoSettings}, caption={fragment pliku settings.xml przechowującego dane utoryzacyjne do serwera myMavenRepo},captionpos=b]{listings/myMavenRepoSettings.xml}
-	
+	\begin{listing}[h]
+		\inputminted{xml}{listings/myMavenRepoPom.xml}
+		\caption{fragment pliku pom.xml umożliwający integracje z serwisem myMavenRepo}
+		\label{listing:myMavenRepoPom}
+	\end{listing}
+
+	\begin{listing}[h]
+		\inputminted{xml}{listings/myMavenRepoSettings.xml}
+		\caption{fragment pliku settings.xml przechowującego dane utoryzacyjne do serwera myMavenRepo}
+		\label{listing:myMavenRepoSettings}
+	\end{listing}
+
 	Przetrzymywanie plików wykonywalnych w zewnętrznym serwisie ułatwia zarządzanie wszystkimi trzema projektami, pozwala na ich wersjonowanie, i łatwiejsze budowanie aplikacji. 
 
 	\section{XBit}

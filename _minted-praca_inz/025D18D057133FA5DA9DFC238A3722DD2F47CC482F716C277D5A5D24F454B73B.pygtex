@@ -1,0 +1,15 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n+nt}{\PYGZlt{}repositories\PYGZgt{}}
+    \PYG{n+nt}{\PYGZlt{}repository\PYGZgt{}}
+        \PYG{n+nt}{\PYGZlt{}id\PYGZgt{}}myMavenRepoRead\PYG{n+nt}{\PYGZlt{}/id\PYGZgt{}}
+        \PYG{n+nt}{\PYGZlt{}url\PYGZgt{}}https://mymavenrepo.com/repo/PmCL80jeU82fLVGyuUt4/\PYG{n+nt}{\PYGZlt{}/url\PYGZgt{}}
+    \PYG{n+nt}{\PYGZlt{}/repository\PYGZgt{}}
+\PYG{n+nt}{\PYGZlt{}/repositories\PYGZgt{}}
+
+\PYG{n+nt}{\PYGZlt{}distributionManagement\PYGZgt{}}
+    \PYG{n+nt}{\PYGZlt{}repository\PYGZgt{}}
+        \PYG{n+nt}{\PYGZlt{}id\PYGZgt{}}myMavenRepo.write\PYG{n+nt}{\PYGZlt{}/id\PYGZgt{}}
+        \PYG{n+nt}{\PYGZlt{}url\PYGZgt{}}\PYGZdl{}\PYGZob{}myMavenRepoWriteUrl\PYGZcb{}\PYG{n+nt}{\PYGZlt{}/url\PYGZgt{}}
+    \PYG{n+nt}{\PYGZlt{}/repository\PYGZgt{}}
+\PYG{n+nt}{\PYGZlt{}/distributionManagement\PYGZgt{}}
+\end{Verbatim}

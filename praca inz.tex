@@ -1,24 +1,39 @@
 \documentclass[12pt]{report}
 \usepackage{polski}
 \usepackage[utf8]{inputenc}
+
 \usepackage{listings}
+\usepackage{xcolor}
+\usepackage{minted}
+
+\setminted[java]{
+	frame=lines,
+	framesep=2mm,
+	baselinestretch=1.2,
+	fontsize=\footnotesize,
+	linenos
+}
 
 \usepackage{graphicx}
 \usepackage{float}
 
-\linespread{1.3}
+
 \usepackage[T1]{fontenc}
 \usepackage{mathptmx}
-
 \usepackage{geometry}
 
+\linespread{1.3}
 \graphicspath{ {./image/} }
 \newgeometry{tmargin=2.5cm, bmargin=2.5cm, lmargin=3.5cm, rmargin=2.5cm}
 
-\renewcommand{\lstlistingname}{Kod}
+\renewcommand{\thelisting}{\thechapter.\arabic{listing}}
+\renewcommand{\listingscaption}{Kod}
 
 \author{Tomasz Kowalczyk}
 \title{Emulator procesora Zilog Z80}
+
+
+
 
 \begin{document}
 	\maketitle
@@ -88,6 +103,9 @@
 		
 		\bibitem{eduinf}
 		https://eduinf.waw.pl/
+		
+		\bibitem{overflowRules}
+		http://sandbox.mc.edu/~bennet/cs110/tc/orules.html
 				
 	\end{thebibliography}
 	

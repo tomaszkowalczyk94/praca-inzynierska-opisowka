@@ -11,17 +11,33 @@
 \contentsline {section}{\numberline {3.4}Podsumowanie istniej\IeC {\k a}cych rozwi\IeC {\k a}za\IeC {\'n}}{11}
 \contentsline {chapter}{\numberline {4}Projekt aplikacji}{14}
 \contentsline {section}{\numberline {4.1}Podzia\IeC {\l } aplikacji}{14}
-\contentsline {section}{\numberline {4.2}XBit}{15}
+\contentsline {section}{\numberline {4.2}XBit}{14}
 \contentsline {subsection}{\numberline {4.2.1}Mo\IeC {\.z}liwo\IeC {\'s}ci}{16}
 \contentsline {subsection}{\numberline {4.2.2}Za\IeC {\l }o\IeC {\.z}enia projektowe xBit}{16}
-\contentsline {subsubsection}{Klasy XBit8 i XBit16}{16}
+\contentsline {subsubsection}{Klasy XBit8 i XBit16}{17}
 \contentsline {subsubsection}{Klasa XBitUtils, Arithmetic8bitResult, Arithmetic16bitResult}{18}
 \contentsline {section}{\numberline {4.3}z80emu-core}{18}
 \contentsline {subsection}{\numberline {4.3.1}Publiczny interfejs modu\IeC {\l }u z80emu-core}{19}
 \contentsline {subsection}{\numberline {4.3.2}Elastyczno\IeC {\'s}\IeC {\'c} w \IeC {\l }\IeC {\k a}czeniu z innymi projektami}{21}
 \contentsline {section}{\numberline {4.4}z80emu-gui}{22}
 \contentsline {chapter}{\numberline {5}Implementacja}{26}
-\contentsline {chapter}{\numberline {6}Testy}{27}
-\contentsline {section}{\numberline {6.1}????}{27}
-\contentsline {section}{\numberline {6.2}Test-driven development}{29}
-\contentsline {chapter}{\numberline {7}Uwagi i wnioski}{30}
+\contentsline {section}{\numberline {5.1}XBit}{26}
+\contentsline {subsection}{\numberline {5.1.1}Implementacja klasy Xbit}{27}
+\contentsline {subsubsection}{boolean getBit(int index)}{27}
+\contentsline {subsubsection}{TSelf setBit(int index, boolean value)}{27}
+\contentsline {subsubsection}{int getValueOfBits(int startIndexBit, int stopIndexBit)}{28}
+\contentsline {subsubsection}{Inne metody}{29}
+\contentsline {subsection}{\numberline {5.1.2}Implementacja klasy Xbit8}{29}
+\contentsline {subsection}{\numberline {5.1.3}Implementacja klasy Xbit16}{30}
+\contentsline {subsubsection}{public static XBit16 valueOfHighAndLowInBigEndian(XBit8 high, XBit8 low)}{30}
+\contentsline {subsubsection}{public static XBit16 valueOfHighAndLowInLittleEndian(XBit8 high, XBit8 low)}{30}
+\contentsline {subsubsection}{inne metody}{31}
+\contentsline {subsection}{\numberline {5.1.4}Implementacja klasy XbitUtils}{31}
+\contentsline {subsubsection}{public static XBit8 incrementBy(XBit8 value, int incrementer)}{31}
+\contentsline {subsection}{\numberline {5.1.5}public static XBit8 negativeOf(XBit8 value)}{32}
+\contentsline {subsection}{\numberline {5.1.6}public static Arithmetic8bitResult addTwo8bits(XBit8 value1, XBit8 value2)}{33}
+\contentsline {subsection}{\numberline {5.1.7}public static Arithmetic8bitResult subTwo8bits(XBit8 value1, XBit8 value2)}{34}
+\contentsline {chapter}{\numberline {6}Testy}{35}
+\contentsline {section}{\numberline {6.1}????}{35}
+\contentsline {section}{\numberline {6.2}Test-driven development}{35}
+\contentsline {chapter}{\numberline {7}Uwagi i wnioski}{38}
