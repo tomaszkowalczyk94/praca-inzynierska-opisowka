@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2019.1.14)  4 FEB 2019 20:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2019.1.14)  4 FEB 2019 23:19
 entering extended mode
 **"./praca inz.tex"
 ("praca inz.tex"
@@ -20,10 +20,15 @@ File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-) ("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\polski\polski.st
+) ("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\inputenc.st
 y"
+Package: inputenc 2018/04/06 v1.3b Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+)
+("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\polski\polski.sty"
 Package: polski 2017/05/04 v1.3.4 Polish language package
-
+   Inputenc package detected. Catcodes not changed.
    Switching to Polish text encoding and Polish maths fonts.
 ("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ot4enc.def"
 File: ot4enc.def 2017/04/05 v2.0i Standard LaTeX file
@@ -67,11 +72,6 @@ LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
 (Font)                  OML/cmm/b/it --> OML/plm/b/it on input line 360.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
 (Font)                  OMS/cmsy/b/n --> OMS/plsy/b/n on input line 360.
-) ("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\inputenc.st
-y"
-Package: inputenc 2018/04/06 v1.3b Input encoding file
-\inpenc@prehook=\toks14
-\inpenc@posthook=\toks15
 )
 ("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listings.
 sty"
@@ -469,6 +469,22 @@ Package: array 2018/04/30 v2.4h Tabular extension package (FMi)
 \backup@length=\skip49
 \ar@cellbox=\box38
 )
+("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\chngcntr\chngcntr.
+sty"
+Package: chngcntr 2018/04/09 v1.1a change counter resetting
+Package chngcntr Info: \counterwithout already defined.
+(chngcntr)             Quitting chngcntr on input line 21.
+)
+("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\changepage\changep
+age.sty"
+Package: changepage 2009/10/20 v1.0c check page and change page layout
+\c@cp@cntr=\count128
+\cp@tempcnt=\count129
+)
+("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\indentfirst.
+sty"
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+)
 ("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.
 sty"
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
@@ -489,13 +505,6 @@ Package graphics Info: Driver file: pdftex.def on input line 99.
 \Gin@req@height=\dimen125
 \Gin@req@width=\dimen126
 )
-("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fontenc.sty"
-Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
-
-("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1enc.def"
-File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
-LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
-))
 ("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\mathptmx.st
 y"
 Package: mathptmx 2005/04/12 PSNFSS-v9.2a Times w/ Math, improved (SPQR, WaS) 
@@ -537,6 +546,60 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT4/cmr/bx/it --> OT1/ptm/m/it on input line 35.
 LaTeX Info: Redefining \hbar on input line 50.
 )
+("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\titlesec\titlesec.
+sty"
+Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
+\ttl@box=\box39
+\beforetitleunit=\skip50
+\aftertitleunit=\skip51
+\ttl@plus=\dimen127
+\ttl@minus=\dimen128
+\ttl@toksa=\toks23
+\titlewidth=\dimen129
+\titlewidthlast=\dimen130
+\titlewidthfirst=\dimen131
+)
+("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tocloft\tocloft.st
+y"
+Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
+Package tocloft Info: The document has chapter divisions on input line 51.
+\cftparskip=\skip52
+\cftbeforetoctitleskip=\skip53
+\cftaftertoctitleskip=\skip54
+\cftbeforepartskip=\skip55
+\cftpartnumwidth=\skip56
+\cftpartindent=\skip57
+\cftbeforechapskip=\skip58
+\cftchapindent=\skip59
+\cftchapnumwidth=\skip60
+\cftbeforesecskip=\skip61
+\cftsecindent=\skip62
+\cftsecnumwidth=\skip63
+\cftbeforesubsecskip=\skip64
+\cftsubsecindent=\skip65
+\cftsubsecnumwidth=\skip66
+\cftbeforesubsubsecskip=\skip67
+\cftsubsubsecindent=\skip68
+\cftsubsubsecnumwidth=\skip69
+\cftbeforeparaskip=\skip70
+\cftparaindent=\skip71
+\cftparanumwidth=\skip72
+\cftbeforesubparaskip=\skip73
+\cftsubparaindent=\skip74
+\cftsubparanumwidth=\skip75
+\cftbeforeloftitleskip=\skip76
+\cftafterloftitleskip=\skip77
+\cftbeforefigskip=\skip78
+\cftfigindent=\skip79
+\cftfignumwidth=\skip80
+\c@lofdepth=\count130
+\c@lotdepth=\count131
+\cftbeforelottitleskip=\skip81
+\cftafterlottitleskip=\skip82
+\cftbeforetabskip=\skip83
+\cfttabindent=\skip84
+\cfttabnumwidth=\skip85
+)
 ("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.
 sty"
 Package: geometry 2018/04/16 v5.8 Page Geometry
@@ -550,53 +613,21 @@ Package ifvtex Info: VTeX not detected.
 sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count128
-\Gm@cntv=\count129
-\c@Gm@tempcnt=\count130
-\Gm@bindingoffset=\dimen127
-\Gm@wd@mp=\dimen128
-\Gm@odd@mp=\dimen129
-\Gm@even@mp=\dimen130
-\Gm@layoutwidth=\dimen131
-\Gm@layoutheight=\dimen132
-\Gm@layouthoffset=\dimen133
-\Gm@layoutvoffset=\dimen134
-\Gm@dimlist=\toks23
+\Gm@cnth=\count132
+\Gm@cntv=\count133
+\c@Gm@tempcnt=\count134
+\Gm@bindingoffset=\dimen132
+\Gm@wd@mp=\dimen133
+\Gm@odd@mp=\dimen134
+\Gm@even@mp=\dimen135
+\Gm@layoutwidth=\dimen136
+\Gm@layoutheight=\dimen137
+\Gm@layouthoffset=\dimen138
+\Gm@layoutvoffset=\dimen139
+\Gm@dimlist=\toks24
 
 ("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.
 cfg"))
-*geometry* verbose mode - [ newgeometry ] result:
-* driver: 
-* paper: <default>
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
-* h-part:(L,W,R)=(99.58464pt, 443.57848pt, 71.13188pt)
-* v-part:(T,H,B)=(71.13188pt, 652.70622pt, 71.13188pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=443.57848pt
-* \textheight=652.70622pt
-* \oddsidemargin=27.31465pt
-* \evensidemargin=27.31465pt
-* \topmargin=-38.1381pt
-* \headheight=12.0pt
-* \headsep=25.0pt
-* \topskip=12.0pt
-* \footskip=30.0pt
-* \marginparwidth=44.0pt
-* \marginparsep=10.0pt
-* \columnsep=10.0pt
-* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
 runsystem(for ^%i in (pygmentize.exe pygmentize.bat pygmentize.cmd) do set > pr
 aca_inz.aex <nul: /p x=^%~$PATH:i>> praca_inz.aex)...executed.
 
@@ -607,48 +638,50 @@ runsystem(del praca_inz.aex)...executed.
 (testy.aux) (uwagiIWnioski.aux))
 \openout1 = `"praca inz.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 39.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 39.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 64.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 64.
 
 ("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 39.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Try loading font information for OT4+ptm on input line 64.
+LaTeX Font Info:    No file OT4ptm.fd. on input line 64.
 
-("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\t1ptm.fd"
-File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
-)
-\c@lstlisting=\count131
+
+LaTeX Font Warning: Font shape `OT4/ptm/m/n' undefined
+(Font)              using `OT4/cmr/m/n' instead on input line 64.
+
+\c@lstlisting=\count135
 
 ("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mk
 ii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count132
-\scratchdimen=\dimen135
-\scratchbox=\box39
-\nofMPsegments=\count133
-\nofMParguments=\count134
-\everyMPshowfont=\toks24
-\MPscratchCnt=\count135
-\MPscratchDim=\dimen136
-\MPnumerator=\count136
-\makeMPintoPDFobject=\count137
-\everyMPtoPDFconversion=\toks25
+\scratchcounter=\count136
+\scratchdimen=\dimen140
+\scratchbox=\box40
+\nofMPsegments=\count137
+\nofMParguments=\count138
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count139
+\MPscratchDim=\dimen141
+\MPnumerator=\count140
+\makeMPintoPDFobject=\count141
+\everyMPtoPDFconversion=\toks26
 )
 ("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-
 base.sty"
@@ -669,30 +702,31 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-\big@size=\dimen137
+\big@size=\dimen142
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
 * driver: pdftex
-* paper: <default>
+* paper: a4paper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
+* bindingoffset: 28.45274pt
 * modes: 
-* h-part:(L,W,R)=(99.58464pt, 443.57848pt, 71.13188pt)
-* v-part:(T,H,B)=(71.13188pt, 652.70622pt, 71.13188pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=443.57848pt
-* \textheight=652.70622pt
-* \oddsidemargin=27.31465pt
-* \evensidemargin=27.31465pt
+* h-part:(L,W,R)=(71.13188pt, 426.79137pt, 71.13188pt)
+* v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=426.79137pt
+* \textheight=702.78308pt
+* \oddsidemargin=27.31464pt
+* \evensidemargin=-1.1381pt
 * \topmargin=-38.1381pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=12.0pt
 * \footskip=30.0pt
-* \marginparwidth=44.0pt
+* \marginparwidth=35.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
 * \skip\footins=10.8pt plus 4.0pt minus 2.0pt
@@ -705,168 +739,180 @@ G,.JBIG2,.JB2,.eps]
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 40
+(titlePage.tex)
+
+LaTeX Font Warning: Font shape `OT4/ptm/m/sc' undefined
+(Font)              using `OT4/ptm/m/n' instead on input line 70.
+
+[1
+
+{C:/Users/tomek/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [1]
+<./image/testa4.png, id=10, 1039.885pt x 1699.34875pt>
+File: ./image/testa4.png Graphic file (type png)
+<use ./image/testa4.png>
+Package pdftex.def Info: ./image/testa4.png  used on input line 78.
+(pdftex.def)             Requested size: 537.75343pt x 878.7657pt.
+
+Overfull \hbox (13.98851pt too wide) in paragraph at lines 77--79
+[]  [] 
+ []
+
+
+Overfull \vbox (104.85074pt too high) has occurred while \output is active []
+
+
+[2 <./image/testa4.png (PNG copy)>] [3]
+File: ./image/testa4.png Graphic file (type png)
+<use ./image/testa4.png>
+Package pdftex.def Info: ./image/testa4.png  used on input line 86.
+(pdftex.def)             Requested size: 537.75343pt x 878.7657pt.
+
+Overfull \hbox (13.98851pt too wide) in paragraph at lines 85--87
+[]  [] 
+ []
+
+
+Overfull \vbox (104.85074pt too high) has occurred while \output is active []
+
+
+[4] [5] (summaryContent.tex
+
+LaTeX Font Warning: Font shape `OT4/ptm/bx/n' undefined
+(Font)              using `OT4/ptm/m/n' instead on input line 4.
+
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 13
 .
 ("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1ztmcm.fd
 "
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 40
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 13
 .
 
 ("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omlztmcm.fd
 "
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 40
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 13
 .
 
 ("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omsztmcm.fd
 "
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 40
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 13
 .
 
 ("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omxztmcm.fd
 "
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 40.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 13.
  ("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 40.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 40.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 40.
- [1
-
-
-{C:/Users/tomek/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 41.
-
-("praca inz.toc"
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 13.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 13.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
- [1
-
-])
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 13.
+) [6] [7] ("praca inz.toc" [9])
 \tf@toc=\write5
 \openout5 = `"praca inz.toc"'.
 
- [2]
+ [10]
 \openout2 = `wstep.aux'.
 
  (wstep.tex
 Rozdzia\PlPrIeC {\l } 1.
-<./image/z80wyprowadzenia.png, id=13, 273.27094pt x 289.83281pt>
+<./image/z80wyprowadzenia.png, id=37, 273.27094pt x 289.83281pt>
 File: ./image/z80wyprowadzenia.png Graphic file (type png)
 <use ./image/z80wyprowadzenia.png>
 Package pdftex.def Info: ./image/z80wyprowadzenia.png  used on input line 16.
-(pdftex.def)             Requested size: 221.78923pt x 235.23206pt.
+(pdftex.def)             Requested size: 213.39568pt x 226.32959pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./image/z80Gui.png, id=15, 1002.74625pt x 581.17125pt>
+<./image/z80Gui.png, id=39, 1002.74625pt x 581.17125pt>
 File: ./image/z80Gui.png Graphic file (type png)
 <use ./image/z80Gui.png>
 Package pdftex.def Info: ./image/z80Gui.png  used on input line 23.
-(pdftex.def)             Requested size: 310.50357pt x 179.95726pt.
+(pdftex.def)             Requested size: 298.75264pt x 173.14667pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Font Info:    Try loading font information for TS1+ptm on input line 30.
 ("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ts1ptm.fd"
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [3
+)) [11
 
 
-]) [4 <./image/z80wyprowadzenia.png>] [5 <./image/z80Gui.png>]
+] [12 <./image/z80wyprowadzenia.png> <./image/z80Gui.png>]
 \openout2 = `zagadnienieEmulacji.aux'.
 
 
 (zagadnienieEmulacji.tex
 Rozdzia\PlPrIeC {\l } 2.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 16.
 (_minted-praca_inz/default-pyg-prefix.pygstyle)
 (_minted-praca_inz/default.pygstyle)
 (_minted-praca_inz/D8FDB4D59FC3A117FBB55A1F05725FB10A26A37ED1894093C92D167BF2F1
 C621.pygtex
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 1.
+LaTeX Font Info:    Try loading font information for OT4+cmtt on input line 1.
 
-("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
-File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\polski\ot4cmtt.fd"
+File: ot4cmtt.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
-LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <10> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 2.
+
+LaTeX Font Warning: Font shape `OT4/cmtt/bx/n' in size <10> not available
+(Font)              Font shape `OT4/cmtt/m/n' tried instead on input line 2.
+
 )
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[6
+[13
 
 
 
-] [7]
-Underfull \hbox (badness 1824) in paragraph at lines 51--52
-[]|\T1/ptm/m/n/12 ‘ci±le prze-strze-ga pa-ra-me-trów i re-guª
- []
-
-) [8]
+] [14]) [15]
 \openout2 = `przegladIstniejacychRozwiazan.aux'.
 
  (przegladIstniejacychRozwiazan.tex
 Rozdzia\PlPrIeC {\l } 3.
-
-Overfull \hbox (2.02554pt too wide) in paragraph at lines 7--8
-\T1/ptm/m/n/12 Dost¦pny pod ad-re-sem http://www.oshonsoft.com/z80.html pªat-ny
- sy-mu-la-tor po-sia-da-j¡-cy naj-
- []
-
-<./image/oshonsoftEmulator.png, id=38, 869.2475pt x 822.07124pt>
+<./image/oshonsoftEmulator.png, id=61, 869.2475pt x 822.07124pt>
 File: ./image/oshonsoftEmulator.png Graphic file (type png)
 <use ./image/oshonsoftEmulator.png>
 Package pdftex.def Info: ./image/oshonsoftEmulator.png  used on input line 11.
-(pdftex.def)             Requested size: 310.50357pt x 293.6499pt.
+(pdftex.def)             Requested size: 298.75264pt x 282.53612pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[9
+[16
 
 
 
 ]
-<./image/zemu.jpg, id=42, 770.88pt x 578.16pt>
+<./image/zemu.jpg, id=65, 770.88pt x 578.16pt>
 File: ./image/zemu.jpg Graphic file (type jpg)
 <use ./image/zemu.jpg>
 Package pdftex.def Info: ./image/zemu.jpg  used on input line 30.
-(pdftex.def)             Requested size: 354.86412pt x 266.14209pt.
+(pdftex.def)             Requested size: 341.43439pt x 256.07619pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[10 <./image/oshonsoftEmulator.png>]
-<./image/zim.jpg, id=46, 638.385pt x 602.25pt>
+[17 <./image/oshonsoftEmulator.png>]
+<./image/zim.jpg, id=69, 638.385pt x 602.25pt>
 File: ./image/zim.jpg Graphic file (type jpg)
 <use ./image/zim.jpg>
 Package pdftex.def Info: ./image/zim.jpg  used on input line 45.
-(pdftex.def)             Requested size: 354.86412pt x 334.7765pt.
+(pdftex.def)             Requested size: 341.43439pt x 322.10406pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[11 <./image/zemu.jpg>] [12 <./image/zim.jpg>]) [13]
+[18 <./image/zemu.jpg>]) [19 <./image/zim.jpg>]
 \openout2 = `projektAplikacji.aux'.
 
  (projektAplikacji.tex
@@ -874,8 +920,10 @@ Rozdzia\PlPrIeC {\l } 4.
 
 (_minted-praca_inz/025D18D057133FA5DA9DFC238A3722DD2F47CC482F716C277D5A5D24F454
 B73B.pygtex
-LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <12> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 2.
+
+LaTeX Font Warning: Font shape `OT4/cmtt/bx/n' in size <12> not available
+(Font)              Font shape `OT4/cmtt/m/n' tried instead on input line 2.
+
 )
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -886,154 +934,121 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[14
+[20
 
 
 
-] [15]
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 34.
-<./image/xbitUml.png, id=64, 990.70125pt x 712.91344pt>
+] [21]
+<./image/xbitUml.png, id=84, 990.70125pt x 712.91344pt>
 File: ./image/xbitUml.png Graphic file (type png)
 <use ./image/xbitUml.png>
 Package pdftex.def Info: ./image/xbitUml.png  used on input line 53.
-(pdftex.def)             Requested size: 443.57848pt x 319.1981pt.
+(pdftex.def)             Requested size: 426.79137pt x 307.12334pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[16]
-Overfull \hbox (9.11703pt too wide) in paragraph at lines 66--67
-[]\T1/ptm/m/n/12 Bezpieczne u»y-wa-nie obiek-tów nie-zmien-nych w pro-gra-mach 
-wie-lo-w¡t-ko-wych, co umo»-
+[22] [23 <./image/xbitUml.png>] [24]
+Overfull \hbox (22.41234pt too wide) in paragraph at lines 102--103
+[]\OT4/ptm/bx/n/12 makeInterupt(addressBus: XBit8), ma-ke-Non-Ma-ska-ble-In-te-
+rupt(addressBus: XBit8)
  []
 
-[17 <./image/xbitUml.png>] [18]
-Overfull \hbox (8.55164pt too wide) in paragraph at lines 102--103
-[]\T1/ptm/m/n/12 makeInterupt(addressBus: XBit8), ma-ke-Non-Ma-ska-ble-In-te-ru
-pt(addressBus: XBit8) - me-
- []
-
-[19]
-<./image/z80EmuCoreUml.png, id=79, 526.96875pt x 531.48563pt>
+<./image/z80EmuCoreUml.png, id=95, 526.96875pt x 531.48563pt>
 File: ./image/z80EmuCoreUml.png Graphic file (type png)
 <use ./image/z80EmuCoreUml.png>
 Package pdftex.def Info: ./image/z80EmuCoreUml.png  used on input line 113.
-(pdftex.def)             Requested size: 443.57848pt x 447.40184pt.
- [20 <./image/z80EmuCoreUml.png>]
-<./image/z80minimalnySystemKomputerowy.png, id=84, 423.08063pt x 316.18124pt>
+(pdftex.def)             Requested size: 426.79137pt x 430.46857pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[25] [26 <./image/z80EmuCoreUml.png>]
+<./image/z80minimalnySystemKomputerowy.png, id=104, 423.08063pt x 316.18124pt>
 File: ./image/z80minimalnySystemKomputerowy.png Graphic file (type png)
 <use ./image/z80minimalnySystemKomputerowy.png>
 Package pdftex.def Info: ./image/z80minimalnySystemKomputerowy.png  used on inp
 ut line 130.
-(pdftex.def)             Requested size: 266.14978pt x 198.90576pt.
- [21 <./image/z80minimalnySystemKomputerowy.png>]
+(pdftex.def)             Requested size: 256.07742pt x 191.37949pt.
 File: ./image/z80Gui.png Graphic file (type png)
 <use ./image/z80Gui.png>
 Package pdftex.def Info: ./image/z80Gui.png  used on input line 141.
-(pdftex.def)             Requested size: 443.57848pt x 257.09067pt.
- [22]
-<./image/z80GuiPart1WithPoints.png, id=92, 652.4375pt x 595.22375pt>
-File: ./image/z80GuiPart1WithPoints.png Graphic file (type png)
-<use ./image/z80GuiPart1WithPoints.png>
-Package pdftex.def Info: ./image/z80GuiPart1WithPoints.png  used on input line 
-159.
-(pdftex.def)             Requested size: 443.57848pt x 404.6923pt.
- [23 <./image/z80GuiPart1WithPoints.png>]
-<./image/z80GuiPart2WithPoints.png, id=97, 525.965pt x 625.33624pt>
-File: ./image/z80GuiPart2WithPoints.png Graphic file (type png)
-<use ./image/z80GuiPart2WithPoints.png>
-Package pdftex.def Info: ./image/z80GuiPart2WithPoints.png  used on input line 
-187.
-(pdftex.def)             Requested size: 354.86412pt x 421.92154pt.
+(pdftex.def)             Requested size: 426.79137pt x 247.36253pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [24] [25 <./image/z80GuiPart2WithPoints.png>]
+[27 <./image/z80minimalnySystemKomputerowy.png>]
+<./image/z80GuiPart1WithPoints.png, id=109, 652.4375pt x 595.22375pt>
+File: ./image/z80GuiPart1WithPoints.png Graphic file (type png)
+<use ./image/z80GuiPart1WithPoints.png>
+Package pdftex.def Info: ./image/z80GuiPart1WithPoints.png  used on input line 
+159.
+(pdftex.def)             Requested size: 426.79137pt x 389.37943pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[28] [29 <./image/z80GuiPart1WithPoints.png>]
+<./image/z80GuiPart2WithPoints.png, id=117, 525.965pt x 625.33624pt>
+File: ./image/z80GuiPart2WithPoints.png Graphic file (type png)
+<use ./image/z80GuiPart2WithPoints.png>
+Package pdftex.def Info: ./image/z80GuiPart2WithPoints.png  used on input line 
+187.
+(pdftex.def)             Requested size: 341.43439pt x 405.95802pt.
+) [30 <./image/z80GuiPart2WithPoints.png>]
 \openout2 = `implementacja.aux'.
 
  (implementacja.tex
 Rozdzia\PlPrIeC {\l } 5.
 (implementacjaXbit.tex
-Overfull \hbox (10.7705pt too wide) in paragraph at lines 6--7
-[]\T1/ptm/m/n/12 Wewn¡trz obiek-tów re-pre-zen-tu-j¡-cych licz-by bi-nar-ne, wa
-r-to±¢ prze-cho-wy-wa-na jest w zmien-
- []
-
-[26
+(_minted-praca_inz/0B6EBEFFC5C9485D81E609737F722638E36A4643DF3E2A157A0C4DE95617
+C1D8.pygtex) [31
 
 
 
 ]
-(_minted-praca_inz/0B6EBEFFC5C9485D81E609737F722638E36A4643DF3E2A157A0C4DE95617
-C1D8.pygtex)
 (_minted-praca_inz/C041CA84F9A362C7D3788FDEEEA3EFB82F8432F4FD64B75FCABFC208FBCF
-C4D6.pygtex) [27]
+C4D6.pygtex) [32]
 (_minted-praca_inz/ABE601C4ADF2F2170E99943B38AEB5638ECDAF6CAA9C808D10E1393C7C2B
-4FCF.pygtex) [28] [29]
-(_minted-praca_inz/4CDDB1C311E7E1DBA1C34F82F52A12D7720355BA0BD0AD4373380F79B378
-8AAB.pygtex)
-(_minted-praca_inz/B5B401D6F9A3D6EC23C69A1A5F0980F6CB3F471DFC11863E94044BD7B289
-443D.pygtex) [30]
-Overfull \hbox (6.32025pt too wide) in paragraph at lines 106--107
-\T1/ptm/m/n/12 XBit16. Po-sia-da ona dwie kla-sy we-wn¦trz-ne, Ari-th-me-tic8bi
-tResult oraz Ari-th-me-tic16bitResult
+4FCF.pygtex) [33]
+Overfull \hbox (7.09303pt too wide) in paragraph at lines 71--72
+[]\OT4/ptm/bx/n/12 public sta-tic XBit8 va-lu-eOfBo-ole-anAr-ray(boolean[] va-l
+u-es) - two-rzy no-wy obiekt
  []
 
 
+(_minted-praca_inz/4CDDB1C311E7E1DBA1C34F82F52A12D7720355BA0BD0AD4373380F79B378
+8AAB.pygtex)
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[34]
+(_minted-praca_inz/B5B401D6F9A3D6EC23C69A1A5F0980F6CB3F471DFC11863E94044BD7B289
+443D.pygtex) [35]
 (_minted-praca_inz/8255220CFF2853AFCAEF7ED2427C2B13BF1C60712811D348DEC718AD2B2F
 BA66.pygtex)
 (_minted-praca_inz/0CB0A71E795D313AAB3723ECDE55FFCD7F7BFA9DA0FEEC8F77207B58D679
 7B3B.pygtex)
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
 (_minted-praca_inz/B2D03B8B3851F651748688441D376692AF7087D5D9383E5C972DDCE98EAA
-C5B6.pygtex)
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[31]
+C5B6.pygtex) [36]
 (_minted-praca_inz/C45CCC63339E203A1D4F9E9D42AEB25813F11F59E17AF1B663DAF42041D1
-E9E2.pygtex) [32]
-Overfull \hbox (13.94775pt too wide) in paragraph at lines 140--140
-[]\T1/ptm/b/n/14.4 public sta-tic Ari-th-me-tic8bitResult ad-d-Two8bits(XBit8 v
-a-lue1, XBit8
- []
-
-
+E9E2.pygtex)
 (_minted-praca_inz/C5AD8C6AE4C355022D4666A5E4600972D05FD010B63C3B730FA93403A798
 0571.pygtex)
-Overfull \hbox (12.34921pt too wide) in paragraph at lines 160--160
-[]\T1/ptm/b/n/14.4 public sta-tic Ari-th-me-tic8bitResult sub-Two8bits(XBit8 va
--lue1, XBit8
- []
-
-
-(_minted-praca_inz/3FC79D590628F0CF63D27309E3A113910D027D7B093D014212773EA1AC8B
-A72C.pygtex) [33]
-Overfull \hbox (7.46973pt too wide) in paragraph at lines 166--169
-[]\T1/ptm/m/n/12 W ko-dzie nr 5.14[] za-pre-zen-to-wa-no me-to-d¦ re-ali-zu-j¡-
-c¡ odej-mo-wa-nie jed-nej licz-by 8-bitowej,
- []
-
-
-(_minted-praca_inz/F040C7D69A576B4EE628D9DBE152C2916CFA773B6F25A67D65FF38E8FF23
-230D.pygtex)
-(_minted-praca_inz/908CF7EFFDCDECEB71946223B5404282B5F5282F395F7DCE699F0B040687
-BDCA.pygtex)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
+[37]
+(_minted-praca_inz/3FC79D590628F0CF63D27309E3A113910D027D7B093D014212773EA1AC8B
+A72C.pygtex)
+(_minted-praca_inz/F040C7D69A576B4EE628D9DBE152C2916CFA773B6F25A67D65FF38E8FF23
+230D.pygtex)
 
-Overfull \hbox (1.57904pt too wide) in paragraph at lines 184--185
-[]\T1/ptm/m/n/12 Kod 5.16[] pre-zen-tu-je me-to-d¦ wy-ko-nu-j¡-c¡ ope-ra-cj¦ su
--my lo-gicz-nej dwóch liczb 8-bitowych
- []
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-[34]) (implementacjaZ80Core.tex)) [35] [36]
+[38]
+(_minted-praca_inz/908CF7EFFDCDECEB71946223B5404282B5F5282F395F7DCE699F0B040687
+BDCA.pygtex) [39]) (implementacjaZ80Core.tex)) [40]
 \openout2 = `testy.aux'.
 
  (testy.tex
@@ -1042,64 +1057,76 @@ Rozdzia\PlPrIeC {\l } 6.
 (_minted-praca_inz/9B111CE980895324EF8FF4D114BF01FAB8326E0A0C1BA1228258BCF57AA6
 2890.pygtex)
 
-LaTeX Warning: Float too large for page by 408.26059pt on input line 16.
+LaTeX Warning: Float too large for page by 358.05215pt on input line 16.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [37
+) [41
 
 
 
-] [38] [39]
+] [42]
 \openout2 = `uwagiIWnioski.aux'.
 
  (uwagiIWnioski.tex
 Rozdzia\PlPrIeC {\l } 7.
-
-Overfull \hbox (51.52463pt too wide) in paragraph at lines 3--4
-\T1/ptm/m/n/12 ce-so-ra, je-dy-n¡ opcj¡ by-ªo by pod-da-nie urz¡-dze-nia in-»y-
-nie-rii wstecz-nej, $[]$ 
- []
-
-) [40
+) [43
 
 
 
 ]
-Overfull \hbox (157.79121pt too wide) in paragraph at lines 78--80
-[]\T1/ptm/m/n/12 https://www.researchgate.net/publication/239665973_The_univers
-ity_of_queensland_binary_translator_uqbt_framework 
+
+LaTeX Font Warning: Font shape `OT4/ptm/m/it' undefined
+(Font)              using `OT4/ptm/m/n' instead on input line 120.
+
+
+Overfull \hbox (197.80598pt too wide) in paragraph at lines 139--141
+[]\OT4/ptm/bx/n/12 https://www.researchgate.net/publication/239665973[]The[]uni
+versity[]of[]queensland[]binary[]translator[]uqbt[]framework 
  []
 
-[41
+
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
+[]\OT4/ptm/bx/n/12 https://www.retrobrewcomputers.org/n8vem-gg-archive/html-
+ []
+
+[44
 
 
 ] ("praca inz.aux" (wstep.aux) (zagadnienieEmulacji.aux)
 (przegladIstniejacychRozwiazan.aux) (projektAplikacji.aux) (implementacja.aux)
-(testy.aux) (uwagiIWnioski.aux)) ) 
+(testy.aux) (uwagiIWnioski.aux))
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ ) 
 Here is how much of TeX's memory you used:
- 8181 strings out of 492970
- 141643 string characters out of 3126594
- 257602 words of memory out of 3000000
- 11757 multiletter control sequences out of 15000+200000
- 57944 words of font info for 90 fonts, out of 3000000 for 9000
+ 8558 strings out of 492970
+ 148407 string characters out of 3126594
+ 269308 words of memory out of 3000000
+ 12122 multiletter control sequences out of 15000+200000
+ 23814 words of font info for 57 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,10n,35p,928b,475s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\tomek\AppData\Local\MiKTeX\2.9\fon
-ts\pk\ljfour\jknappen\ec\dpi600\ecit1200.pk>{C:/Users/tomek/AppData/Local/Progr
-ams/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc} <C:\Users\tomek\AppData\Local\MiKTe
-X\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1200.pk> <C:\Users\tomek\AppData\L
-ocal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1000.pk><C:/Users/tomek/
-AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/
-Users/tomek/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
-sy10.pfb><C:/Users/tomek/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/time
-s/utmb8a.pfb><C:/Users/tomek/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/
-times/utmr8a.pfb><C:/Users/tomek/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
-urw/times/utmri8a.pfb>
-Output written on "praca inz.pdf" (42 pages, 1213440 bytes).
+ 39i,10n,35p,929b,475s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Users/tomek/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/pl/plitt.en
+c}{C:/Users/tomek/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc
+}{C:/Users/tomek/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/pl/pltt.enc}
+{C:/Users/tomek/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/pl/plrm.enc}<
+C:/Users/tomek/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmr10.pfb><C:/Users/tomek/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmsy10.pfb><C:/Users/tomek/AppData/Local/Programs/MiKTeX 2.9/fonts
+/type1/public/pl/plitt10.pfb><C:/Users/tomek/AppData/Local/Programs/MiKTeX 2.9/
+fonts/type1/public/pl/plr12.pfb><C:/Users/tomek/AppData/Local/Programs/MiKTeX 2
+.9/fonts/type1/public/pl/plr17.pfb><C:/Users/tomek/AppData/Local/Programs/MiKTe
+X 2.9/fonts/type1/public/pl/plr6.pfb><C:/Users/tomek/AppData/Local/Programs/MiK
+TeX 2.9/fonts/type1/public/pl/pltt10.pfb><C:/Users/tomek/AppData/Local/Programs
+/MiKTeX 2.9/fonts/type1/public/pl/pltt12.pfb><C:/Users/tomek/AppData/Local/Prog
+rams/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/tomek/AppData/Local/
+Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on "praca inz.pdf" (44 pages, 1447959 bytes).
 PDF statistics:
- 337 PDF objects out of 1000 (max. 8388607)
+ 208 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 51 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 

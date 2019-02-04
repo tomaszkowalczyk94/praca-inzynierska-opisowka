@@ -1,55 +1,55 @@
-\contentsline {chapter}{\numberline {1}Wst\IeC {\k e}p}{3}
-\contentsline {chapter}{\numberline {2}Zagadnienie emulacji}{6}
-\contentsline {section}{\numberline {2.1}Emulacja przez interpretowanie}{6}
-\contentsline {section}{\numberline {2.2}Statyczna re-kompilacja}{7}
-\contentsline {section}{\numberline {2.3}Dynamiczna re-kompilacja}{8}
-\contentsline {section}{\numberline {2.4}R\IeC {\'o}\IeC {\.z}nica mi\IeC {\k e}dzy symulacj\IeC {\k a} a emulacj\IeC {\k a}}{8}
-\contentsline {chapter}{\numberline {3}Przegl\IeC {\k a}d istniej\IeC {\k a}cych rozwi\IeC {\k a}za\IeC {\'n}}{9}
-\contentsline {section}{\numberline {3.1}Z80 SIMULATOR IDE}{9}
-\contentsline {section}{\numberline {3.2}ZEMU - Z80 Emulator Joe Moore}{10}
-\contentsline {section}{\numberline {3.3}ZIM - The Z80 Machine Simulator}{11}
-\contentsline {section}{\numberline {3.4}Podsumowanie istniej\IeC {\k a}cych rozwi\IeC {\k a}za\IeC {\'n}}{11}
-\contentsline {chapter}{\numberline {4}Projekt aplikacji}{14}
-\contentsline {section}{\numberline {4.1}Podzia\IeC {\l } aplikacji}{14}
-\contentsline {section}{\numberline {4.2}XBit}{14}
-\contentsline {subsection}{\numberline {4.2.1}Mo\IeC {\.z}liwo\IeC {\'s}ci}{16}
-\contentsline {subsection}{\numberline {4.2.2}Za\IeC {\l }o\IeC {\.z}enia projektowe xBit}{16}
-\contentsline {subsubsection}{Klasy XBit8 i XBit16}{17}
-\contentsline {subsubsection}{Klasa XBitUtils, Arithmetic8bitResult, Arithmetic16bitResult}{18}
-\contentsline {section}{\numberline {4.3}z80emu-core}{18}
-\contentsline {subsection}{\numberline {4.3.1}Publiczny interfejs modu\IeC {\l }u z80emu-core}{19}
-\contentsline {subsection}{\numberline {4.3.2}Elastyczno\IeC {\'s}\IeC {\'c} w \IeC {\l }\IeC {\k a}czeniu z innymi projektami}{21}
-\contentsline {section}{\numberline {4.4}z80emu-gui}{22}
-\contentsline {chapter}{\numberline {5}Implementacja}{26}
-\contentsline {section}{\numberline {5.1}XBit}{26}
-\contentsline {subsection}{\numberline {5.1.1}Implementacja klasy Xbit}{27}
-\contentsline {subsubsection}{boolean getBit(int index)}{27}
-\contentsline {subsubsection}{TSelf setBit(int index, boolean value)}{27}
-\contentsline {subsubsection}{int getValueOfBits(int startIndexBit, int stopIndexBit)}{28}
-\contentsline {subsubsection}{Inne metody}{29}
-\contentsline {subsection}{\numberline {5.1.2}Implementacja klasy Xbit8}{29}
-\contentsline {subsection}{\numberline {5.1.3}Implementacja klasy Xbit16}{30}
-\contentsline {subsubsection}{public static XBit16 valueOfHighAndLowInBigEndian(XBit8 high, XBit8 low)}{30}
-\contentsline {subsubsection}{public static XBit16 valueOfHighAndLowInLittleEndian(XBit8 high, XBit8 low)}{30}
-\contentsline {subsubsection}{inne metody}{31}
-\contentsline {subsection}{\numberline {5.1.4}Implementacja klasy XbitUtils}{31}
-\contentsline {subsubsection}{public static XBit8 incrementBy(XBit8 value, int incrementer)}{31}
-\contentsline {subsection}{\numberline {5.1.5}public static XBit8 negativeOf(XBit8 value)}{32}
-\contentsline {subsection}{\numberline {5.1.6}public static Arithmetic8bitResult addTwo8bits(XBit8 value1, XBit8 value2)}{33}
-\contentsline {subsection}{\numberline {5.1.7}public static Arithmetic8bitResult subTwo8bits(XBit8 value1, XBit8 value2)}{34}
-\contentsline {subsection}{\numberline {5.1.8}public static XBit8 not8bit(XBit8 value)}{34}
-\contentsline {subsection}{\numberline {5.1.9}public static XBit8 and8bit(XBit8 value1, XBit8 value2)}{34}
-\contentsline {subsection}{\numberline {5.1.10}metody wykonuj\IeC {\k a}ce sum\IeC {\k e} bitow\IeC {\k a} i r\IeC {\'o}\IeC {\.z}nice symetryczn\IeC {\k a}}{35}
-\contentsline {section}{\numberline {5.2}Z80emu-core}{35}
-\contentsline {subsection}{\numberline {5.2.1}obiekt klasy Z80}{36}
-\contentsline {subsection}{\numberline {5.2.2}opis registerbank}{36}
-\contentsline {subsection}{\numberline {5.2.3}opis flagmanager}{36}
-\contentsline {subsection}{\numberline {5.2.4}opis memory}{36}
-\contentsline {subsection}{\numberline {5.2.5}opis io}{36}
-\contentsline {subsection}{\numberline {5.2.6}InstructionDecoder i instructionContainer}{36}
-\contentsline {subsection}{\numberline {5.2.7}opis instrukcje}{36}
-\contentsline {subsection}{\numberline {5.2.8}opis helpery do instrukcji}{36}
-\contentsline {chapter}{\numberline {6}Testy}{37}
-\contentsline {section}{\numberline {6.1}????}{37}
-\contentsline {section}{\numberline {6.2}Test-driven development}{37}
-\contentsline {chapter}{\numberline {7}Uwagi i wnioski}{40}
+\contentsline {chapter}{\numberline {1}Wst\IeC {\k e}p}{11}
+\contentsline {chapter}{\numberline {2}Zagadnienie emulacji}{13}
+\contentsline {section}{\numberline {2.1}Emulacja przez interpretowanie}{13}
+\contentsline {section}{\numberline {2.2}Statyczna re-kompilacja}{14}
+\contentsline {section}{\numberline {2.3}Dynamiczna re-kompilacja}{14}
+\contentsline {section}{\numberline {2.4}R\IeC {\'o}\IeC {\.z}nica mi\IeC {\k e}dzy symulacj\IeC {\k a} a emulacj\IeC {\k a}}{15}
+\contentsline {chapter}{\numberline {3}Przegl\IeC {\k a}d istniej\IeC {\k a}cych rozwi\IeC {\k a}za\IeC {\'n}}{16}
+\contentsline {section}{\numberline {3.1}Z80 SIMULATOR IDE}{16}
+\contentsline {section}{\numberline {3.2}ZEMU - Z80 Emulator Joe Moore}{16}
+\contentsline {section}{\numberline {3.3}ZIM - The Z80 Machine Simulator}{17}
+\contentsline {section}{\numberline {3.4}Podsumowanie istniej\IeC {\k a}cych rozwi\IeC {\k a}za\IeC {\'n}}{18}
+\contentsline {chapter}{\numberline {4}Projekt aplikacji}{20}
+\contentsline {section}{\numberline {4.1}Podzia\IeC {\l } aplikacji}{20}
+\contentsline {section}{\numberline {4.2}XBit}{20}
+\contentsline {subsection}{\numberline {4.2.1}Mo\IeC {\.z}liwo\IeC {\'s}ci}{22}
+\contentsline {subsection}{\numberline {4.2.2}Za\IeC {\l }o\IeC {\.z}enia projektowe xBit}{22}
+\contentsline {subsubsection}{Klasy XBit8 i XBit16}{22}
+\contentsline {subsubsection}{Klasa XBitUtils, Arithmetic8bitResult, Arithmetic16bitResult}{24}
+\contentsline {section}{\numberline {4.3}z80emu-core}{24}
+\contentsline {subsection}{\numberline {4.3.1}Publiczny interfejs modu\IeC {\l }u z80emu-core}{24}
+\contentsline {subsection}{\numberline {4.3.2}Elastyczno\IeC {\'s}\IeC {\'c} w \IeC {\l }\IeC {\k a}czeniu z innymi projektami}{26}
+\contentsline {section}{\numberline {4.4}z80emu-gui}{27}
+\contentsline {chapter}{\numberline {5}Implementacja}{31}
+\contentsline {section}{\numberline {5.1}XBit}{31}
+\contentsline {subsection}{\numberline {5.1.1}Implementacja klasy Xbit}{31}
+\contentsline {subsubsection}{boolean getBit(int index)}{32}
+\contentsline {subsubsection}{TSelf setBit(int index, boolean value)}{32}
+\contentsline {subsubsection}{int getValueOfBits(int startIndexBit, int stopIndexBit)}{33}
+\contentsline {subsubsection}{Inne metody}{33}
+\contentsline {subsection}{\numberline {5.1.2}Implementacja klasy Xbit8}{34}
+\contentsline {subsection}{\numberline {5.1.3}Implementacja klasy Xbit16}{34}
+\contentsline {subsubsection}{public static XBit16 valueOfHighAndLowInBigEndian(XBit8 high, XBit8 low)}{34}
+\contentsline {subsubsection}{public static XBit16 valueOfHighAndLowInLittleEndian(XBit8 high, XBit8 low)}{35}
+\contentsline {subsubsection}{inne metody}{35}
+\contentsline {subsection}{\numberline {5.1.4}Implementacja klasy XbitUtils}{36}
+\contentsline {subsubsection}{public static XBit8 incrementBy(XBit8 value, int incrementer)}{36}
+\contentsline {subsection}{\numberline {5.1.5}public static XBit8 negativeOf(XBit8 value)}{37}
+\contentsline {subsection}{\numberline {5.1.6}public static Arithmetic8bitResult addTwo8bits(XBit8 value1, XBit8 value2)}{37}
+\contentsline {subsection}{\numberline {5.1.7}public static Arithmetic8bitResult subTwo8bits(XBit8 value1, XBit8 value2)}{38}
+\contentsline {subsection}{\numberline {5.1.8}public static XBit8 not8bit(XBit8 value)}{38}
+\contentsline {subsection}{\numberline {5.1.9}public static XBit8 and8bit(XBit8 value1, XBit8 value2)}{39}
+\contentsline {subsection}{\numberline {5.1.10}metody wykonuj\IeC {\k a}ce sum\IeC {\k e} bitow\IeC {\k a} i r\IeC {\'o}\IeC {\.z}nice symetryczn\IeC {\k a}}{39}
+\contentsline {section}{\numberline {5.2}Z80emu-core}{40}
+\contentsline {subsection}{\numberline {5.2.1}obiekt klasy Z80}{40}
+\contentsline {subsection}{\numberline {5.2.2}opis registerbank}{40}
+\contentsline {subsection}{\numberline {5.2.3}opis flagmanager}{40}
+\contentsline {subsection}{\numberline {5.2.4}opis memory}{40}
+\contentsline {subsection}{\numberline {5.2.5}opis io}{40}
+\contentsline {subsection}{\numberline {5.2.6}InstructionDecoder i instructionContainer}{40}
+\contentsline {subsection}{\numberline {5.2.7}opis instrukcje}{40}
+\contentsline {subsection}{\numberline {5.2.8}opis helpery do instrukcji}{40}
+\contentsline {chapter}{\numberline {6}Testy}{41}
+\contentsline {section}{\numberline {6.1}????}{41}
+\contentsline {section}{\numberline {6.2}Test-driven development}{41}
+\contentsline {chapter}{\numberline {7}Uwagi i wnioski}{43}

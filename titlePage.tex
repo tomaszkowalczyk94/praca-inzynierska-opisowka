@@ -1,0 +1,39 @@
+\makeatletter
+\newcommand{\linia}{\rule[1em]{\linewidth}{0.4mm}}
+
+\def\studentNo#1{\gdef\@studentNo{#1}}
+\def\@studentNo{\@latex@warning@no@line{No \noexpandstudentNo given}}
+
+\renewcommand{\maketitle}{\begin{titlepage}
+
+    \begin{center}{\large
+	    POLITECHNIKA  ŚWIĘTOKRZYSKA \\
+	    Wydział Elektrotechniki, Automatyki i Informatyki}
+	\linia
+    \end{center}
+    \vspace{2.5cm}
+   
+    \begin{center}
+		\normalsize \textsc{\@author} \par
+		\normalsize Numer albumu: \@studentNo \par	
+		\vspace{2,5cm}
+		\LARGE \textsc{\@title}\par
+		\normalsize
+		\vspace{5mm}
+		Praca dyplomowa inżynierska\\
+	    na kierunku  Informatyka\\
+	\end{center}
+	\vfill
+	
+    \begin{flushright}
+	    Opiekun pracy dyplomowej:\\
+        dr inż. Arkadiusz Chrobot\\
+        Zakład Informatyki
+     \end{flushright}
+   \vspace{1,5cm}
+    \begin{center}
+	    Kielce, 2019%\@date
+    \end{center}
+  \end{titlepage}%
+}
+\makeatother
