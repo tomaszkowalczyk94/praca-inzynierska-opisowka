@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2019.1.14)  4 FEB 2019 17:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2019.1.14)  4 FEB 2019 20:37
 entering extended mode
 **"./praca inz.tex"
 ("praca inz.tex"
@@ -459,7 +459,16 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 )
 runsystem(if not exist _minted-praca_inz mkdir _minted-praca_inz)...executed.
 
-
+ ("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\array.sty"
+Package: array 2018/04/30 v2.4h Tabular extension package (FMi)
+\col@sep=\dimen123
+\ar@mcellbox=\box37
+\extrarowheight=\dimen124
+\NC@list=\toks22
+\extratabsurround=\skip48
+\backup@length=\skip49
+\ar@cellbox=\box38
+)
 ("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.
 sty"
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
@@ -477,8 +486,8 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
 )
-\Gin@req@height=\dimen123
-\Gin@req@width=\dimen124
+\Gin@req@height=\dimen125
+\Gin@req@width=\dimen126
 )
 ("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\fontenc.sty"
 Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
@@ -544,15 +553,15 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@cnth=\count128
 \Gm@cntv=\count129
 \c@Gm@tempcnt=\count130
-\Gm@bindingoffset=\dimen125
-\Gm@wd@mp=\dimen126
-\Gm@odd@mp=\dimen127
-\Gm@even@mp=\dimen128
-\Gm@layoutwidth=\dimen129
-\Gm@layoutheight=\dimen130
-\Gm@layouthoffset=\dimen131
-\Gm@layoutvoffset=\dimen132
-\Gm@dimlist=\toks22
+\Gm@bindingoffset=\dimen127
+\Gm@wd@mp=\dimen128
+\Gm@odd@mp=\dimen129
+\Gm@even@mp=\dimen130
+\Gm@layoutwidth=\dimen131
+\Gm@layoutheight=\dimen132
+\Gm@layouthoffset=\dimen133
+\Gm@layoutvoffset=\dimen134
+\Gm@dimlist=\toks23
 
 ("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry.
 cfg"))
@@ -598,28 +607,28 @@ runsystem(del praca_inz.aex)...executed.
 (testy.aux) (uwagiIWnioski.aux))
 \openout1 = `"praca inz.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 38.
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 38.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 38.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 39.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 39.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 39.
 
 ("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 38.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 38.
+LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 39.
 
 ("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\t1ptm.fd"
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
@@ -630,16 +639,16 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 ii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count132
-\scratchdimen=\dimen133
-\scratchbox=\box37
+\scratchdimen=\dimen135
+\scratchbox=\box39
 \nofMPsegments=\count133
 \nofMParguments=\count134
-\everyMPshowfont=\toks23
+\everyMPshowfont=\toks24
 \MPscratchCnt=\count135
-\MPscratchDim=\dimen134
+\MPscratchDim=\dimen136
 \MPnumerator=\count136
 \makeMPintoPDFobject=\count137
-\everyMPtoPDFconversion=\toks24
+\everyMPtoPDFconversion=\toks25
 )
 ("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-
 base.sty"
@@ -660,7 +669,7 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-\big@size=\dimen135
+\big@size=\dimen137
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -696,49 +705,49 @@ G,.JBIG2,.JB2,.eps]
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 39
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 40
 .
 ("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1ztmcm.fd
 "
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 39
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 40
 .
 
 ("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omlztmcm.fd
 "
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 39
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 40
 .
 
 ("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omsztmcm.fd
 "
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 39
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 40
 .
 
 ("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\omxztmcm.fd
 "
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 39.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 40.
  ("C:\Users\tomek\AppData\Local\Programs\MiKTeX 2.9\tex\latex\psnfss\ot1ptm.fd"
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 39.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 40.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 39.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 40.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 39.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 40.
  [1
 
 
 {C:/Users/tomek/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 40.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 41.
 
 ("praca inz.toc"
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
@@ -809,7 +818,12 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 
 
-] [7]) [8]
+] [7]
+Underfull \hbox (badness 1824) in paragraph at lines 51--52
+[]|\T1/ptm/m/n/12 ‘ci±le prze-strze-ga pa-ra-me-trów i re-guª
+ []
+
+) [8]
 \openout2 = `przegladIstniejacychRozwiazan.aux'.
 
  (przegladIstniejacychRozwiazan.tex
@@ -1008,11 +1022,6 @@ c¡ odej-mo-wa-nie jed-nej licz-by 8-bitowej,
 
 (_minted-praca_inz/F040C7D69A576B4EE628D9DBE152C2916CFA773B6F25A67D65FF38E8FF23
 230D.pygtex)
-runsystem(pygmentize -l java -f latex -P commandprefix=PYG -F tokenmerge -o _mi
-nted-praca_inz/908CF7EFFDCDECEB71946223B5404282B5F5282F395F7DCE699F0B040687BDCA
-.pygtex listings/xbit/and8bit.java)...executed.
-
-
 (_minted-praca_inz/908CF7EFFDCDECEB71946223B5404282B5F5282F395F7DCE699F0B040687
 BDCA.pygtex)
 
@@ -1058,13 +1067,10 @@ nie-rii wstecz-nej, $[]$
 
 
 ]
-Overfull \hbox (157.79121pt too wide) in paragraph at lines 74--76
+Overfull \hbox (157.79121pt too wide) in paragraph at lines 78--80
 []\T1/ptm/m/n/12 https://www.researchgate.net/publication/239665973_The_univers
 ity_of_queensland_binary_translator_uqbt_framework 
  []
-
-runsystem(del _minted-praca_inz\47E884F28F448C241FF1490BDD8416E70860A283FB4A9EF
-7A1FE09898A7148BB.pygtex)...executed.
 
 [41
 
@@ -1073,13 +1079,13 @@ runsystem(del _minted-praca_inz\47E884F28F448C241FF1490BDD8416E70860A283FB4A9EF
 (przegladIstniejacychRozwiazan.aux) (projektAplikacji.aux) (implementacja.aux)
 (testy.aux) (uwagiIWnioski.aux)) ) 
 Here is how much of TeX's memory you used:
- 8129 strings out of 492970
- 141022 string characters out of 3126594
- 256745 words of memory out of 3000000
- 11706 multiletter control sequences out of 15000+200000
+ 8181 strings out of 492970
+ 141643 string characters out of 3126594
+ 257602 words of memory out of 3000000
+ 11757 multiletter control sequences out of 15000+200000
  57944 words of font info for 90 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,6n,35p,928b,474s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 39i,10n,35p,928b,475s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\tomek\AppData\Local\MiKTeX\2.9\fon
 ts\pk\ljfour\jknappen\ec\dpi600\ecit1200.pk>{C:/Users/tomek/AppData/Local/Progr
 ams/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc} <C:\Users\tomek\AppData\Local\MiKTe
@@ -1091,7 +1097,7 @@ sy10.pfb><C:/Users/tomek/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/time
 s/utmb8a.pfb><C:/Users/tomek/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/
 times/utmr8a.pfb><C:/Users/tomek/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
 urw/times/utmri8a.pfb>
-Output written on "praca inz.pdf" (42 pages, 1212737 bytes).
+Output written on "praca inz.pdf" (42 pages, 1213440 bytes).
 PDF statistics:
  337 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

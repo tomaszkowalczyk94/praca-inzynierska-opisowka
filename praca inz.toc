@@ -3,7 +3,7 @@
 \contentsline {section}{\numberline {2.1}Emulacja przez interpretowanie}{6}
 \contentsline {section}{\numberline {2.2}Statyczna re-kompilacja}{7}
 \contentsline {section}{\numberline {2.3}Dynamiczna re-kompilacja}{8}
-\contentsline {section}{\numberline {2.4}R\IeC {\'o}\IeC {\.z}nica mi\IeC {\k e}dzy symulacj\IeC {\k a} a emulacj\IeC {\k a} (i mo\IeC {\.z}e virtualizacj\IeC {\k a}???)}{8}
+\contentsline {section}{\numberline {2.4}R\IeC {\'o}\IeC {\.z}nica mi\IeC {\k e}dzy symulacj\IeC {\k a} a emulacj\IeC {\k a}}{8}
 \contentsline {chapter}{\numberline {3}Przegl\IeC {\k a}d istniej\IeC {\k a}cych rozwi\IeC {\k a}za\IeC {\'n}}{9}
 \contentsline {section}{\numberline {3.1}Z80 SIMULATOR IDE}{9}
 \contentsline {section}{\numberline {3.2}ZEMU - Z80 Emulator Joe Moore}{10}
