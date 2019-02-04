@@ -3,5 +3,5 @@
 	\PYG{k}{return} \PYG{n}{XBit8}\PYG{o}{.}\PYG{n+na}{valueOfUnsigned}\PYG{o}{(}
 		\PYG{o}{(\PYGZti{}}\PYG{n}{value}\PYG{o}{.}\PYG{n+na}{getUnsignedValue}\PYG{o}{())} \PYG{o}{\PYGZam{}} \PYG{n}{XBit8}\PYG{o}{.}\PYG{n+na}{MAX\PYGZus{}UNSIGNED\PYGZus{}VALUE}
 	\PYG{o}{);}
-\PYG{o}{\PYGZcb{}}		
+\PYG{o}{\PYGZcb{}}	
 \end{Verbatim}

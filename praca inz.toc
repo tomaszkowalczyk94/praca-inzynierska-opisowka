@@ -40,7 +40,16 @@
 \contentsline {subsection}{\numberline {5.1.8}public static XBit8 not8bit(XBit8 value)}{34}
 \contentsline {subsection}{\numberline {5.1.9}public static XBit8 and8bit(XBit8 value1, XBit8 value2)}{34}
 \contentsline {subsection}{\numberline {5.1.10}metody wykonuj\IeC {\k a}ce sum\IeC {\k e} bitow\IeC {\k a} i r\IeC {\'o}\IeC {\.z}nice symetryczn\IeC {\k a}}{35}
-\contentsline {chapter}{\numberline {6}Testy}{36}
-\contentsline {section}{\numberline {6.1}????}{36}
-\contentsline {section}{\numberline {6.2}Test-driven development}{36}
-\contentsline {chapter}{\numberline {7}Uwagi i wnioski}{39}
+\contentsline {section}{\numberline {5.2}Z80emu-core}{35}
+\contentsline {subsection}{\numberline {5.2.1}obiekt klasy Z80}{36}
+\contentsline {subsection}{\numberline {5.2.2}opis registerbank}{36}
+\contentsline {subsection}{\numberline {5.2.3}opis flagmanager}{36}
+\contentsline {subsection}{\numberline {5.2.4}opis memory}{36}
+\contentsline {subsection}{\numberline {5.2.5}opis io}{36}
+\contentsline {subsection}{\numberline {5.2.6}InstructionDecoder i instructionContainer}{36}
+\contentsline {subsection}{\numberline {5.2.7}opis instrukcje}{36}
+\contentsline {subsection}{\numberline {5.2.8}opis helpery do instrukcji}{36}
+\contentsline {chapter}{\numberline {6}Testy}{37}
+\contentsline {section}{\numberline {6.1}????}{37}
+\contentsline {section}{\numberline {6.2}Test-driven development}{37}
+\contentsline {chapter}{\numberline {7}Uwagi i wnioski}{40}

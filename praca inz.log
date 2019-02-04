@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2019.1.14)  3 FEB 2019 23:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2019.1.14)  4 FEB 2019 17:30
 entering extended mode
 **"./praca inz.tex"
 ("praca inz.tex"
@@ -768,11 +768,11 @@ Package pdftex.def Info: ./image/z80wyprowadzenia.png  used on input line 16.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<./image/app1.png, id=15, 588.69937pt x 346.29375pt>
-File: ./image/app1.png Graphic file (type png)
-<use ./image/app1.png>
-Package pdftex.def Info: ./image/app1.png  used on input line 23.
-(pdftex.def)             Requested size: 266.14978pt x 156.55994pt.
+<./image/z80Gui.png, id=15, 1002.74625pt x 581.17125pt>
+File: ./image/z80Gui.png Graphic file (type png)
+<use ./image/z80Gui.png>
+Package pdftex.def Info: ./image/z80Gui.png  used on input line 23.
+(pdftex.def)             Requested size: 310.50357pt x 179.95726pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -782,7 +782,7 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ) [3
 
 
-]) [4 <./image/z80wyprowadzenia.png>] [5 <./image/app1.png>]
+]) [4 <./image/z80wyprowadzenia.png>] [5 <./image/z80Gui.png>]
 \openout2 = `zagadnienieEmulacji.aux'.
 
 
@@ -914,20 +914,19 @@ Package pdftex.def Info: ./image/z80minimalnySystemKomputerowy.png  used on inp
 ut line 130.
 (pdftex.def)             Requested size: 266.14978pt x 198.90576pt.
  [21 <./image/z80minimalnySystemKomputerowy.png>]
-<./image/z80Gui.png, id=89, 1002.74625pt x 581.17125pt>
 File: ./image/z80Gui.png Graphic file (type png)
 <use ./image/z80Gui.png>
 Package pdftex.def Info: ./image/z80Gui.png  used on input line 141.
 (pdftex.def)             Requested size: 443.57848pt x 257.09067pt.
- [22 <./image/z80Gui.png>]
-<./image/z80GuiPart1WithPoints.png, id=94, 652.4375pt x 595.22375pt>
+ [22]
+<./image/z80GuiPart1WithPoints.png, id=92, 652.4375pt x 595.22375pt>
 File: ./image/z80GuiPart1WithPoints.png Graphic file (type png)
 <use ./image/z80GuiPart1WithPoints.png>
 Package pdftex.def Info: ./image/z80GuiPart1WithPoints.png  used on input line 
 159.
 (pdftex.def)             Requested size: 443.57848pt x 404.6923pt.
  [23 <./image/z80GuiPart1WithPoints.png>]
-<./image/z80GuiPart2WithPoints.png, id=99, 525.965pt x 625.33624pt>
+<./image/z80GuiPart2WithPoints.png, id=97, 525.965pt x 625.33624pt>
 File: ./image/z80GuiPart2WithPoints.png Graphic file (type png)
 <use ./image/z80GuiPart2WithPoints.png>
 Package pdftex.def Info: ./image/z80GuiPart2WithPoints.png  used on input line 
@@ -942,8 +941,8 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
  (implementacja.tex
 Rozdzia\PlPrIeC {\l } 5.
-
-Overfull \hbox (10.7705pt too wide) in paragraph at lines 13--14
+(implementacjaXbit.tex
+Overfull \hbox (10.7705pt too wide) in paragraph at lines 6--7
 []\T1/ptm/m/n/12 Wewn¡trz obiek-tów re-pre-zen-tu-j¡-cych licz-by bi-nar-ne, wa
 r-to±¢ prze-cho-wy-wa-na jest w zmien-
  []
@@ -953,108 +952,79 @@ r-to±¢ prze-cho-wy-wa-na jest w zmien-
 
 
 ]
-\openout3 = `praca_inz.pyg'.
-
-
-(_minted-praca_inz/BD44DBCA725C36377B0FBA8E0F7627740860A283FB4A9EF7A1FE09898A71
-48BB.pygtex)
-\openout3 = `praca_inz.pyg'.
-
-
-(_minted-praca_inz/49A556F17E9A94B196229ACE3BB665D10860A283FB4A9EF7A1FE09898A71
-48BB.pygtex) [27]
-\openout3 = `praca_inz.pyg'.
-
-
-(_minted-praca_inz/F974C18032B84B0E0173F1F0DDDC46A50860A283FB4A9EF7A1FE09898A71
-48BB.pygtex) [28] [29]
-\openout3 = `praca_inz.pyg'.
-
-
-(_minted-praca_inz/5C7DDE8626851B60A604E617B7B4EA140860A283FB4A9EF7A1FE09898A71
-48BB.pygtex)
-\openout3 = `praca_inz.pyg'.
-
-
-(_minted-praca_inz/4E4439AE3B841A1D4803DC50E4BA63B90860A283FB4A9EF7A1FE09898A71
-48BB.pygtex) [30]
-Overfull \hbox (6.32025pt too wide) in paragraph at lines 152--153
+(_minted-praca_inz/0B6EBEFFC5C9485D81E609737F722638E36A4643DF3E2A157A0C4DE95617
+C1D8.pygtex)
+(_minted-praca_inz/C041CA84F9A362C7D3788FDEEEA3EFB82F8432F4FD64B75FCABFC208FBCF
+C4D6.pygtex) [27]
+(_minted-praca_inz/ABE601C4ADF2F2170E99943B38AEB5638ECDAF6CAA9C808D10E1393C7C2B
+4FCF.pygtex) [28] [29]
+(_minted-praca_inz/4CDDB1C311E7E1DBA1C34F82F52A12D7720355BA0BD0AD4373380F79B378
+8AAB.pygtex)
+(_minted-praca_inz/B5B401D6F9A3D6EC23C69A1A5F0980F6CB3F471DFC11863E94044BD7B289
+443D.pygtex) [30]
+Overfull \hbox (6.32025pt too wide) in paragraph at lines 106--107
 \T1/ptm/m/n/12 XBit16. Po-sia-da ona dwie kla-sy we-wn¦trz-ne, Ari-th-me-tic8bi
 tResult oraz Ari-th-me-tic16bitResult
  []
 
-\openout3 = `praca_inz.pyg'.
 
-
-(_minted-praca_inz/66E0FD62504B7B4A439FBF7557DDC98C0860A283FB4A9EF7A1FE09898A71
-48BB.pygtex)
-\openout3 = `praca_inz.pyg'.
-
-
-(_minted-praca_inz/F4B8C23AAE1D0253B4CA6F8714BFDAF00860A283FB4A9EF7A1FE09898A71
-48BB.pygtex)
+(_minted-praca_inz/8255220CFF2853AFCAEF7ED2427C2B13BF1C60712811D348DEC718AD2B2F
+BA66.pygtex)
+(_minted-praca_inz/0CB0A71E795D313AAB3723ECDE55FFCD7F7BFA9DA0FEEC8F77207B58D679
+7B3B.pygtex)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-\openout3 = `praca_inz.pyg'.
 
-
-(_minted-praca_inz/0AFD1FE4759A7766537260FE5EFC90870860A283FB4A9EF7A1FE09898A71
-48BB.pygtex)
+(_minted-praca_inz/B2D03B8B3851F651748688441D376692AF7087D5D9383E5C972DDCE98EAA
+C5B6.pygtex)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [31]
-\openout3 = `praca_inz.pyg'.
-
-
-(_minted-praca_inz/D19EA8DE39761CC3969AA0D23476AA2F0860A283FB4A9EF7A1FE09898A71
-48BB.pygtex) [32]
-Overfull \hbox (13.94775pt too wide) in paragraph at lines 213--213
+(_minted-praca_inz/C45CCC63339E203A1D4F9E9D42AEB25813F11F59E17AF1B663DAF42041D1
+E9E2.pygtex) [32]
+Overfull \hbox (13.94775pt too wide) in paragraph at lines 140--140
 []\T1/ptm/b/n/14.4 public sta-tic Ari-th-me-tic8bitResult ad-d-Two8bits(XBit8 v
 a-lue1, XBit8
  []
 
-\openout3 = `praca_inz.pyg'.
 
-
-(_minted-praca_inz/E3AE94397BCF905FF079C69906151C200860A283FB4A9EF7A1FE09898A71
-48BB.pygtex)
-Overfull \hbox (12.34921pt too wide) in paragraph at lines 247--247
+(_minted-praca_inz/C5AD8C6AE4C355022D4666A5E4600972D05FD010B63C3B730FA93403A798
+0571.pygtex)
+Overfull \hbox (12.34921pt too wide) in paragraph at lines 160--160
 []\T1/ptm/b/n/14.4 public sta-tic Ari-th-me-tic8bitResult sub-Two8bits(XBit8 va
 -lue1, XBit8
  []
 
-\openout3 = `praca_inz.pyg'.
 
-
-(_minted-praca_inz/BDF5CD9FFE5FC1B6805760C848F68AE70860A283FB4A9EF7A1FE09898A71
-48BB.pygtex) [33]
-Overfull \hbox (7.46973pt too wide) in paragraph at lines 260--263
+(_minted-praca_inz/3FC79D590628F0CF63D27309E3A113910D027D7B093D014212773EA1AC8B
+A72C.pygtex) [33]
+Overfull \hbox (7.46973pt too wide) in paragraph at lines 166--169
 []\T1/ptm/m/n/12 W ko-dzie nr 5.14[] za-pre-zen-to-wa-no me-to-d¦ re-ali-zu-j¡-
 c¡ odej-mo-wa-nie jed-nej licz-by 8-bitowej,
  []
 
-\openout3 = `praca_inz.pyg'.
+
+(_minted-praca_inz/F040C7D69A576B4EE628D9DBE152C2916CFA773B6F25A67D65FF38E8FF23
+230D.pygtex)
+runsystem(pygmentize -l java -f latex -P commandprefix=PYG -F tokenmerge -o _mi
+nted-praca_inz/908CF7EFFDCDECEB71946223B5404282B5F5282F395F7DCE699F0B040687BDCA
+.pygtex listings/xbit/and8bit.java)...executed.
 
 
-(_minted-praca_inz/D65E184893474FC76570FA0AB9DFA41D0860A283FB4A9EF7A1FE09898A71
-48BB.pygtex)
-\openout3 = `praca_inz.pyg'.
-
-
-(_minted-praca_inz/BCEEA8CE48811D4F067048CF1CEE75660860A283FB4A9EF7A1FE09898A71
-48BB.pygtex)
+(_minted-praca_inz/908CF7EFFDCDECEB71946223B5404282B5F5282F395F7DCE699F0B040687
+BDCA.pygtex)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (1.57904pt too wide) in paragraph at lines 291--292
+Overfull \hbox (1.57904pt too wide) in paragraph at lines 184--185
 []\T1/ptm/m/n/12 Kod 5.16[] pre-zen-tu-je me-to-d¦ wy-ko-nu-j¡-c¡ ope-ra-cj¦ su
 -my lo-gicz-nej dwóch liczb 8-bitowych
  []
 
-[34]) [35]
+[34]) (implementacjaZ80Core.tex)) [35] [36]
 \openout2 = `testy.aux'.
 
  (testy.tex
@@ -1068,11 +1038,11 @@ LaTeX Warning: Float too large for page by 408.26059pt on input line 16.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [36
+) [37
 
 
 
-] [37] [38]
+] [38] [39]
 \openout2 = `uwagiIWnioski.aux'.
 
  (uwagiIWnioski.tex
@@ -1083,7 +1053,7 @@ Overfull \hbox (51.52463pt too wide) in paragraph at lines 3--4
 nie-rii wstecz-nej, $[]$ 
  []
 
-) [39
+) [40
 
 
 
@@ -1093,36 +1063,37 @@ Overfull \hbox (157.79121pt too wide) in paragraph at lines 74--76
 ity_of_queensland_binary_translator_uqbt_framework 
  []
 
-[40
+runsystem(del _minted-praca_inz\47E884F28F448C241FF1490BDD8416E70860A283FB4A9EF
+7A1FE09898A7148BB.pygtex)...executed.
+
+[41
 
 
 ] ("praca inz.aux" (wstep.aux) (zagadnienieEmulacji.aux)
 (przegladIstniejacychRozwiazan.aux) (projektAplikacji.aux) (implementacja.aux)
-(testy.aux) (uwagiIWnioski.aux))
-runsystem(del praca_inz.pyg)...executed.
-
- ) 
+(testy.aux) (uwagiIWnioski.aux)) ) 
 Here is how much of TeX's memory you used:
- 8127 strings out of 492970
- 140844 string characters out of 3126594
- 256802 words of memory out of 3000000
- 11710 multiletter control sequences out of 15000+200000
+ 8129 strings out of 492970
+ 141022 string characters out of 3126594
+ 256745 words of memory out of 3000000
+ 11706 multiletter control sequences out of 15000+200000
  57944 words of font info for 90 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,6n,35p,928b,474s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\tomek\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\
-ecit1200.pk>{C:/Users/tomek/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/b
-ase/8r.enc} <C:\Users\tomek\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\e
-c\dpi600\ectt1200.pk> <C:\Users\tomek\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\
-jknappen\ec\dpi600\ectt1000.pk><C:/Users/tomek/AppData/Local/Programs/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/tomek/AppData/Local/Progra
-ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/tomek/AppData
-/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Users/tomek/App
-Data/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Users/tomek
-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "praca inz.pdf" (41 pages, 1236783 bytes).
+ <C:\Users\tomek\AppData\Local\MiKTeX\2.9\fon
+ts\pk\ljfour\jknappen\ec\dpi600\ecit1200.pk>{C:/Users/tomek/AppData/Local/Progr
+ams/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc} <C:\Users\tomek\AppData\Local\MiKTe
+X\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1200.pk> <C:\Users\tomek\AppData\L
+ocal\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1000.pk><C:/Users/tomek/
+AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/
+Users/tomek/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+sy10.pfb><C:/Users/tomek/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/time
+s/utmb8a.pfb><C:/Users/tomek/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/
+times/utmr8a.pfb><C:/Users/tomek/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
+urw/times/utmri8a.pfb>
+Output written on "praca inz.pdf" (42 pages, 1212737 bytes).
 PDF statistics:
- 336 PDF objects out of 1000 (max. 8388607)
+ 337 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 56 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

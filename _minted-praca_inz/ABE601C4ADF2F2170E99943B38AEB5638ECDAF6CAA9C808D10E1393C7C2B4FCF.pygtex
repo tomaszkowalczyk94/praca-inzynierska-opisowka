@@ -3,7 +3,7 @@
 	\PYG{k}{if}\PYG{o}{(}\PYG{n}{startIndexBit}\PYG{o}{\PYGZlt{}}\PYG{n}{stopIndexBit}\PYG{o}{)} \PYG{o}{\PYGZob{}}
 		\PYG{k}{throw} \PYG{k}{new} \PYG{n}{NumberFormatException}\PYG{o}{();}
 	\PYG{o}{\PYGZcb{}}
-
+	
 	\PYG{k+kt}{int} \PYG{n}{buff} \PYG{o}{=} \PYG{n}{valueContainer} \PYG{o}{\PYGZgt{}\PYGZgt{}\PYGZgt{}} \PYG{n}{stopIndexBit}\PYG{o}{;}
 	\PYG{k}{return} \PYG{n}{buff} \PYG{o}{\PYGZam{}} \PYG{o}{(\PYGZti{}(}\PYG{n}{Integer}\PYG{o}{.}\PYG{n+na}{MAX\PYGZus{}VALUE}\PYG{o}{\PYGZlt{}\PYGZlt{}(}\PYG{n}{startIndexBit}\PYG{o}{\PYGZhy{}}\PYG{n}{stopIndexBit}\PYG{o}{+}\PYG{l+m+mi}{1}\PYG{o}{)));}
 \PYG{o}{\PYGZcb{}}
