@@ -1,0 +1,209 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[MeX]{polski}
+
+\usepackage{listings}
+
+\usepackage{xcolor}
+\usepackage{minted}
+\usepackage{array} 
+\usepackage{chngcntr}
+\usepackage{changepage}
+\usepackage{indentfirst}  %wcięcie w pierwszym akapicie
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{mathptmx}
+\usepackage[T1]{fontenc}
+\usepackage{titlesec} % zmiana rozmiaru tytułów 
+\usepackage{tocloft}
+
+%Załączam pakiet do wprowadzania poprawek i uwag. Jeśli chce Pan zostawić w tekście tylko poprawki, a ukryć uwagi to proszę ująć w komentarz następny wiersz, a usunąć go z kolejnego.
+\usepackage[show]{checking}
+%\usepackage{checking}
+
+\graphicspath{ {./image/} }
+
+\setminted[java]{
+	frame=lines,
+	framesep=2mm,
+	baselinestretch=1.2,
+	fontsize=\footnotesize,
+	linenos
+}
+
+% marginesy
+\usepackage[inner=2.5cm, outer=2.5cm, top=2.5cm, bottom=2.5cm, bindingoffset=1cm]{geometry}
+\linespread{1.3} %1.3 da interlinie 1.5cm
+
+%puste miejsca w liniach spisu treści wypełnione kropkami
+\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftsubsecleader}{\cftdotfill{\cftdotsep}}
+
+%Kropka po numerze sekcji i podsekcji
+\titleformat{\chapter}
+{\normalfont\Huge\bfseries}{\thechapter.}{20pt}{\Huge}
+
+%Kropka po numerze sekcji i podsekcji.
+\makeatletter
+\renewcommand\@seccntformat[1]{\csname the#1\endcsname.\quad}
+\renewcommand\numberline[1]{#1.\hskip0.7em}
+\makeatother
+%Tu się kończy definicja kropki po numerze sekcji i podsekcji.
+
+
+\AtBeginDocument{\counterwithin{listing}{chapter}} % numeracja fragmentów z kodem
+
+
+%rozmiar dla rozdziałów i tytułów
+\titleformat{\chapter}
+{\normalfont\large\bfseries\fontsize{14}{0}}{\thechapter.}{1em}{}
+
+\titleformat{\section}
+{\normalfont\bfseries\fontfamily{times}\fontsize{12}{0}}{\thesection.}{1em}{}
+
+\titleformat{\subsection}
+{\normalfont\bfseries\fontsize{12}{0}}{\thesubsection}{1em}{}
+
+\begin{document}
+	
+	\input{titlePage.tex}
+	\author{Tomasz Kowalczyk}
+	\studentNo{083562}
+	\title{Emulator procesora Zilog Z80}
+	\maketitle
+	
+	\leavevmode\thispagestyle{empty}\newpage
+	
+	\pagestyle{empty}
+	\begin{figure}[H]
+		\vspace{-2.5cm}
+		\hspace{-3.5cm}
+		\includegraphics[width=1.0\paperwidth]{skany/zadanie.jpg}
+	\end{figure}
+	
+	\leavevmode\thispagestyle{empty}\newpage
+	
+	\begin{figure}[H]
+		\vspace{-2.5cm}
+		\hspace{-3.5cm}
+		\includegraphics[width=1.0\paperwidth]{skany/osw.jpg}
+	\end{figure}
+
+	\leavevmode\thispagestyle{empty}\newpage
+	
+	\input{summaryContent.tex}
+	
+	\leavevmode\thispagestyle{empty}\newpage
+	\leavevmode\thispagestyle{empty}\newpage
+	
+	%strona ze spisem treści
+	\pagebreak
+	\pagestyle{plain}
+	\setcounter{page}{9} %start numeracji od strony 9
+	\tableofcontents	 %generuj spis treści na podstawie \chapter i \section
+	
+	\leavevmode\newpage %pusta lub kontynuacja spisu treści
+	
+	\include{0-wstep}
+	\include{1-zagadnienieEmulacji}
+	\include{2-przegladIstniejacychRozwiazan}
+	\include{3-projektAplikacji}
+	\include{4-implementacja}	
+	\include{5-testy}	
+	\include{6-uwagiIWnioski}
+    
+    \addcontentsline{toc}{chapter}{Bibliografia}
+	\begin{flushleft}
+	\begin{thebibliography}{99}
+	    \bibitem{howDoIWriteAnEmulator}
+		Boris D., \emph{How Do I Write an Emulator?} (online),
+		https://www.atarihq.com/danb/files/emu\_vol1.txt (10 grudnia 2018).
+	
+	    \bibitem{emulationOrSimulation2}
+		Bourakis A.,
+		\emph{What’s the difference between simulation and emulation} (online),
+		http://bourakis.com/whats-the-difference-between-simulation-and-emulation/ (28 stycznia 2018).
+	
+	    \bibitem{fms_komkon_org_howto}
+		Fayzullin M., 
+		\emph{How To Write a Computer Emulator} (online),
+        http://fms.komkon.org/EMUL8/HOWTO.html
+		(04 grudnia 2018).
+		
+		\bibitem{dynamicRecompilationInJava}
+		Goetz B., \emph{Dynamic compilation and performance measurement} (online),
+		https://www.ibm.com/developerworks/library/j-jtp12214/index.html (12 grudnia 2018).
+		
+        \bibitem{cpm}
+		Johnson H. R., \emph{How to start with CP/M} (online),
+		http://www.retrotechnology.com/dri/howto\_cpm.html (02 stycznia 2019).
+
+	    \bibitem{karczmarczuk}
+	    Karczmarczuk J., \emph{Mikroprocesor Z80}, Wydawnictwa Naukowo-Techniczne, Warszawa 1987.
+
+		\bibitem{studyofthetechniquesforemulationprogramming}
+		Moya del Barrio V.,
+		\emph{Study of the techniques for emulation programming}  (online), http://www.xsim.com/papers/Bario.2001.emubook.pdf (4 grudnia 2018).
+		
+        
+        \bibitem{programming_the_z80}
+		Zaks R., \emph{Programming the Z80, 3rd Edition}, Sybex, Berkeley 1981.
+        
+        
+        
+        
+        
+        
+        
+        \bibitem{emulationOrSimulation}
+		\emph{Difference between Simulator and Emulator} (online), https://difference.guru/difference-between-simulator-and-emulator (4 grudnia 2018).
+        
+		\bibitem{manual} 
+		Dokumentacja techniczna Zilog Z80 CPU, 2016.
+		
+		\bibitem{zimManual}
+		Instrukcja obsługi ZIM (online),
+		http://www.natmac.net/zim/manual/index.html (03 stycznia 2019).
+	
+		\bibitem{tdd}
+		\emph{Test Driven Development} (online),
+		https://msdn.microsoft.com/pl-pl/library/test-driven-development.aspx (16 stycznia 2019).
+		
+		\bibitem{uqbt} 
+		\emph{The University of Queensland Binary Translator (UQBT) Framework} (online),
+		https://www.researchgate.net/publication/239665973\_The\_university\_of
+		\_queensland\_binary\_translator\_uqbt\_framework (10 grudnia 2018).
+
+		\bibitem{overflowRules}
+		\emph{Two's Complement Overflow Rules} (online),
+		http://sandbox.mc.edu/~bennet/cs110/tc/orules.html (04 stycznia 2019).
+		
+		\bibitem{oshonsoftEmulator}
+		\emph{Z80 Simulator IDE} (online),
+		http://www.oshonsoft.com/z80.html (28 stycznia 2018).		
+		
+		%\bibitem{zemuImg}
+		%https://www.retrobrewcomputers.org/n8vem-gg-archive/html-2012/Jul/msg00238.html
+
+		%\bibitem{zim}
+		%http://www.natmac.net/zim/
+		
+			
+		%\bibitem{zimImg}
+		%http://www.natmac.net/zim/GUI6.jpg
+		
+% 		\bibitem{javaGoslingInterview}
+% 		\emph{The C Family of Languages: Interview with Dennis Ritchie, Bjarne Stroustrup, and James Gosling} (online),
+% 		http://www.gotw.ca/publications/c\_family\_interview.htm (04 stycznia 2019).
+		
+		%\bibitem{eduinf}
+		%https://eduinf.waw.pl/
+		
+			
+		
+		
+		
+	\end{thebibliography}
+	\end{flushleft}
+\end{document}

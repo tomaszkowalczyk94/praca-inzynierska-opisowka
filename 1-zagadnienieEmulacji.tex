@@ -1,0 +1,71 @@
+\chapter{Zagadnienie emulacji}
+
+    W rozdziale tym wyjaśniono, czym jest proces emulacji, na czym polega, oraz w jaki sposób może zostać on zaimplementowany. Zwrócono także uwagę na różnicę między pojęciami \emph{symulacja} oraz \emph{emulacja}, które są często błędnie używane zamiennie.
+
+	Emulator w~dziedzinie informatyki, oznacza program który jest przystosowany do uruchomienia w~określonym systemie komputerowym i pozwala na wykonywanie programów przeznaczonych dla innego tego typu urządzenia\cite{howDoIWriteAnEmulator}. 
+	
+	Inną ciekawą definicję emulatora podał Victor Moya del Barrio ,,Emulator to program komputerowy, którego zadaniem jest symulacja zachowania wszystkich komponentów danego urządzenia, używając oprogramowania uruchamianego na innym urządzeniu" 
+	\cite{studyofthetechniquesforemulationprogramming}.
+		
+	Emulacje CPU można przeprowadzić na trzy sposoby:\cite{fms_komkon_org_howto}	
+	\begin{itemize}  
+		\item przez interpretowanie,
+		\item przez statyczną rekompilację,
+		\item przez dynamiczną rekompilację.
+	\end{itemize} 
+	Każda z tych metod wymaga oddzielnego przedstawienia.
+	
+	\section{Emulacja przez interpretowanie}
+	Interpreter to najprostszy rodzaj emulatora. Odczytuje on w pętli kod programu z~symulowanej pamięci. Odczytany bajt (lub bajty, gdyż rozkaz procesora może być wielobajtowy) zawiera informacje o rodzaju operacji jaką CPU 
+	powinien wykonać. Interpreter ma za zadanie odkodować informacje o operacji, a następnie ją wykonać. Między wykonaniem kolejnych rozkazów powinien on zmienić wirtualne parametry (np. zwiększyć o~jeden wartość licznika rozkazów), sprawdzić czy nie zostało zgłoszone przerwanie, obsłużyć urządzenia wejścia/wyjścia, liczniki, kartę graficzną, lub wykonać inne operacje zależne od emulowanego urządzenia. Schemat struktury interpretera został przedstawiony na listingu \ref{listing:interpreter}.
+	
+	\begin{listing}[h]
+		\inputminted{java}{listings/interpreter.c}
+		\caption{Schemat struktury interpretera procesora}
+		\label{listing:interpreter}
+	\end{listing}
+		
+	Emulacja przez interpretowanie jest najwolniejszą formą emulacji, ale także najłatwiejszą w debugowaniu. Pozwala ona na prześledzenie wykonania operacji i podgląd wewnętrznych stanów urządzenia. Z tego powodu jest najczęściej wybierana przez programistów do tworzenia debuggerów procesorów oraz mikrokontrolerów.
+	
+	\section{Statyczna rekompilacja}
+	Statyczna rekompilacja (ang. \emph{static binary translaion}) to proces konwertowania kodu maszynowego na inny kod maszynowy przeznaczony dla docelowej platformy sprzętowej. Plik wykonywalny tłumaczony jest w~całości i~tylko raz. Wadą tego rozwiązania są problemy z~tłumaczeniem rozkazów skoków pośrednich czyli takich gdzie adres skoku przechowywany jest w rejestrze lub pamięci i może on być uzyskany tylko podczas wykonywania programu. W takim przypadku niemożliwym jest przetłumaczenie wszystkich instrukcji pliku wykonywalnego\cite{uqbt}. 
+	
+	
+	\section{Dynamiczna rekompilacja}
+	Dynamiczna rekompilacja (ang. \emph{Dynamic binary translator}), w odróżnieniu od translacji statycznej, tłumaczy kod blokami podczas jego wykonywania. Dokonywana jest ona ,,na żądanie" w~związku z~tym jest wolniejsza od rekompilacji statycznej, ale rozwiązuje problem związany z tłumaczeniem rozkazów skoków pośrednich.
+	
+	Raz przetłumaczony fragment kodu jest przechowywany w pamięci, na wypadek potrzeby jego ponownego użycia, co pozwala zwiększyć efektywność tej metody emulacji\cite{uqbt}.
+	
+	Dynamicznej rekompilacji używa w dużym stopniu maszyna wirtualna języka Java. Wczesne wersje JVM (ang. \emph{Java Virtual Machin}) używały interpreterów, co okazało się mało wydajne. Dobrym sposobem na poprawę efektywności maszyny wirtualnej Java jest dynamiczne tłumaczenie kodu bajtowego\cite{dynamicRecompilationInJava}. 
+	
+	\section{Różnica między symulacją a emulacją} 
+	Różnicę między emulacją a~symulacją obrazuje tabela \ref{table:emulationAndSimulation}.
+	
+	\begin{table}
+		\centering
+		\begin{tabular}{ m{7cm} | m{7cm} }
+			Symulator &  Emulator  \\ 
+			\hline
+			System zdolny do naśladowania innego systemu w pewnym stopniu.  & System który naśladuje dokładne zachowanie innego systemu. \\   
+			\hline
+			Może nie przestrzegać wszystkich reguł symulowanego systemu. & Ściśle przestrzega parametrów i reguł emulowanego systemu. \\ 
+			\hline
+			Modeluje aplikacje i zdarzenia. & Kopiuje zachowanie systemów. \\ 
+		\end{tabular}
+		\caption{Różnice między symulacją a emulacją \cite{emulationOrSimulation}}
+		\label{table:emulationAndSimulation}
+	\end{table}
+	
+	W~informatyce, symulator to program komputerowy, który modeluje zachowania i~funkcje innego realnego systemu lub zjawiska (np. prowadzenie pojazdu). Nie jest wymagane, aby odwzorowywał wszystkie jego zachowania i~funkcje. Symulator nie wykonuje realnych zadań symulowanego urządzenia i ~nie zastępuje go\cite{emulationOrSimulation}.
+	
+	Natomiast emulator ma za zadanie ,,udawać" dane urządzenie/zjawisko w takim stopniu~i na takim poziomie, aby był w stanie zastąpić emulowane urządzenie i funkcjonować tak jak ono\cite{emulationOrSimulation2}.
+	
+	W~rozdziale zdefiniowano, czym jest emulacja w dziedzinie informatyki. Przybliżono jej realizacje przez interpretacje oraz statyczną i dynamiczną rekompilacje. Na koniec zwrócono uwagę, że wbrew powszechnej opinii emulacja i symulacja nie są synonimami, oraz wytłumaczono różnicę między nimi.
+
+	% linki z których czerpałem wiedze:
+	% https://www.guru99.com/real-device-vs-emulator-testing-ultimate-showdown.html
+	% http://fms.komkon.org/EMUL8/HOWTO.html https://stackoverflow.com/questions/1584617/simulator-or-emulator-what-is-the-difference
+	% https://www.quora.com/What-are-the-differences-between-simulation-and-emulation
+	% TO NAJLEPSZE: https://softwareengineering.stackexchange.com/questions/134746/whats-the-difference-between-simulation-and-emulation
+		
+	% W książe "Study of the techniques for emulation programming" Victor Moya del Barrio podaje taką to definicje emulatora "An emulator tries to duplicate the behaviour of a full computer using software programs in a different computer."\cite{studyofthetechniquesforemulationprogramming}. https://www.overleaf.com/project/5c58bbe8b206d66446cbcd63

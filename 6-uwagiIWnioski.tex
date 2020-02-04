@@ -1,0 +1,13 @@
+\chapter{Uwagi i wnioski}
+
+      Wynikiem realizacji pracy jest aplikacja pozwalająca na emulację procesora Zilog~Z80. Z celów zawartych w zadaniu na pracę dyplomową zrealizowano wszystkie, oprócz emulacji wewnętrznych magistrali procesora. Problem okazał się zbyt złożony i czasochłonny bez dostępu do dokumentacji opisującej wewnętrzną budowę procesora, której firma \emph{Zilog} nie upublicznia.
+      
+      Opisany w pracy emulator spośród innych podobnych rozwiązań wyróżnia się możliwością uruchomienia na wielu platformach systemowych, dzięki użyciu języka Java oraz czytelnym kodem źródłowym podzielonym na moduły, z~których każdy może zostać ponownie użyty w innym projekcie.
+      
+      Podczas pracy nad aplikacją napotkano dwa główne problemy. Jednym z nich, jest brak w~języku Java typu prostego przeznaczonego wyłącznie dla liczb naturalnych (ang.~\emph{unsigned}). Rozwiązano go tworząc własną implementację liczb w bibliotece Xbit. Drugim, poważniejszym problemem okazała się wrażliwość procesu emulacji na błędy. Nawet niewielkie nieprawidłowości w wykonywanych instrukcjach procesora, powodują nieprawidłowe działanie emulowanego programu. Ten problem rozwiązano testami jednostkowymi opracowanymi dla wszystkich instrukcji procesora.
+      
+      Każdy moduł aplikacji można rozwijać niezależnie. Wydajność biblioteki \emph{XBit} może zostać zwiększona poprzez zmianę kontenera przechowującego wartość liczby, który jest typu \emph{int}, na obiekt klasy \emph{ByteBuffer} która jest standardowym elementem języka Java.
+      
+      W module \emph{Z80emu{\dywiz}core} można zaimplementować \emph{debugger}, który dla trybu ciągłego emulacji zatrzymywałby wykonywany program w określonym miejscu.
+      
+      W \emph{Z80emu{\dywiz}gui} elementem, który mógłby zostać w przyszłości zaimplementowany i~usprawniłby obsługę programu przez osoby dopiero uczące się zasad działania procesorów, jest wbudowany w aplikację system pomocy. Zawierałby on informacje o rozkazach, rejestrach, przerwaniach i zasadach działania procesora, które można uzyskać z ogólnodostępnych źródeł. Użytkownik mógłby kliknąć tekst z podpisem konkretnego elementu interfejsu emulatora, o którym chciałby się dowiedzieć więcej, a aplikacja przekierowałaby go do odpowiedniej informacji w systemie pomocy. Dodatkowo wersja anglojęzyczna interfejsu pozwoliłaby na dotarcie do większej liczby użytkowników.

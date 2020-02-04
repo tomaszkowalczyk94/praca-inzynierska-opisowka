@@ -1,20 +1,19 @@
 \section{XBit}
-XBit to projekt mający za zadanie ułatwić operacje bitowe w javie, która interpretuje liczby całkowite w kodzie dopełnień do dwóch, i nie jest możliwa interpretacja ich w naturalnym kodzie binarnym (w skrócie NKB). Z tego powodu powstał projekt XBit implementujący taką opcję. Potrafi on odczytać liczbę n-bitową, i zwrócić jej wartość jako zmienna integer, interpretując ją jako bity w U2 lub NKB.
+
+\emph{XBit} to moduł mający za zadanie ułatwić operacje bitowe w języku Java, która interpretuje liczby całkowite w kodzie dopełnień do dwóch i nie jest możliwa interpretacja ich w naturalnym kodzie binarnym (w skrócie NKB). Z tego powodu powstał moduł \emph{XBit} implementujący taką operację. Potrafi on odczytać liczbę n{\dywiz}bitową i zwrócić jej wartość jako zmienną typu \emph{int}, interpretując ją jako bity w U2 lub NKB.
 
 
+Wewnątrz obiektów reprezentujących liczby binarne, wartość przechowywana jest w~polu typu \emph{int}, które nazwano \emph{valueContainer}. Może ono przyjąć teoretycznie wartości od -2147483648 do 2147483647. Uznano jednak, że atrybut ten przechowywał będzie wartość, jaką reprezentują przechowywane bity w notacji NKB (czyli tylko wartości dodatnie). Z tego powodu wartość \emph{valueContainer} nigdy nie będzie ujemna. \newline
+Zakres wartości tego pola to od 0 do $ 2^{n}-1, n<32 $ gdzie \emph{n} oznacza liczbę bitów, jaką przechowuje dany obiekt. Ponieważ typ \emph{int} przechowywany jest w czterech bajtach i interpretowany jest przez język Java w notacji U2, maksymalnie może przechować wartość 2 147 483 647. Dla wartości interpretowanej w NKB na czterech bajtach jest to \newline $2^{32}-1 =$ 4 294 967 296. Jest to więcej niż typ \emph{int} może zawierać, dlatego maksymalna możliwa binarna reprezentacja, jaka może zostać zapisana w podobny sposób, to liczba przechowywana na 31 bitach.
 
-Wewnątrz obiektów reprezentujących liczby binarne, wartość przechowywana jest w zmiennej typu integer, którą nazwano "valueContainer". Może ona więc przyjmować teoretycznie wartości od -2147483648 do 2147483647. W praktyce liczba ta nigdy nie jest ujemna, może przyjąć wartości od 0 do $ 2^{n}-1 $ gdzie n oznacza liczbę bitów. 
+Jeśli obiekt \emph{XBit8} będzie przechowywał liczbę binarną 11111111 (czyli odczytując w~NKB to decymalne 255, a w U2 decymalnie -1). Wartość jego pola \emph{valueContainer} będzie wynosić w~kodzie binarnym
+00000000 00000000 00000000 11111111. (czyli odczytując zarówno w NKB, jak i w U2 będzie to 255). Niestety nadmiarowość bitów jest w tym rozwiązaniu wymagana, ponieważ liczba w kodzie U2, której najbardziej znaczący bit ma wartość $1$, jest ujemna. 
 
-Dla przykładu,  valueContainer obiektu Xbit8, który w zamierzeniu ma przechowywać wartości 8-bitowe, będzie mógł zawierać wartość od 0 do $ 2^{8}-1 = 255 $. 
-
-Jeśli XBit8 będzie przechowywał liczbę binarną 11111111 (czyli odczytując w NKB to decymalne 255, a w u2 decymalnie -1). Jego wartość zmiennej valueContainer będzie wynosić binarnie 
-00000000 00000000 00000000 11111111. (czyli odczytując zarówno w NKB jak i w U2 będzie to 255). Niestety nadmiarowość bitów jest w tym rozwiązaniu wymagana, ponieważ wartość w kodzie u2 której najbardziej znaczącym bitem wynosi 1, jest ujemna. 
-
-Podsumowując, cała sztuczka XBit wykorzystuje fakt takiego samego zapisu liczb dodatnich w U2 i NKB, jeśli tylko będą one zapisane na większej ilości bitów niż wymagana.
+Podsumowując, \emph{XBit} wykorzystuje fakt takiego samego zapisu liczb dodatnich w U2 i NKB, jeśli tylko będą one zapisane na większej liczbie bitów niż wymagana.
 
 
-\subsection{Implementacja klasy Xbit}
-XBit to klasa abstrakcyjna zawierająca wspólne elementy dla klas XBit8 i XBit16 oraz, ewentualnych przyszłych klas. Poniżej opiszę warte uwagi metody.
+\subsection{Implementacja klasy \emph{XBit}}
+\emph{XBit} to klasa abstrakcyjna zawierająca wspólne elementy dla klas \emph{XBit8} i \emph{XBit16} oraz, ewentualnych klas dziedziczących.W~tym podrozdziale zawarto opis najbardziej istotnych metod tej klasy.
 
 \subsubsection{boolean getBit(int index)}
 
@@ -23,18 +22,19 @@ XBit to klasa abstrakcyjna zawierająca wspólne elementy dla klas XBit8 i XBit1
 	\caption{Metoda boolean getBit(int index)}
 	\label{listing:xbitMethodGetBit}
 \end{listing}
-W kodzie \ref{listing:xbitMethodGetBit} zaprezentowano metodę getBit zwracającą bit o danym indeksie przekazanym w parametrze. W linii nr 2 sprawdzana jest poprawność podanego indeksu. Jeśli parametr jest niepoprawny, w linii nr 3 wyrzucany jest wyjątek NumberFormatException. W linii nr 5 wykonujemy przesunięcie bitowe pola valueContainer o podany index. Ponieważ wynikiem przesunięcia bitowego jest liczba o typie integer, wykonujemy koniunkcje bitową z maską o wartości 1. Na końcu przekształcamy wynik operacji z typu integer na boolean i zwracamy.
+Na listingu \ref{listing:xbitMethodGetBit} zaprezentowano metodę \emph{getBit} zwracającą wartość bitu na pozycji o~numerze przekazanym w parametrze. W linii nr 2 sprawdzana jest poprawność parametru \emph{index}. Jeśli jest on niepoprawny, w linii nr 3 wyrzucany jest wyjątek \emph{NumberFormatException}. W linii nr 5 metoda wykonuje przesunięcie bitowe pola \emph{valueContainer} o~podany index. Ponieważ wynikiem jest liczba o typie \emph{int}, wykonywana zostaje koniunkcja bitowa z maską o wartości 1. Na końcu wynik operacji jest przekształcany z typu \emph{int} na \emph{boolean} i zwracany.
 
-\subsubsection{TSelf setBit(int index, boolean value)}
+
+\subsubsection{setBit(int index, boolean value)}
 \begin{listing}[h]
 	\inputminted{java}{listings/xbit/xbitMethodSetBit.java}
 	\caption{Metoda TSelf setBit(int index, boolean value)}
 	\label{listing:xbitMethodSetBit}
 \end{listing}	
-Kod \ref{listing:xbitMethodSetBit} prezentuje metodę modyfikujący bit o danym indeksie, o daną wartość, a następnie zwracający nową zmodyfikowany obiekt. Zwracany typ TSelf to typ generyczny reprezentujący docelową liczbę n-bitową. W linii nr 2 tworzymy maskę bitową, wykonując przesunięcie bitowe na liczbie 1 o wartość parametru "index", czyli maska będzie posiadała tylko jeden bit ustawiony na prawdę logiczną, i będzie to bit o indeksie z parametru. W liniach 5 i 7 wykonuje operacje bitowe mające na celu zmianę bitu na 1 lub 0 w zależności od parametru "value". 
+Listing \ref{listing:xbitMethodSetBit} prezentuje metodę nadającą bitowi o określonej pozycji, zadaną wartość, a~następnie zwracającą nowy zmodyfikowany obiekt. Typ \emph{TSelf} zwracanej wartości to typ generyczny reprezentujący docelową liczbę n-bitową. W linii nr 2 metoda tworzy maskę bitową, wykonując przesunięcie bitowe na liczbie 1 o wartość parametru \emph{index}, czyli maska będzie posiadała tylko jeden bit ustawiony na wartość $1$, i będzie to bit o~pozycji z~parametru. W liniach 5 i 7 metoda wykonuje operacje bitowe mające na celu zmianę bitu na 1 lub 0 w zależności od parametru \emph{value}:
 \begin{itemize}  
-	\item Dla "value" równego 1 wykonuje się linia 5. Najpierw pobieramy obecną wartość obiektu i wykonujemy alternatywę bitową na niej, i na wcześniej zbudowanej masce. Wynik przypisujemy do zmiennej "newValue" będącej buforem.
-	\item Dla "value" równego 10 wykonuje się linia 7. Nową wartość uzyskujemy przez koniunkcje bitową aktualnej wartości oraz negacji maski. 
+	\item dla \emph{value} równego 1 wykonywane są instrukcje zawarte w~linii nr~5. Najpierw pobierana jest obecna wartość obiektu i wykonana alternatywa bitowa  na niej i na wcześniej zbudowanej masce. Metoda przypisuje wynik do zmiennej \emph{newValue} będącej buforem,
+	\item dla \emph{value} równego 0 metoda wykonuje instrukcje zawartą w linii nr~7. Nowa wartość uzyskiwana jest przez koniunkcje bitową aktualnej wartości oraz negacji maski. 
 \end{itemize} 
 
 \subsubsection{int getValueOfBits(int startIndexBit, int stopIndexBit)}
@@ -43,36 +43,33 @@ Kod \ref{listing:xbitMethodSetBit} prezentuje metodę modyfikujący bit o danym 
 	\caption{Metoda int getValueOfBits(int startIndexBit, int stopIndexBit)}
 	\label{listing:getValueOfBits}
 \end{listing}
-Kod \ref{listing:getValueOfBits} przedstawia metodę przyjmującą dwa parametry, które są indeksami dwóch bitów, a zwraca wartość od indeksu pierwszego argumentu, do drugiego. Dla przykładu, jeśli wartość obiektu to binarnie 00001110, argument startIndexBit jest równy 4, a stopIndexBit jest równy 1, to metoda zwróci binarnie wartość 0111.
+Listing \ref{listing:getValueOfBits} przedstawia metodę zwracającą fragment wartości binarnej, od pozycji określonej przez argument \emph{startIndexBit}. do \emph{stopIndexBit}, włącznie.
 
-W liniach 1 i dwa sprawdzamy poprawność argumentów i ewentualnie wyrzucamy wyjątek.  Linia 6 tworzy bufor, wykonując przesunięcie bitowe w prawo na wartości obiektu, o wartość drugiego, końcowego indeksu podanego w parametrze metody.
-
-Linia nr 7 wykonuje koniunkcję bitową na buforze, i wyniku operacji przesunięcia bitowego w lewo wartości wypełnionej binarnej jedynkami, o wyniki operacji indeksPoczątku-indeksKońca+1. 
+W liniach 2 i 3 sprawdzana jest poprawność argumentów i ewentualnie zostaje wyrzucony wyjątek.  W linii 6 tworzony jest bufor, wykonując przesunięcie bitowe w prawo na wartości obiektu, o wartość parametru \emph{stopIndexBit}. Dzięki tej operacji pozbyto się zbędnych bitów z wartości obiektu po prawej stronie. Następnym krokiem jest pozbycie się bitów po lewej stronie. W tym celu, w linii nr 7 wykonywana jest maska bitowa wypełniona taką liczbą jedynek, jak liczba bitów docelowej wartości. Aby ją wykonać, wykonujemy przesunięcie bitowe w lewo na maksymalnej liczbie, jaką może przyjąć typ \emph{int} (w zapisie binarnym 01111111 11111111 11111111 11111111) o liczbę bitów wartości docelowej - 1. Następnie wykonano negację bitową. Bitów po lewej stronie pozbyto się za pomocą operacji iloczynu bitowego na uzyskanej masce i buforze.
 
 \subsubsection{Inne metody}
-Klasa XBit posiada inne metody, zbyt proste w swojej budowie aby były warte głębszego opisywania. Zostaną one jedynie wymienione poniżej w celu lepszego zobrazowania wszystkich funkcjonalności.
+Klasa \emph{XBit} posiada inne metody, zbyt proste w swojej budowie, aby były warte dokładniejszego opisywania. Zostaną one jedynie wymienione w celu lepszego zobrazowania wszystkich możliwości.
 \begin{itemize}  
-	\item public abstract short getSize() - abstrakcyjna klasa zwracająca ilość bitów jakie przechowuje docelowa liczba
-	\item public abstract int getMinSignedValue() - zwraca minimalną liczbę ze znakiem jaka może być przechowywana w obiekcie
-	\item public abstract int getMaxSignedValue() - zwraca maksymalną liczbę ze znakiem jaka może być przechowywana w obiekcie
-	\item public int getMinUnsignedValue() - zwraca minimalną liczbę bez znaku jaka może być przechowywana w obiekcie (czyli zawsze przyjmuje wartość 0)
-	\item public abstract int getMaxUnsignedValue() - zwraca maksymalną liczbę bez znaku jaka może być przechowywana w obiekcie
-	\item public boolean isNegative() - zwraca wartość bitu o największym indeksie, który w kodowaniu u2 decyduje czy liczba jest mniejsza od zera
-	\item public int getSignedValue() - zwraca wartość w kodowaniu U2
-	\item public int getUnsignedValue() - zwraca wartość w kodowaniu NKB
+	\item \emph{public abstract short getSize()} - abstrakcyjna metoda zwracająca liczbę bitów jakie przechowuje docelowa liczba,
+	\item \emph{public abstract int getMinSignedValue()} - zwraca minimalną liczbę ze znakiem jaka może być przechowywana w obiekcie,
+	\item \emph{public abstract int getMaxSignedValue()} - zwraca maksymalną liczbę ze znakiem jaka może być przechowywana w obiekcie,
+	\item \emph{public int getMinUnsignedValue()} - zwraca minimalną liczbę bez znaku jaka może być przechowywana w obiekcie (czyli zawsze przyjmuje wartość 0),
+	\item \emph{public abstract int getMaxUnsignedValue()} - zwraca maksymalną liczbę bez znaku jaka może być przechowywana w obiekcie,
+	\item \emph{public boolean isNegative()} - zwraca wartość bitu o największej pozycji, który w kodowaniu U2 decyduje czy liczba jest mniejsza od zera,
+	\item \emph{public int getSignedValue()} - zwraca wartość w kodowaniu U2,
+	\item \emph{public int getUnsignedValue()} - zwraca wartość w kodowaniu NKB.
 \end{itemize}
 
-
-\subsection{Implementacja klasy Xbit8}
-Klasa XBit8 dziedziczy funkcjonalności po abstrakcyjnej klasie XBit, która została zbudowana w taki sposób aby klasy po niej dziedziczące były jak najmniejsze. Metody które należą do XBit8 i nie zostały odziedziczone nie są na tyle skomplikowane aby warto było je głębiej opisywać, z tego powodu zostaną wymienione poniżej i krótko opisane bez szczegółów implementacji.
+\subsection{Implementacja klasy \emph{XBit8}}
+Klasa \emph{XBit8} dziedziczy po abstrakcyjnej klasie \emph{XBit}, która została zbudowana w taki sposób, aby klasy po niej dziedziczące były jak najmniejsze. Metody, które należą do \emph{XBit8} i nie zostały odziedziczone. Nie są one na tyle skomplikowane, aby warto było je bardziej szczegółowo opisywać, z tego powodu zostaną wymienione i krótko opisane.
 \begin{itemize}  
-	\item public static XBit8 valueOfUnsigned(int value) - tworzy nowy obiekt o wartości bez znaku
-	\item public static XBit8 valueOfSigned(int value) - tworzy nowy obiekt o wartości ze znakiem
-	\item public static XBit8 valueOfBooleanArray(boolean[] values) - tworzy nowy obiekt na podstawie tablicy elementów o typie boolean.
+	\item \emph{public static XBit8 valueOfUnsigned(int value)} - tworzy nowy obiekt o wartości bez znaku,
+	\item \emph{public static XBit8 valueOfSigned(int value)} - tworzy nowy obiekt o wartości ze znakiem,
+	\item \emph{public static XBit8 valueOfBooleanArray(boolean[] values)} - tworzy nowy obiekt na podstawie tablicy elementów o typie \emph{boolean}.
 \end{itemize}
 
-\subsection{Implementacja klasy Xbit16}
-XBit16 to klasa reprezentująca liczbę 16 bitową. Dziedziczy ona po XBit dzięki temu nie musi implementować najbardziej podstawowych funkcji. 
+\subsection{Implementacja klasy XBit16}
+\emph{XBit16} to klasa reprezentująca liczbę 16 bitową. Dziedziczy ona po \emph{XBit}. Dzięki temu nie musi implementować najbardziej podstawowych metod. 
 
 
 \subsubsection{public static XBit16 valueOfHighAndLowInBigEndian(XBit8 high, XBit8 low)}
@@ -81,8 +78,9 @@ XBit16 to klasa reprezentująca liczbę 16 bitową. Dziedziczy ona po XBit dzię
 	\caption{Metoda XBit16 valueOfHighAndLowInBigEndian(XBit8 high, XBit8 low)}
 	\label{listing:valueOfHighAndLowInBigEndian}
 \end{listing}
-W kodzie \ref{listing:valueOfHighAndLowInBigEndian} pokazano implementację metody "valueOfHighAndLowInBigEndian" tworzącą liczbę 16bitową w formacie zapisu big endian (kolejność bajtów zgodna z "ludzkim" zapisem, najbardziej znaczący bajt umieszczony jest jako pierwszy).  Jako parametry przyjmowane są dwie liczby 8-bitowe o nazwach "high" i "low". 
-Na początku tworzony jest obiekt klasy ByteBuffer należącej do standardowej biblioteki java, a następnie ustawiana jest kolejność w jakiej będą dodawane kolejne bajty (linia nr 3). Następne linie prezentują dodanie do bufora kolejno większego (linia nr 4) i młodszego  bajtu (linia nr 5). Na koniec wykonano metode getShort() zwracająca docelową liczbę i na jej podstawie tworzymy reprezentacje klasy XBit16.
+Listingu \ref{listing:valueOfHighAndLowInBigEndian} przedstawia implementację metody \emph{valueOfHighAndLowInBigEndian} tworzącej liczbę 16{\dywiz}bitową w formacie zapisu \emph{big endian} (najbardziej znaczący bajt umieszczony jest jako pierwszy). Przyjmuje ona jako parametry dwie liczby 8{\dywiz}bitowe o nazwach \emph{high} i \emph{low}. 
+Metoda tworzy obiekt klasy \emph{ByteBuffer} należącej do standardowej biblioteki języka Java i konfiguruje ją, aby przechowywała dane w formacie \emph{big endian} (linia nr 3). 
+Następne linie prezentują operacje dodania do bufora kolejno starszego (linia nr 4) i~młodszego  bajtu (linia nr 5). Na koniec wykonano metodę \emph{getShort()} zwracającą docelową liczbę i na jej podstawie tworzona jest reprezentacja klasy \emph{XBit16}.
 
 \subsubsection{public static XBit16 valueOfHighAndLowInLittleEndian(XBit8 high, XBit8 low)}
 \begin{listing}[h]
@@ -90,20 +88,20 @@ Na początku tworzony jest obiekt klasy ByteBuffer należącej do standardowej b
 	\caption{Metoda XBit16 valueOfHighAndLowInLittleEndian(XBit8 high, XBit8 low)}
 	\label{listing:valueOfHighAndLowInLittleEndian}
 \end{listing}
-W kodzie \ref{listing:valueOfHighAndLowInLittleEndian} zaprezentowano metodę tworzącą liczbę 16-bitową w formacie zapisu little endian, czyli najbardziej znaczący bajt umieszczony jest jako ostatni (odwrotnie do "ludzkiego" zapisu gdzie najbardziej znacząca cyfra jest pierwsza).
-Implementacja metody jest dosyć prosta, wykonuje ona metodę valueOfHighAndLowInBigEndian() z zamienioną kolejnością parametrów.
+W listingu \ref{listing:valueOfHighAndLowInLittleEndian} zaprezentowano metodę tworzącą liczbę 16{\dywiz}bitową w formacie zapisu \emph{little endian}, czyli najbardziej znaczący bajt umieszczony jest jako ostatni.
+Implementacja metody jest dosyć prosta, wykonuje ona metodę \emph{valueOfHighAndLowInBigEndian()} z~zamienioną kolejnością parametrów.
 
 
-\subsubsection{inne metody}
-Poniżej wymieniono metody które są zbyt proste w implementacji aby warto było je opisywać pojedynczo. 
+\subsubsection{Inne metody}
+Klasa \emph{XBit16} zawiera także metody, które są zbyt proste w implementacji aby warto było je opisywać pojedynczo:
 \begin{itemize}  
-	\item public static XBit16 valueOfUnsigned(int value) - tworzy nowy obiekt o wartości bez znaku
-	\item public static XBit16 valueOfSigned(int value) - tworzy nowy obiekt o wartości z znakiem
+	\item \emph{public static XBit16 valueOfUnsigned(int value)} - tworzy nowy obiekt o wartości bez znaku,
+	\item \emph{public static XBit16 valueOfSigned(int value)} - tworzy nowy obiekt o wartości ze znakiem.
 \end{itemize}
 
 
 \subsection{Implementacja klasy XbitUtils}
-XbitUtils to klasa implementująca operacje arytmetyczne i bitowe na obiektach XBit8 oraz XBit16. Posiada ona dwie klasy wewnętrzne, Arithmetic8bitResult oraz Arithmetic16bitResult reprezentujące wynik operacji arytmetycznych, które oprócz samego wyniku powinny informować o wystąpieniu przeniesienia i przepełnienia. Klasy te zaprezentowano w kodach \ref{listing:arithmetic8bitResult} oraz \ref{listing:arithmetic16bitResult}
+\emph{XbitUtils} to klasa implementująca operacje arytmetyczne i bitowe na obiektach \emph{XBit8} i~\emph{XBit16}. Posiada ona dwie klasy wewnętrzne, \emph{Arithmetic8bitResult}  oraz \newline\emph{Arithmetic16bitResult} reprezentujące wynik operacji arytmetycznych i zawierające informacje o wystąpieniu przeniesienia i przepełnienia. Klasy te zaprezentowano w listingach \ref{listing:arithmetic8bitResult} oraz \ref{listing:arithmetic16bitResult}.
 
 \begin{listing}[h]
 	\inputminted{java}{listings/xbit/arithmetic8bitResult.java}
@@ -123,9 +121,9 @@ XbitUtils to klasa implementująca operacje arytmetyczne i bitowe na obiektach X
 	\caption{Metoda XBit8 incrementBy(XBit8 value, int incrementer)}
 	\label{listing:incrementBy}
 \end{listing}
-Kod \ref{listing:incrementBy} prezentuje metodę inkrementującą liczbę 8 bitową o daną wartość. Aby wykonać operację, metoda konwertuje parametr "value" na liczbę typu integer (linia nr 2) i wykonuje inkrementacje za pomocą standardowej operacji dodawania w języku java (linia nr 3). Następnie w linii nr 4 wykonuje operacje iloczynu bitowego na uzyskanej nowej wartości, oraz masce bitowej reprezentującej największą możliwą wartość jaką może przechowywać liczba 8-bitowa (celem tej operacji jest nie dopuszczenie do sytuacji, w której wynik inkrementacji nie mieści się na ośmiu bitach). Na koniec tworzona jest i zwracana instancja klasy XBit8. 
+Listing \ref{listing:incrementBy} prezentuje metodę zwiększającą liczbę 8{\dywiz}bitową o daną wartość. Aby wykonać operację, metoda konwertuje parametr \emph{value} na liczbę typu \emph{int} (linia nr 2) i dodaje wartość parametru \emph{incrementer} (linia nr 3). Następnie w linii nr 4 wykonuje operacje iloczynu bitowego na uzyskanej nowej wartości oraz masce bitowej reprezentującej największą możliwą wartość, jaką może przechowywać liczba 8{\dywiz}bitowa (celem tej operacji jest niedopuszczenie do sytuacji, w której wynik operacji nie mieści się na ośmiu bitach). Na koniec tworzona jest i zwracana instancja klasy \emph{XBit8}. 
 
-Zasada działania metody "XBit16 incrementBy(XBit16 value, int incrementer)" jest podobna, dlatego zostanie pominięta.
+Zasada działania metody \emph{XBit16 incrementBy(XBit16 value, int incrementer)} jest podobna, dlatego jej opis zostanie pominięty. 
 
 \subsection{public static XBit8 negativeOf(XBit8 value)}
 \begin{listing}[h]
@@ -133,9 +131,10 @@ Zasada działania metody "XBit16 incrementBy(XBit16 value, int incrementer)" jes
 	\caption{Metoda XBit8 negativeOf(XBit8 value)}
 	\label{listing:negativeOf}
 \end{listing}
-Funkcja tworząca liczbę negatywną do podanej została zaprezentowana w kodzie \ref{listing:negativeOf}. Operacja polega na wykonaniu iloczynu bitowego na negacji bitowej danej wartości, oraz liczbie 255. Następnie wykonany wynik zostaje zainkrementowany. 
+Funkcja tworząca liczbę o~przeciwnym znaku do podanej została zaprezentowana w~listingu \ref{listing:negativeOf}. Operacja ta polega na wykonaniu iloczynu bitowego na negacji bitowej danej wartości oraz liczbie 255. Ma to na celu niedopuszczenie do sytuacji, w której wartość bufora będzie większa niż 255, a więc nie będzie mogła się zmieścić na ośmiu bitach.
+Następnie wykonany wynik zostaje zwiększony o jeden. 
 
-Zasada działania metody "XBit16 negativeOf(XBit16 value)" jest identyczna. Jedyną różnicą jest operacja iloczynu bitowego którą wykonujemy nie na liczbie 255 a 65535.
+Zasada działania metody \emph{XBit16 negativeOf(XBit16 value)} jest taka sama. Jedyną różnicą jest operacja iloczynu bitowego, którą wykonujemy nie na liczbie 255 a 65535.
 
 \subsection{public static Arithmetic8bitResult addTwo8bits(XBit8 value1, XBit8 value2)}
 \begin{listing}[h]
@@ -143,19 +142,19 @@ Zasada działania metody "XBit16 negativeOf(XBit16 value)" jest identyczna. Jedy
 	\caption{Metoda Arithmetic8bitResult addTwo8bits(XBit8 value1, XBit8 value2)}
 	\label{listing:addTwo8bits}
 \end{listing}
-Kod \ref{listing:addTwo8bits} prezentuje metodę realizującą dodawanie dwóch liczb 8-bitowych. Wynikiem jej działania jest obiekt klasy Arithmetic8bitResult przechowujący wynik operacji, i flagi przepełnienia lub przeniesienia. 
+Listing \ref{listing:addTwo8bits} prezentuje metodę realizującą dodawanie dwóch liczb 8-bitowych. Wynikiem jej działania jest obiekt klasy \emph{Arithmetic8bitResult} przechowujący wynik operacji i flagi przepełnienia lub przeniesienia. 
 
-W linii nr 3, metoda wykonuje samą operacje dodawania. Linia nr 4 sprawdza czy nastąpiło przepełnienie, a linia nr 5 ustawia flagę. Linia nr 7 wykonuje "obcięcie" bitów w przypadku, gdy wynik nie będzie w stanie zmieścić się w liczbie 8-bitowej. 
+W linii nr 3 metoda wykonuje operacje dodawania. W linii nr 4 umieszczono sprawdzenie, czy nastąpiło przepełnienie, a linia nr 5 ustawia flagę. Linia nr 7 wykonuje ,,obcięcie" bitów w przypadku, gdy wynik nie będzie w stanie zmieścić się w liczbie 8{\dywiz}bitowej.
 
-Linia nr 9 i 10 ustawia flagę przepełnienia według trzech zasad \cite{overflowRules}:
+Linie 9 i 10 zawierają operację ustawiającą flagę przepełnienia według\newline trzech zasad \cite{overflowRules}:
 \begin{enumerate}
-	\item Jeśli suma dwóch liczb dodatnich daje wynik ujemny, suma została przepełniona. 
-	\item Jeśli suma dwóch liczb ujemnych daje wynik dodatni, suma została przepełniona.
-	\item W każdym innym przypadku przepełnienie nie wystąpiło.
+	\item jeśli suma dwóch liczb dodatnich daje wynik ujemny, to znaczy, że wystąpiło przepełnienie,
+	\item jeśli suma dwóch liczb ujemnych daje wynik dodatni, to również oznaca wystąpienie przepełnienia,
+	\item w każdym innym przypadku przepełnienie nie wystąpiło.
 \end{enumerate}
-Przyjmujemy że najbardziej znaczący bit jest bitem znaku.
+Zakłada się, że najbardziej znaczący bit jest bitem znaku.
 
-Prezentacja funkcji realizującej dodawanie dwóch liczb 16-bitowych została pominięta, ponieważ odbywa się na tej samej zasadzie.
+Prezentacja metody realizującej dodawanie dwóch liczb 16{\dywiz}bitowych została pominięta, ponieważ operacja ta jest przeprowadzana na tej samej zasadzie co 8{\dywiz}bitowa.
 
 \subsection{public static Arithmetic8bitResult subTwo8bits(XBit8 value1, XBit8 value2)}
 \begin{listing}[h]
@@ -163,9 +162,9 @@ Prezentacja funkcji realizującej dodawanie dwóch liczb 16-bitowych została po
 	\caption{Metoda Arithmetic8bitResult subTwo8bits(XBit8 value1, XBit8 value2)}
 	\label{listing:subTwo8bits}
 \end{listing}
-W kodzie nr \ref{listing:subTwo8bits} zaprezentowano metodę realizującą odejmowanie jednej liczby 8-bitowej, od drugiej. Metoda wykorzystuje regułę 
-$ a - b = a+(-b) $ mówiącą, że odejmowanie dwóch liczb można zastąpić dodawaniem, negując drugi składnik odejmowania. 
-Metoda realizująca odejmowanie dwóch liczb 16-bitowych działa w analogiczny sposób.
+W listingu \ref{listing:subTwo8bits} zaprezentowano metodę realizującą odejmowanie jednej liczby 8{\dywiz}bitowej, od drugiej. Metoda wykorzystuje regułę 
+$ a - b = a+(-b) $ według której odejmowanie dwóch liczb można zastąpić dodawaniem, negując drugi składnik odejmowania. 
+Metoda realizująca odejmowanie dwóch liczb 16{\dywiz}bitowych działa w analogiczny sposób.
 
 \subsection{public static XBit8 not8bit(XBit8 value)}
 \begin{listing}[h]
@@ -173,7 +172,7 @@ Metoda realizująca odejmowanie dwóch liczb 16-bitowych działa w analogiczny s
 	\caption{Metoda XBit8 not8bit(XBit8 value)}
 	\label{listing:not8bit}
 \end{listing}
-Funkcja not8bit(XBit8 value) zaprezentowana w kodzie \ref{listing:not8bit} wykonuje negację bitową na liczbie 8bitowej. Operacja wykonywana jest za pomocą wbudowanej w język java opcji negacji bitowej (znak "\~{}"). Dodatkową wykonywaną operacją jest iloczyn bitowy z liczbą 255, mająca za zadanie obcięcie niepotrzebnych bitów. Wersja metody 16-bitowa jest analogiczna.
+Metoda \emph{not8bit(XBit8 value)} zaprezentowana w listingu \ref{listing:not8bit} wykonuje negację bitową na liczbie 8{\dywiz}bitowej. Operacja wykonywana jest za pomocą standardowego operatora negacji bitowej języka Java (znak tyldy górnej ,,\~{}"). Dodatkową wykonywaną operacją jest iloczyn bitowy z liczbą 255, mający za zadanie wyzerowanie bitów starszych od ósmego. Wersja metody dla liczb 16{\dywiz}bitowych jest analogiczna.
 
 \subsection{public static XBit8 and8bit(XBit8 value1, XBit8 value2)}
 \begin{listing}[h]
@@ -181,21 +180,16 @@ Funkcja not8bit(XBit8 value) zaprezentowana w kodzie \ref{listing:not8bit} wykon
 	\caption{Metoda XBit8 and8bit(XBit8 value1, XBit8 value2)}
 	\label{listing:and8bit}
 \end{listing}
-Kod \ref{listing:and8bit} prezentuje metodę wykonującą operację sumy logicznej dwóch liczb 8-bitowych (linia nr 3). Linia nr 4 obcina wynik operacji tak, aby mieścił się w ośmiu bitach. Wersja metody dla liczb 16-bitowych działa analogicznie.
+Listing \ref{listing:and8bit} prezentuje metodę wykonującą operację sumy logicznej dwóch liczbe \mbox{8{\dywiz}bitowych} (linia nr 3). Linia nr 4 zawiera operację wyzerowania bitów starszych od ósmego dla wyniku, aby mieścił się on w ośmiu bitach. Wersja metody dla liczb \mbox{16{\dywiz}bitowych} działa analogicznie.
 
-\subsection{metody wykonujące sumę bitową i różnice symetryczną}
-Implementacja metod:
+\subsection{Metody wykonujące sumę bitową i różnice symetryczną}
+Implementacje metod:
 \begin{itemize}  
-	\item public static XBit8 or8bit(XBit8 value1, XBit8 value2)
-	\item public static XBit16 or16bit(XBit16 value1, XBit16 value2)
-	\item public static XBit8 xor8bit(XBit8 value1, XBit8 value2)
-	\item public static XBit16 xor16bit(XBit16 value1, XBit16 value2)
-	\item public static XBit8 shift8bit(XBit8 value1, int position) 
-	\item public static XBit8 shift16bit(XBit8 value1, int position)
+	\item \emph{public static XBit8 or8bit(XBit8 value1, XBit8 value2)},
+	\item \emph{public static XBit16 or16bit(XBit16 value1, XBit16 value2)},
+	\item \emph{public static XBit8 xor8bit(XBit8 value1, XBit8 value2)},
+	\item \emph{public static XBit16 xor16bit(XBit16 value1, XBit16 value2)},
+	\item \emph{public static XBit8 shift8bit(XBit8 value1, int position)},
+	\item \emph{public static XBit8 shift16bit(XBit8 value1, int position)}.
 \end{itemize}
-wygląda analogicznie do metody and8bit(XBit8 value1, XBit8 value2). Operacje bitowe wykonywane są za pomocą mechanizmów wbudowanych w język java, a nadmiar bitów zostaje obcięty.
-
-
-
-
-
+są analogicznie do metody and8bit(XBit8 value1, XBit8 value2). Operacje bitowe wykonywane są za pomocą mechanizmów wbudowanych w język Java, a nadmiar bitów zostaje obcięty.

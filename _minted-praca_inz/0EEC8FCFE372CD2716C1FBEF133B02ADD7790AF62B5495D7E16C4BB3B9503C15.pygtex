@@ -1,7 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{n+nt}{\PYGZlt{}server\PYGZgt{}}
-	\PYG{n+nt}{\PYGZlt{}id\PYGZgt{}}myMavenRepo.write\PYG{n+nt}{\PYGZlt{}/id\PYGZgt{}}
-	\PYG{n+nt}{\PYGZlt{}username\PYGZgt{}}usename\PYG{n+nt}{\PYGZlt{}/username\PYGZgt{}}
-	\PYG{n+nt}{\PYGZlt{}password\PYGZgt{}}password\PYG{n+nt}{\PYGZlt{}/password\PYGZgt{}}
-\PYG{n+nt}{\PYGZlt{}/server\PYGZgt{}}
-\end{Verbatim}
